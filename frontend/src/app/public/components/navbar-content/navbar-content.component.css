@@ -1,0 +1,41 @@
+.example-icon {
+  display: none;
+}
+
+.toolbar-container{
+  display:flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  margin-top: 0;
+}
+.toolbar-sections{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.login-btn{
+  background-color: #11AEBF;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.toolbar-content{
+  display: flex;
+  gap:2em;
+  margin-left:10rem;
+}
+.mat-toolbar{
+  background-color: white;
+  color: black;
+}
+
+@media  (width>=0px) and (width<= 1024px) {
+  .example-icon {
+    display:block;
+  }
+}
