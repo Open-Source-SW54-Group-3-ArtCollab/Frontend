@@ -3,6 +3,8 @@ import {MatIcon} from "@angular/material/icon";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'footer-content',
   standalone: true,
@@ -16,4 +18,6 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 export class FooterContentComponent {
   faXTwitter = faXTwitter;
   faInstagram = faInstagram;
+  faYoutube = faYoutube;
+  faTiktok = faTiktok;
 }
