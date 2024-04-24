@@ -1,3 +1,6 @@
+.navbar-tools img{
+  cursor: pointer;
+}
 .example-icon {
   display: none;
 }
@@ -8,25 +11,24 @@ span:hover{
 
 span{
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .toolbar-container{
   display:flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 10rem;
   border: 1px solid #e0e0e0;
-  margin-top: 0;
 }
 .toolbar-sections{
   display: flex;
   gap: 2em;
   justify-content: center;
   align-items: center;
+
 }
 
 .login-container{
-  margin-right: 10rem;
 }
 .login-btn{
   background-color: #11AEBF;
@@ -39,21 +41,21 @@ span{
 
 .search-input{
   display:flex;
+
 }
 
 .search-btn{
-  margin-top: 1rem;
+  align-content: center;
 }
 
 .input-btn input{
-  padding: 15px 35px 15px;
+  padding: 15px 20px 15px;
   border-radius: 10px;
   border-color: transparent;
 }
 .toolbar-content{
   display: flex;
   gap:2em;
-  margin-left:10rem;
 }
 .mat-toolbar{
   background-color: white;
@@ -67,12 +69,22 @@ span{
 
 
 
-@media  (width>=0px) and (width<= 1024px) {
+@media (min-width: 0px) and (max-width: 1024px) {
   .example-icon {
     display:block;
+  }
+
+  .input-btn input{
+    display: none;
   }
 
   .toolbar-sections{
     display: none;
   }
+
+  .toolbar-container{
+    justify-content: space-around;
+    padding: 1rem 0;
+  }
+
 }
