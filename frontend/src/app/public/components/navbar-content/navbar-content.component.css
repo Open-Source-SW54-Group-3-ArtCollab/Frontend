@@ -1,6 +1,15 @@
 .example-icon {
   display: none;
 }
+span:hover{
+   color: #11AEBF;
+   cursor: pointer;
+}
+
+span{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 
 .toolbar-container{
   display:flex;
@@ -15,14 +24,31 @@
   justify-content: center;
   align-items: center;
 }
+
+.login-container{
+  margin-right: 10rem;
+}
 .login-btn{
   background-color: #11AEBF;
   color: white;
   border: none;
-  padding: 15px;
+  padding: 15px 35px 15px;
   border-radius: 10px;
   cursor: pointer;
+}
 
+.search-input{
+  display:flex;
+}
+
+.search-btn{
+  margin-top: 1rem;
+}
+
+.input-btn input{
+  padding: 15px 35px 15px;
+  border-radius: 10px;
+  border-color: transparent;
 }
 .toolbar-content{
   display: flex;
@@ -34,8 +60,19 @@
   color: black;
 }
 
+.navbar-tools{
+  display: flex;
+  gap: 2em;
+}
+
+
+
 @media  (width>=0px) and (width<= 1024px) {
   .example-icon {
     display:block;
+  }
+
+  .toolbar-sections{
+    display: none;
   }
 }
