@@ -1,33 +1,48 @@
-<p>
-  <mat-toolbar>
-   <div class="toolbar-container">
-     <div class="toolbar-content">
-       <div class="navbar-tools">
-         <img src="./assets/logo.png"  class="logo" width="50" height="50" alt="Artcollab Logo">
-          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-           <mat-icon>menu</mat-icon>
+<div class="navbar-container">
+  <mat-toolbar class="toolbar">
+    <div class="toolbar-container">
+      <div class="toolbar-content">
+        <div class="navbar-tools">
+          <img src="./assets/logo.png"  class="logo" width="50" height="50" alt="Artcollab Logo">
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"  (click)="snav.toggle()" >
+            <mat-icon>menu</mat-icon>
           </button>
-       </div>
-       <div class="toolbar-sections">
-         <span> Géneros </span>
-         <span>Populares </span>
-         <span> Suscripciones </span>
-         <span> Recomendaciones </span>
-         <span> Monetización </span>
-         <span> Artistas </span>
-       </div>
-     </div>
-       <div class="search-input">
-         <div class="search-btn">
-            <mat-icon>search</mat-icon>
-         </div>
-         <div class="input-btn">
-           <input type="text" placeholder="Buscar"/>
-         </div>
-       </div>
-     <div class="login-container">
-       <button class="login-btn"> Iniciar Sesión </button>
-     </div>
-   </div>
+        </div>
+          <div class="toolbar-sections">
+            <span> Géneros </span>
+            <span>Populares </span>
+            <span> Suscripciones </span>
+            <span> Recomendaciones </span>
+            <span> Monetización </span>
+            <span> Artistas </span>
+          </div>
+      </div>
+      <div class="search-input">
+        <div class="search-btn">
+          <mat-icon>search</mat-icon>
+        </div>
+        <div class="input-btn">
+          <input type="text" placeholder="Buscar"/>
+        </div>
+      </div>
+      <div class="login-container">
+        <button class="login-btn"> Iniciar Sesión </button>
+      </div>
+    </div>
   </mat-toolbar>
-</p>
+  <mat-sidenav-container class="sidenav-container"
+                         [style.margin-top.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list class="sidenav-list">
+        <span> Géneros </span>
+        <span>Populares </span>
+        <span> Suscripciones </span>
+        <span> Recomendaciones </span>
+        <span> Monetización </span>
+        <span> Artistas </span>
+      </mat-nav-list>
+    </mat-sidenav>
+
+  </mat-sidenav-container>
+</div>

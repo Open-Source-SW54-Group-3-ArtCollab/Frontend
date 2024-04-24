@@ -14,6 +14,10 @@ span{
   font-size: 1rem;
 }
 
+.sidenav-list span{
+  cursor: pointer;
+}
+
 .toolbar-container{
   display:flex;
   justify-content: space-between;
@@ -29,8 +33,8 @@ span{
 
 }
 
-.login-container{
-}
+
+
 .login-btn{
   background-color: #11AEBF;
   color: white;
@@ -60,6 +64,7 @@ span{
 }
 .mat-toolbar{
   background-color: white;
+  padding: 0;
   color: black;
 }
 
@@ -69,6 +74,28 @@ span{
 }
 
 
+.sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.example-is-mobile .sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.mat-toolbar .toolbar-container {
+  flex: 1;
+}
+
+.sidenav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1rem;
+}
 
 @media (min-width: 0px) and (max-width: 1024px) {
   .example-icon {
@@ -85,7 +112,7 @@ span{
 
   .toolbar-container{
     justify-content: space-around;
-    padding: 1rem 0;
+    padding: 0 0;
   }
 
 }
