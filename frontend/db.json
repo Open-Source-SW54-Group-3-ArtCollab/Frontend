@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+    "id": 1,
+    "title": "Boulevard",
+    "authors": [ {"id": 1, "name": "Flor M Salvador"}, {"id": 2, "name": "MMIVens"} ],
+    "likes": 15
+  },
+    {
+    "id": 2,
+    "title": "The Alchemist",
+    "authors": [ {"id": 3, "name": "Paulo Coelho"} ],
+    "likes": 20
+    }
+  ]
+}
