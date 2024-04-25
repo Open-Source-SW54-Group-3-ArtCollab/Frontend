@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-the-hero-monetization',
+  selector: 'the-hero-monetization',
   standalone: true,
   imports: [],
   templateUrl: './the-hero-monetization.component.html',

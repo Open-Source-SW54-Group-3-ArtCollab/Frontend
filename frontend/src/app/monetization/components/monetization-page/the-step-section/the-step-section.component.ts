@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-the-step-section',
+  selector: 'the-step-subscription',
   standalone: true,
   imports: [],
   templateUrl: './the-step-section.component.html',
