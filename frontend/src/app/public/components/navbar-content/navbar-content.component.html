@@ -1,14 +1,14 @@
-<div class="navbar-container">
+<div class="navbar-container p-3">
   <mat-toolbar class="toolbar">
-    <div class="toolbar-container">
-      <div class="toolbar-content">
+    <div class="toolbar-container flex justify-center gap-16">
+      <div class="toolbar-content flex gap-5">
         <div class="navbar-tools">
-          <img src="./assets/logo.png"  class="logo" width="50" height="50" alt="Artcollab Logo">
+          <img src="./assets/logo.png"  class="logo hidden lg:block" width="60" height="50" alt="Artcollab Logo">
           <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"  (click)="snav.toggle()" >
             <mat-icon>menu</mat-icon>
           </button>
         </div>
-          <div class="toolbar-sections">
+          <div class="toolbar-sections flex justify-center items-center gap-8">
             <span> Géneros </span>
             <span>Populares </span>
             <span> Suscripciones </span>
@@ -17,16 +17,18 @@
             <span> Artistas </span>
           </div>
       </div>
-      <div class="search-input">
-        <div class="search-btn">
-          <mat-icon>search</mat-icon>
+      <div class="flex justify-center items-center gap-4">
+        <div class="search-input">
+          <div class="search-btn mt-1">
+            <mat-icon>search</mat-icon>
+          </div>
+          <div class="input-btn">
+            <input class="lg:p-1" type="text"/>
+          </div>
         </div>
-        <div class="input-btn">
-          <input type="text" placeholder="Buscar"/>
+        <div class="login-container">
+          <button class="login-btn p-2 rounded-lg hidden lg:block"> Iniciar Sesión </button>
         </div>
-      </div>
-      <div class="login-container">
-        <button class="login-btn"> Iniciar Sesión </button>
       </div>
     </div>
   </mat-toolbar>
@@ -35,12 +37,15 @@
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list class="sidenav-list">
+        <img src="./assets/logo.png"  class="logo" width="60" height="50" alt="Artcollab Logo">
         <span> Géneros </span>
         <span>Populares </span>
         <span> Suscripciones </span>
         <span> Recomendaciones </span>
         <span> Monetización </span>
         <span> Artistas </span>
+        <button class="login-btn p-2 rounded-lg"> Iniciar Sesión </button>
+
       </mat-nav-list>
     </mat-sidenav>
 
