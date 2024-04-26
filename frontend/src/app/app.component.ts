@@ -5,11 +5,14 @@ import {FooterContentComponent} from "./public/components/footer-content/footer-
 import {
   TheSubscriptionApplicationComponent
 } from "./monetization/pages/the-subscription-application/the-subscription-application.component";
+import {
+  TheMonetizationApplicationComponent
+} from "./monetization/pages/the-monetization-application/the-monetization-application.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheSubscriptionApplicationComponent],
+  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheSubscriptionApplicationComponent, TheMonetizationApplicationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
