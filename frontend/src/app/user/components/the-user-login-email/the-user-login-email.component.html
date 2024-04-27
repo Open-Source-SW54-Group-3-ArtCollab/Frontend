@@ -1,6 +1,5 @@
-<!-- user-login-email.component.html -->
-<div *ngIf="showEmailLogin" class="user-login-email w-full flex justify-center items-center fixed" (click)="closeLogin()">
-  <mat-card (click)="$event.stopPropagation()" class="login-card flex justify-center items-center">
+<div *ngIf="showEmailLogin" class="user-login-email w-full flex justify-center items-center fixed" (click)="closeLogin()" aria-label="Pantalla de inicio de sesión con correo electrónico">
+  <mat-card (click)="$event.stopPropagation()" class="login-card flex justify-center items-center" aria-label="Tarjeta de inicio de sesión con correo electrónico">
     <mat-card-title>
       <h3 class="text-center font-bold"> Iniciar sesión con correo electrónico </h3>
     </mat-card-title>
@@ -9,17 +8,17 @@
         <div class="flex flex-col gap-1">
           <mat-form-field class="w-full">
             <mat-label>Correo electrónico</mat-label>
-            <input matInput placeholder="Ingresar correo electrónico">
+            <input matInput placeholder="Ingresar correo electrónico" aria-label="Campo de correo electrónico">
           </mat-form-field>
           <mat-form-field class="w-full">
             <mat-label>Contraseña</mat-label>
-            <input matInput [(ngModel)]="password" placeholder="Ingresar contraseña">
+            <input matInput [(ngModel)]="password" placeholder="Ingresar contraseña" aria-label="Campo de contraseña">
           </mat-form-field>
           <div class="flex justify-center gap-2 mt-3">
-            <button mat-raised-button class="w-full bg-white" (click)="backToLogin()">
+            <button mat-raised-button class="w-full bg-white" (click)="backToLogin()" aria-label="Botón para volver">
               Atrás
             </button>
-            <button mat-raised-button class="w-full bg-white">
+            <button mat-raised-button class="w-full bg-white" aria-label="Botón para iniciar sesión">
               Iniciar sesión
             </button>
           </div>
@@ -28,10 +27,10 @@
     </mat-card-content>
     <mat-card-footer>
       <div class="flex justify-center flex-col">
-        <h5 class="text-center cursor-pointer">¿Olvidaste tu contraseña?</h5>
+        <h5 class="text-center cursor-pointer" aria-label="Link para recuperar contraseña">¿Olvidaste tu contraseña?</h5>
         <div class="flex justify-center gap-2">
           <h5 class="text-center">¿No tienes una cuenta?</h5>
-          <h5 class="text-center cursor-pointer text-yellow-900">Regístrarse</h5>
+          <h5 class="text-center cursor-pointer text-yellow-900" aria-label="Link para registrarse">Regístrarse</h5>
         </div>
       </div>
     </mat-card-footer>
