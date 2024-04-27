@@ -27,7 +27,7 @@
           </div>
         </div>
         <div class="login-container">
-          <button class="login-btn p-2 rounded-lg hidden lg:block"> Iniciar Sesión </button>
+          <button class="login-btn p-2 rounded-lg hidden lg:block"  (click)="openLogin()"> Iniciar Sesión </button>
         </div>
       </div>
     </div>
@@ -44,10 +44,12 @@
         <span> Recomendaciones </span>
         <span> Monetización </span>
         <span> Artistas </span>
-        <button class="login-btn p-2 rounded-lg"> Iniciar Sesión </button>
+        <button (click)="openLogin()" class="login-btn p-2 rounded-lg"> Iniciar Sesión </button>
 
       </mat-nav-list>
     </mat-sidenav>
 
   </mat-sidenav-container>
 </div>
+
+<app-the-user-login [showLogin]="showLogin" *ngIf="showLogin" (close)="handleCloseLogin()" (closeEmail)="handleCloseEmailLogin()"/>
