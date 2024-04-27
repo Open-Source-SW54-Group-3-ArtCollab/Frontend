@@ -1,0 +1,23 @@
+.banner-gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-gallery mat-card {
+  width: 300px;
+  margin: 10px;
+}
+
+.banner-gallery button {
+  margin: 10px;
+}
+
+.items-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10rem;
+  align-items: center;
+}
+
