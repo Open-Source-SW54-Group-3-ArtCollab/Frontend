@@ -1,26 +1,45 @@
 {
   "books": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Boulevard",
-      "authors": [ {"id": 2, "name": "Flor M Salvador"}, {"id": 3, "name": "MMIVens"} ],
-      "summary":"¿Quién dijo que después de la tormenta sale el sol cuando puede haber un rayo? Vuelve el fenómeno literario de mayor éxito de los últimos tiempos en una edición revisada por la autora. Luke Howland, lleno de problemas y sumido en una desesperación profunda, y Hasley Weigel, tan despistada como optimista, no se ajustan al prototipo de pareja perfecta. Como si cada uno fuese un cielo uno es tormenta y el otro un día soleado: él es oscuridad. Ella un rayo de sol. Y, sin embargo, juntos deciden ponerle nombre a lo que habían creado: un boulevard teñido de tonos grisáceos, celestes y azules eléctricos preparándose para la tormenta. Ella era para él y él era para ella. Una historia de amor tan única que te marcará para el resto de tus días.",
+      "authors": [
+        {
+          "id": 2,
+          "name": "Flor M Salvador"
+        },
+        {
+          "id": 3,
+          "name": "MMIVens"
+        }
+      ],
+      "summary": "¿Quién dijo que después de la tormenta sale el sol cuando puede haber un rayo? Vuelve el fenómeno literario de mayor éxito de los últimos tiempos en una edición revisada por la autora. Luke Howland, lleno de problemas y sumido en una desesperación profunda, y Hasley Weigel, tan despistada como optimista, no se ajustan al prototipo de pareja perfecta. Como si cada uno fuese un cielo uno es tormenta y el otro un día soleado: él es oscuridad. Ella un rayo de sol. Y, sin embargo, juntos deciden ponerle nombre a lo que habían creado: un boulevard teñido de tonos grisáceos, celestes y azules eléctricos preparándose para la tormenta. Ella era para él y él era para ella. Una historia de amor tan única que te marcará para el resto de tus días.",
       "genre": "Romance",
-      "imageUrl":"https://tse1.mm.bing.net/th?id=OIP.Haxl0dIB2Tn5T3nHGwM9HwHaLb&pid=Api&P=0&h=180",
+      "imageUrl": "https://tse1.mm.bing.net/th?id=OIP.Haxl0dIB2Tn5T3nHGwM9HwHaLb&pid=Api&P=0&h=180",
       "publishDate": "2021-06-01T00:00:00.000Z",
       "likes": 0
-  }
+    }
   ],
   "users": [
     {
-      "id": 1,
-      "firstName": "Miriam",
-      "lastName": "Bonastre",
-      "email": "miriamBonastre@gmail.com",
-      "type": "ilustrator",
-      "subscription": false,
-      "imgUrl": "https://editorialentredos.com/wp-content/uploads/2023/03/Foto_Miriam_Bonastre-1010x1024.jpg",
-      "password": "hola12334"
+      "id": "1",
+      "firstName": "Rodrigo",
+      "lastName": "Navarrete",
+      "email": "elionavarrete@gmail.com",
+      "type": "Artist",
+      "subscription": true,
+      "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.Hln0nbZFcCfaUNHmRl0AcAAAAA&pid=Api&P=0&h=180",
+      "password": "opensource1234"
+    },
+    {
+      "id": "2",
+      "firstName": "diego",
+      "lastName": "Diaz",
+      "email": "elionavarrete@gmail.com",
+      "type": "Artist",
+      "subscription": true,
+      "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.Hln0nbZFcCfaUNHmRl0AcAAAAA&pid=Api&P=0&h=180",
+      "password": "opensource1234"
     }
   ]
 }

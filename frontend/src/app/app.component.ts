@@ -8,11 +8,12 @@ import {
 import {
   TheMonetizationApplicationComponent
 } from "./monetization/pages/the-monetization-application/the-monetization-application.component";
+import {TestPageComponent} from "./public/components/test-page/test-page.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheSubscriptionApplicationComponent, TheMonetizationApplicationComponent],
+  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheSubscriptionApplicationComponent, TheMonetizationApplicationComponent, TestPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
