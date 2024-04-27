@@ -12,7 +12,10 @@
           </mat-form-field>
           <mat-form-field class="w-full">
             <mat-label>Contraseña</mat-label>
-            <input matInput [(ngModel)]="password" placeholder="Ingresar contraseña" aria-label="Campo de contraseña">
+            <input matInput [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
           </mat-form-field>
           <div class="flex justify-center gap-2 mt-3">
             <button mat-raised-button class="w-full bg-white" (click)="backToLogin()" aria-label="Botón para volver">

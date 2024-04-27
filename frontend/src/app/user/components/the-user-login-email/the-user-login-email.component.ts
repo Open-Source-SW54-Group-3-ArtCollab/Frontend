@@ -2,9 +2,10 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {MatCard, MatCardModule} from "@angular/material/card";
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
-import {MatButton} from "@angular/material/button";
+import {MatButton, MatIconButton} from "@angular/material/button";
 import {FormsModule} from "@angular/forms";
 import {NgIf} from "@angular/common";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-the-user-login-email',
@@ -17,11 +18,15 @@ import {NgIf} from "@angular/common";
     FormsModule,
     MatLabel,
     NgIf,
+    MatIconButton,
+    MatIcon,
   ],
   templateUrl: './the-user-login-email.component.html',
   styleUrl: './the-user-login-email.component.css'
 })
 export class TheUserLoginEmailComponent {
+  hide = true;
+
   @Output() back = new EventEmitter<void>();
   password = '';
   @Input() showEmailLogin !: boolean;
