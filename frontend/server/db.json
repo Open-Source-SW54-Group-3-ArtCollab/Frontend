@@ -1,16 +1,14 @@
 {
   "books": [
     {
-    "id": 1,
-    "title": "Boulevard",
-    "authors": [ {"id": 1, "name": "Flor M Salvador"}, {"id": 2, "name": "MMIVens"} ],
-    "likes": 15
-  },
-    {
-    "id": 2,
-    "title": "The Alchemist",
-    "authors": [ {"id": 3, "name": "Paulo Coelho"} ],
-    "likes": 20
-    }
+      "id": 1,
+      "title": "Boulevard",
+      "authors": [ {"id": 1, "name": "Flor M Salvador"}, {"id": 2, "name": "MMIVens"} ],
+      "summary":"¿Quién dijo que después de la tormenta sale el sol cuando puede haber un rayo? Vuelve el fenómeno literario de mayor éxito de los últimos tiempos en una edición revisada por la autora. Luke Howland, lleno de problemas y sumido en una desesperación profunda, y Hasley Weigel, tan despistada como optimista, no se ajustan al prototipo de pareja perfecta. Como si cada uno fuese un cielo uno es tormenta y el otro un día soleado: él es oscuridad. Ella un rayo de sol. Y, sin embargo, juntos deciden ponerle nombre a lo que habían creado: un boulevard teñido de tonos grisáceos, celestes y azules eléctricos preparándose para la tormenta. Ella era para él y él era para ella. Una historia de amor tan única que te marcará para el resto de tus días.",
+      "genre": "Romance",
+      "imageUrl":"https://tse1.mm.bing.net/th?id=OIP.Haxl0dIB2Tn5T3nHGwM9HwHaLb&pid=Api&P=0&h=180",
+      "publishDate": "2021-06-01T00:00:00.000Z",
+      "likes": 0
+  }
   ]
 }
