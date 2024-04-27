@@ -4,11 +4,14 @@ import {NavbarContentComponent} from "./public/components/navbar-content/navbar-
 import {FooterContentComponent} from "./public/components/footer-content/footer-content.component";
 import {TheUserLoginComponent} from "./user/components/the-user-login/the-user-login.component";
 import {TheUserRegisterComponent} from "./user/components/the-user-register/the-user-register.component";
+import {
+  TheUserRecoverPasswordComponent
+} from "./user/components/the-user-recover-password/the-user-recover-password.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent],
+  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
