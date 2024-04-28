@@ -7,11 +7,12 @@ import {TheUserRegisterComponent} from "./user/components/the-user-register/the-
 import {
   TheUserRecoverPasswordComponent
 } from "./user/components/the-user-recover-password/the-user-recover-password.component";
+import {UserArtistComponent} from "./user/pages/user-artist/user-artist.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent],
+  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
