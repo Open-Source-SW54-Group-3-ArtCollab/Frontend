@@ -10,11 +10,14 @@ import {
 import {UserArtistComponent} from "./user/pages/user-artist/user-artist.component";
 import {TheWriterProfileComponent} from "./user/components/the-writer-profile/the-writer-profile.component";
 import {WriterProfileComponent} from "./user/pages/writer-profile/writer-profile.component";
+import {
+  TheWriterProfileEditComponent
+} from "./user/components/the-writer-profile-edit/the-writer-profile-edit.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent],
+  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
