@@ -19,27 +19,53 @@
     <p class="text-2xl font-semibold">Redes sociales</p>
     <mat-list role="list">
       <mat-list-item role="listitem">
-        <fa-icon [icon]="faXTwitter" [style.font-size.px]="22"></fa-icon>
-        <a class="font-medium" href="https://twitter.com/?lang=es">https://twitter.com/?lang=es</a>
+        <div class="flex items-center justify-start">
+          <fa-icon [icon]="faXTwitter" [style.font-size.px]="22" class="mr-2"></fa-icon>
+          <a class="font-medium" href="https://twitter.com/?lang=es">https://twitter.com/?lang=es</a>
+          <button class="bg-sky-500 rounded-full p-1 inline-flex items-center justify-center text-white ">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="edit" style="font-size: 18px;"></mat-icon>
+          </button>
+        </div>
       </mat-list-item>
       <mat-list-item role="listitem">
-        <fa-icon [icon]="faInstagram" [style.font-size.px]="22"></fa-icon>
-        <a class="font-medium" href="https://www.instagram.com/">https://www.instagram.com/</a>
+        <div class="flex items-center justify-start">
+          <fa-icon [icon]="faInstagram" [style.font-size.px]="22" class="mr-2"></fa-icon>
+          <a class="font-medium" href="https://www.instagram.com/">https://www.instagram.com/</a>
+          <button class="bg-sky-500 rounded-full p-1 inline-flex items-center justify-center text-white ">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="edit" style="font-size: 18px;"></mat-icon>
+          </button>
+        </div>
       </mat-list-item>
       <mat-list-item role="listitem">
-        <mat-icon >facebook</mat-icon>
-        <a class="font-medium" href="https://www.facebook.com/">https://www.facebook.com/</a>
+        <div class="flex items-center justify-start">
+          <mat-icon class="mr-2">facebook</mat-icon>
+          <a class="font-medium" href="https://www.facebook.com/">https://www.facebook.com/</a>
+          <button class="bg-sky-500 rounded-full p-1 inline-flex items-center justify-center text-white ">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="edit" style="font-size: 18px;"></mat-icon>
+          </button>
+        </div>
       </mat-list-item>
       <mat-list-item role="listitem">
-        <fa-icon [icon]="faTiktok" [style.font-size.px]="23"></fa-icon>
-        <a class="font-medium" href="https://www.tiktok.com/es/">https://www.tiktok.com/es/</a>
+        <div class="flex items-center justify-start">
+          <fa-icon [icon]="faTiktok" [style.font-size.px]="23" class="mr-2"></fa-icon>
+          <a class="font-medium" href="https://www.tiktok.com/es/">https://www.tiktok.com/es/</a>
+          <button class="bg-sky-500 rounded-full p-1 inline-flex items-center justify-center text-white ">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="edit" style="font-size: 18px;"></mat-icon>
+          </button>
+        </div>
       </mat-list-item>
     </mat-list>
   </div>
   <div class="w-3/4">
-    <p class="text-2xl font-semibold">
-      Bio
-    </p>
+    <div class="flex items-start">
+      <p class="text-2xl font-semibold">
+        Bio
+      </p>
+      <button class="bg-sky-500 rounded-full p-1 inline-flex items-center justify-center text-white align-middle ml-2">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="edit"></mat-icon>
+      </button>
+    </div>
+
     <p class="text-xl text-justify">
       Lorem ipsum dolor sit amet consectetur adipiscing elit mauris ornare malesuada himenaeos eleifend morbi, vivamus nostra
       faucibus platea nisl nec lacinia hendrerit ultricies id maecenas diam. Eget vel aliquet nam penatibus
