@@ -1,19 +1,19 @@
 {
-  "Chat": [
+  "chat": [
     {
       "id": 1,
-      "ChatRoom_id": 1,
+      "chatRoom_id": 1,
       "title": 123,
       "created_at": "2024-04-09"
     },
     {
       "id": 2,
-      "ChatRoom_id": 2,
+      "chatRoom_id": 2,
       "title": 456,
       "created_at": "2024-04-10"
     }
   ],
-  "ChatRoom": [
+  "chatRoom": [
     {
       "id": 1,
       "created_date": "2024-04-09",
@@ -29,42 +29,42 @@
       "active": true
     }
   ],
-  "Commission": [
+  "commission": [
     {
       "id": 1,
       "amount": 100.00,
       "content": "Lorem ipsum",
       "get_date": "2024-04-09",
-      "Rewards_id": 1
+      "rewards_id": 1
     },
     {
       "id": 2,
       "amount": 200.00,
       "content": "Dolor sit amet",
       "get_date": "2024-04-10",
-      "Rewards_id": 2
+      "rewards_id": 2
     }
   ],
-  "Message": [
+  "message": [
     {
       "id": 1,
       "content": "Hello!",
-      "Chat_id": 1,
+      "chat_id": 1,
       "isRead": false,
       "isSend": true
     },
     {
       "id": 2,
       "content": "Hi there!",
-      "Chat_id": 2,
+      "chat_id": 2,
       "isRead": false,
       "isSend": true
     }
   ],
-  "Portfolio": [
+  "portfolio": [
     {
       "id": 1,
-      "Reader_id": 1,
+      "reader_id": 1,
       "create_at": "2024-04-09",
       "title": "Portfolio 1",
       "description": "Description 1",
@@ -72,14 +72,14 @@
     },
     {
       "id": 2,
-      "Reader_id": 2,
+      "reader_id": 2,
       "create_at": "2024-04-10",
       "title": "Portfolio 2",
       "description": "Description 2",
       "quantity": 20
     }
   ],
-  "Reader": [
+  "reader": [
     {
       "id": 1,
       "name": "John Doe",
@@ -87,7 +87,7 @@
       "email": "john@example.com",
       "password": "password1",
       "type": "type1",
-      "Suscription_id": 1
+      "suscription_id": 1
     },
     {
       "id": 2,
@@ -96,24 +96,24 @@
       "email": "jane@example.com",
       "password": "password2",
       "type": "type2",
-      "Suscription_id": 2
+      "suscription_id": 2
     }
   ],
-  "Reward": [
+  "reward": [
     {
       "id": 1,
       "type": 1,
       "amount": 50,
-      "Reader_id": 1
+      "reader_id": 1
     },
     {
       "id": 2,
       "type": 2,
       "amount": 100,
-      "Reader_id": 2
+      "reader_id": 2
     }
   ],
-  "Suscription": [
+  "suscription": [
     {
       "flag": true,
       "id": 1,
@@ -125,29 +125,29 @@
       "type": "Type B"
     }
   ],
-  "Template": [
+  "template": [
     {
       "title": "Template 1",
       "description": "Description 1",
       "date_publish": "2024-04-09",
       "type": "Type A",
-      "TemplateState_id": 1,
-      "Template_History_id": 1,
+      "templateState_id": 1,
+      "template_History_id": 1,
       "id": 1,
-      "Portfolio_id": 1
+      "portfolio_id": 1
     },
     {
       "title": "Template 2",
       "description": "Description 2",
       "date_publish": "2024-04-10",
       "type": "Type B",
-      "TemplateState_id": 2,
-      "Template_History_id": 2,
+      "templateState_id": 2,
+      "template_History_id": 2,
       "id": 2,
-      "Portfolio_id": 2
+      "portfolio_id": 2
     }
   ],
-  "TemplateState": [
+  "templateState": [
     {
       "id": 1,
       "flag": true
@@ -157,7 +157,7 @@
       "flag": false
     }
   ],
-  "Template_History": [
+  "template_History": [
     {
       "id": 1,
       "modified_at": null,
@@ -169,18 +169,18 @@
       "delete_at": null
     }
   ],
-  "UserPerRoom": [
+  "userPerRoom": [
     {
       "Reader_id": 1,
       "last_activity_date": "2024-04-09",
       "first_activity_date": "2024-04-09",
-      "ChatRoom_id": 1
+      "chatRoom_id": 1
     },
     {
-      "Reader_id": 2,
+      "reader_id": 2,
       "last_activity_date": "2024-04-10",
       "first_activity_date": "2024-04-10",
-      "ChatRoom_id": 2
+      "chatRoom_id": 2
     }
   ]
 }
