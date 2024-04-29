@@ -4,6 +4,15 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatButtonModule} from '@angular/material/button';
+import {
+  TheBookPublishGenresSelectComponent
+} from "../the-book-publish-genres-select/the-book-publish-genres-select.component";
+import {
+  TheBookPublishTitleInputComponent
+} from "../the-book-publish-title-input/the-book-publish-title-input.component";
+import {
+  TheBookPublishSummaryTextareaComponent
+} from "../the-book-publish-summary-textarea/the-book-publish-summary-textarea.component";
 @Component({
   selector: 'app-book-publish-stepper',
   standalone: true,
@@ -12,7 +21,7 @@ import {MatButtonModule} from '@angular/material/button';
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule,],
+    MatInputModule, TheBookPublishGenresSelectComponent, TheBookPublishTitleInputComponent, TheBookPublishSummaryTextareaComponent,],
   templateUrl: './book-publish-stepper.component.html',
   styleUrl: './book-publish-stepper.component.css'
 })
