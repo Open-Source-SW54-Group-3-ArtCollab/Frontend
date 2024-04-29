@@ -22,6 +22,8 @@ import {
 } from "./content/components/publish/book-publish-stepper/book-publish-stepper.component";
 import {TheBookProfileComponent} from "./content/components/the-book-profile/the-book-profile.component";
 
+import {TheBookDetailsComponent} from "./shared/components/the-book-details/the-book-details.component";
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -35,6 +37,7 @@ import {TheBookProfileComponent} from "./content/components/the-book-profile/the
     TheMainPagePopularArtistComponent,
     BookPublishStepperComponent,
     TheBookProfileComponent,
+    TheBookDetailsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
