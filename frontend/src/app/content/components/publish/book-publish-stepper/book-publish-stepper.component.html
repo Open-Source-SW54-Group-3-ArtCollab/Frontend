@@ -26,6 +26,17 @@
   </mat-step>
   <mat-step [stepControl]="secondFormGroup" label="Capítulos">
     <form [formGroup]="secondFormGroup">
+      <div class="flex items-center justify-center">
+        <mat-form-field class="chapter-title min-w-36 max-w-lg w-full mb-4">
+          <input matInput placeholder="Capítulo sin título 1">
+        </mat-form-field>
+      </div>
+      <div class="border-b border-gray-950"></div>
+      <div class="flex items-center justify-center">
+        <mat-form-field class="chapter-content min-w-36 max-w-full w-full">
+          <textarea matInput rows="10" placeholder="Escribe el texto"></textarea>
+        </mat-form-field>
+      </div>
       <div>
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
