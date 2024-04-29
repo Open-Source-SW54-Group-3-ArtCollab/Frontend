@@ -20,6 +20,7 @@ import {
 import {
   BookPublishStepperComponent
 } from "./content/components/publish/book-publish-stepper/book-publish-stepper.component";
+import {ThePopularsPageComponent} from "./content/pages/the-populars-page/the-populars-page.component";
 
 @Component({
   selector: 'app-root',
@@ -29,7 +30,7 @@ import {
     FooterContentComponent,
     TheMainPageBannerComponent,
     TheMainPageGenresComponent,
-    TheMainPagePopularityComponent, TheMainPageRecentBookComponent, TheMainPagePopularArtistComponent, BookPublishStepperComponent,
+    TheMainPagePopularityComponent, TheMainPageRecentBookComponent, TheMainPagePopularArtistComponent, BookPublishStepperComponent, ThePopularsPageComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
