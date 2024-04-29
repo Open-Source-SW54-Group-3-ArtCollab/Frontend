@@ -10,13 +10,13 @@ interface Genre {
 }
 
 @Component({
-  selector: 'app-the-book-publish-select',
+  selector: 'app-the-book-publish-genres-select',
   standalone: true,
   imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule],
-  templateUrl: './the-book-publish-select.component.html',
-  styleUrl: './the-book-publish-select.component.css'
+  templateUrl: './the-book-publish-genres-select.component.html',
+  styleUrl: './the-book-publish-genres-select.component.css'
 })
-export class TheBookPublishSelectComponent {
+export class TheBookPublishGenresSelectComponent {
   genres: Genre[] = [
     {value: 'romance-0', viewValue: 'Romance'},
     {value: 'fantasy-1', viewValue: 'Fantasía'},

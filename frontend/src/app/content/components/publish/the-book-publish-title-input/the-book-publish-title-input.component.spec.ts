@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TheBookPublishInputComponent } from './the-book-publish-input.component';
+import { TheBookPublishTitleInputComponent } from './the-book-publish-title-input.component';
 
 describe('TheBookPublishInputComponent', () => {
-  let component: TheBookPublishInputComponent;
-  let fixture: ComponentFixture<TheBookPublishInputComponent>;
+  let component: TheBookPublishTitleInputComponent;
+  let fixture: ComponentFixture<TheBookPublishTitleInputComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TheBookPublishInputComponent]
+      imports: [TheBookPublishTitleInputComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(TheBookPublishInputComponent);
+
+    fixture = TestBed.createComponent(TheBookPublishTitleInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
