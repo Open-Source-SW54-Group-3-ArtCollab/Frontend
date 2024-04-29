@@ -17,11 +17,12 @@ import {IllustratorProfileComponent} from "./user/pages/illustrator-profile/illu
 import {
   TheIllustratorProfileComponent
 } from "./user/components/the-illustrator-profile/the-illustrator-profile.component";
+import {IlustratorProfileEditComponent} from "./user/pages/ilustrator-profile-edit/ilustrator-profile-edit.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent, IllustratorProfileComponent, TheIllustratorProfileComponent],
+  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent, IllustratorProfileComponent, TheIllustratorProfileComponent, IlustratorProfileEditComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
