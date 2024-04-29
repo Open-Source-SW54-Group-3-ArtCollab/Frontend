@@ -18,11 +18,12 @@ import {
   TheIllustratorProfileComponent
 } from "./user/components/the-illustrator-profile/the-illustrator-profile.component";
 import {IlustratorProfileEditComponent} from "./user/pages/ilustrator-profile-edit/ilustrator-profile-edit.component";
+import {UserConnectArtistComponent} from "./user/pages/user-connect-artist/user-connect-artist.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent, IllustratorProfileComponent, TheIllustratorProfileComponent, IlustratorProfileEditComponent],
+  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent, IllustratorProfileComponent, TheIllustratorProfileComponent, IlustratorProfileEditComponent, UserConnectArtistComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
