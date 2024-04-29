@@ -1,5 +1,20 @@
 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" color="warn">
-  <mat-tab label="Detalles de la historia">Content 1</mat-tab>
+  <mat-tab label="Detalles de la historia">
+    <div class="input-textarea flex flex-col space-y-4 mt-5 ml-5">
+      <div class="flex flex-col space-y-4">
+        <mat-label>Título</mat-label>
+        <mat-form-field class="chapter-title min-w-36 max-w-lg w-full mb-4">
+          <input matInput placeholder="Título" type="text" [(ngModel)]="value">
+        </mat-form-field>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <mat-label>Descripción</mat-label>
+        <mat-form-field class="chapter-content min-w-36 max-w-lg w-full ">
+          <textarea matInput rows="10" placeholder="Descripción">¿Quién dijo que después de la tormenta sale el sol cuando puede haber un rayo? Vuelve el fenómeno literario de mayor éxito de los últimos tiempos en una edición revisada por la autora. Luke Howland, lleno de problemas y sumido en una desesperación profunda, y Hasley Weigel, tan despistada como optimista, no se ajustan al prototipo de pareja perfecta. Como si cada uno fuese un cielo uno es tormenta y el otro un día soleado: él es oscuridad. Ella un rayo de sol. Y, sin embargo, juntos deciden ponerle nombre a lo que habían creado: un boulevard teñido de tonos grisáceos, celestes y azules eléctricos preparándose para la tormenta. Ella era para él y él era para ella. Una historia de amor tan única que te marcará para el resto de tus días.</textarea>
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-tab>
   <mat-tab label="Tabla de contenidos">Content 2</mat-tab>
   <mat-tab label="Ingresos obtenidos">Content 3</mat-tab>
 </mat-tab-group>
