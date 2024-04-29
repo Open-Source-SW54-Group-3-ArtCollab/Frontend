@@ -15,6 +15,7 @@ import {NgOptimizedImage} from "@angular/common";
 export class BookPopularComponent implements OnInit{
 
   books: any[] = [];
+  booksGroup: any[] = [];
   bookData: any= null;
   ngOnInit(): void {
     this.getBooks();
@@ -28,9 +29,12 @@ export class BookPopularComponent implements OnInit{
         if(template.type === 'book'){
           this.bookData = new Book(template.title, template.description,template.date_publish, template.type, template.id, template.imgUrl, template.likes, template.views);
           this.books.push(this.bookData);
+          this.booksGroup.push(this.bookData);
         }
       });
     });
+    let randomIndex = Math.floor(Math.random() * this.books.length);
+    this.books = this.books.slice(randomIndex, randomIndex + 4);
   }
 
 }

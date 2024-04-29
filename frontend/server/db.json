@@ -113,7 +113,7 @@
       "reader_id": 2
     }
   ],
-  "suscription": [
+  "subscription": [
     {
       "flag": true,
       "id": 1,
@@ -188,7 +188,7 @@
       "type": "book",
       "templateState_id": 7,
       "template_History_id": 7,
-      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/91AfLP0ZEtL.jpg",
+      "imgUrl": "https://covers.alibrate.com/b/59872e9ccba2bce50c1cbcd7/34fe7d67-f9d6-421c-85f6-6ebc81532936/share",
       "id": 7,
       "portfolio_id": 7
     },
@@ -210,7 +210,7 @@
       "type": "book",
       "templateState_id": 9,
       "template_History_id": 9,
-      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/71KXxEI25QL.jpg",
+      "imgUrl": "https://i.pinimg.com/originals/1d/53/f4/1d53f4a35b9004b3d1ce731a226f30e0.jpg",
       "id": 9,
       "portfolio_id": 9
     },
@@ -232,7 +232,7 @@
       "type": "book",
       "templateState_id": 11,
       "template_History_id": 11,
-      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/71yRmiqTSbL.jpg",
+      "imgUrl": "https://tse2.mm.bing.net/th?id=OIP.gsFT5jQkEOx-UDeaEVakPAHaLU&pid=Api&P=0&h=180",
       "id": 11,
       "portfolio_id": 11
     },
@@ -254,7 +254,7 @@
       "type": "book",
       "templateState_id": 13,
       "template_History_id": 13,
-      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/81jZBViR4TL.jpg",
+      "imgUrl": "https://tse3.mm.bing.net/th?id=OIP.o7EweG8Sy9Qq7zLhRWYkmgHaMo&pid=Api&P=0&h=180",
       "id": 13,
       "portfolio_id": 13
     },
@@ -276,7 +276,7 @@
       "type": "book",
       "templateState_id": 15,
       "template_History_id": 15,
-      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/71mw1XNK8ZL.jpg",
+      "imgUrl": "https://tse2.mm.bing.net/th?id=OIP.L9GCrCznPuEmHSIHTIltkQHaLZ&pid=Api&P=0&h=180",
       "id": 15,
       "portfolio_id": 15
     },
@@ -298,7 +298,7 @@
       "type": "book",
       "templateState_id": 17,
       "template_History_id": 17,
-      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/81XGQaMrj4L.jpg",
+      "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.uKXYEcaOZMGtNhEBVV77HgHaLH&pid=Api&P=0&h=180",
       "id": 17,
       "portfolio_id": 17
     },
@@ -320,7 +320,7 @@
       "type": "book",
       "templateState_id": 19,
       "template_History_id": 19,
-      "imgUrl": "https://images-na.ssl-images-amazon.com/images/I/91OwId8BEfL.jpg",
+      "imgUrl": "https://tse3.mm.bing.net/th?id=OIP.0-k_Byjyd50llciwHceNKQHaLd&pid=Api&P=0&h=180",
       "id": 19,
       "portfolio_id": 19
     },
