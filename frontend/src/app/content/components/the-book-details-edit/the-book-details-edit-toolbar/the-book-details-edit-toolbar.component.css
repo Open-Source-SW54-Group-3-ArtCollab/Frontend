@@ -1,0 +1,28 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar{
+  border-bottom-color: black;
+  border-style: solid;
+  border-width: 2px;
+  background-color: transparent;
+}
+
+.button-1{
+  background-color:#7AC8D0;
+  border-radius: 1rem;
+}
+
+.button-text{
+  margin: 0;
+}
+
+.button-2 {
+  background-color: #097682;
+  border-radius: 1rem;
+}
+
+.block-element {
+  display: block;
+}
