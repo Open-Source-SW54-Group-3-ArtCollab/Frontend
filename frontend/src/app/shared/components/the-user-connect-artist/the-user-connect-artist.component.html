@@ -8,11 +8,34 @@
     </div>
   </mat-card>
 </section>
-<section class="justify-between flex max-w-screen-xl mx-auto mt-20 mb-20">
+<section class="justify-end flex max-w-screen-xl mx-auto mt-20 mb-20">
   <div>
-    <button mat-raised-button class="edit-button w-full" color="primary" aria-label="Botón de editar perfil">Editar perfil</button>
-  </div>
-  <div>
-    <button mat-raised-button class="detail-button w-full" color="primary" aria-label="Botón de detalle">Detalles de cuenta</button>
+    <button mat-raised-button class="detail-button w-full" style="font-size: 20px; padding: 12px 24px;" color="warn" aria-label="Botón de detalle">Conectar</button>
   </div>
 </section>
+<section class="flex mx-auto max-w-7xl space-x-10 mb-32">
+  <div class="w-1/4 items-center">
+    <p class="text-2xl font-semibold">Redes sociales</p>
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <fa-icon [icon]="faXTwitter" [style.font-size.px]="22"></fa-icon>
+        <a class="font-medium" href="https://twitter.com/?lang=es">https://twitter.com/?lang=es</a>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <fa-icon [icon]="faInstagram" [style.font-size.px]="22"></fa-icon>
+        <a class="font-medium" href="https://www.instagram.com/">https://www.instagram.com/</a>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <mat-icon >facebook</mat-icon>
+        <a class="font-medium" href="https://www.facebook.com/">https://www.facebook.com/</a>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <fa-icon [icon]="faTiktok" [style.font-size.px]="23"></fa-icon>
+        <a class="font-medium" href="https://www.tiktok.com/es/">https://www.tiktok.com/es/</a>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</section>
+
+
+
