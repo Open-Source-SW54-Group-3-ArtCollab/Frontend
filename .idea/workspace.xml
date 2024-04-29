@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +42,7 @@
     "nodejs_package_manager_path": "npm",
     "npm.ng.executor": "Run",
     "npm.start.executor": "Run",
-    "ts.external.directory.path": "D:\\CAMILA\\UPC\\Ciclo 6\\Open source\\Proyecto\\Frontend\\Frontend\\frontend\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\SAMIR\\repos\\Frontend\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,6 +81,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,6 +103,7 @@
       <workItem from="1714163198641" duration="194000" />
       <workItem from="1714163435319" duration="6000" />
       <workItem from="1714342924937" duration="220000" />
+      <workItem from="1714366091704" duration="1945000" />
     </task>
     <servers />
   </component>
