@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import {NavbarContentComponent} from "../../../public/components/navbar-content/navbar-content.component";
 import {TheBookDetailsComponent} from "../../../shared/components/the-book-details/the-book-details.component";
 import {FooterContentComponent} from "../../../public/components/footer-content/footer-content.component";
-import {BookProfileComponent} from "../book-profile/book-profile.component";
 
 @Component({
   selector: 'app-book-detail',
@@ -11,7 +10,6 @@ import {BookProfileComponent} from "../book-profile/book-profile.component";
     NavbarContentComponent,
     TheBookDetailsComponent,
     FooterContentComponent,
-    BookProfileComponent
   ],
   templateUrl: './book-detail.component.html',
   styleUrl: './book-detail.component.css'
