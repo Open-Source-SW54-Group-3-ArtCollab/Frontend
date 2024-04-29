@@ -5,3 +5,7 @@
 .mat-mdc-form-field {
   margin-top: 16px;
 }
+
+.buttons-step2:hover {
+  background-color: #888888
+}
