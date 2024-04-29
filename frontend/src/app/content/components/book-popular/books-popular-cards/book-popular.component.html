@@ -1,0 +1,20 @@
+<div class="mt-16 flex flex-col lg:flex-row justify-evenly">
+  <div class="lg:w-1/3">
+    <img [ngSrc]="books[books.length-1].imgUrl" height="100" width="250" alt="book-image"/>
+    <div>
+      <h1>{{books[books.length-1].title}}</h1>
+      <p> {{books[books.length-1].description}}</p>
+    </div>
+  </div>
+  <div class="w-80 h-10 flex gap-10">
+ @for(book of books; track book){
+     <div class="w-96 h-20">
+       <img [ngSrc]="book.imgUrl" height="10" width="100" alt="book-image"/>
+      </div>
+     <div>
+       <h1 class="text-sm">{{book.title}}</h1>
+     </div>
+ }
+  </div>
+
+</div>

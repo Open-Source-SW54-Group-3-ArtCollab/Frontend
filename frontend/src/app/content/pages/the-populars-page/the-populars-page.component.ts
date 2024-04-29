@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {NavbarContentComponent} from "../../../public/components/navbar-content/navbar-content.component";
 import {FooterContentComponent} from "../../../public/components/footer-content/footer-content.component";
 import {MatTab, MatTabGroup, MatTabLabel} from "@angular/material/tabs";
 import {Observable, Observer} from "rxjs";
 import {AsyncPipe} from "@angular/common";
+import {BookPopularComponent} from "../../components/book-popular/books-popular-cards/book-popular.component";
 
 export interface ExampleTab {
   label: string;
@@ -19,7 +20,8 @@ export interface ExampleTab {
     MatTabGroup,
     MatTab,
     MatTabLabel,
-    AsyncPipe
+    AsyncPipe,
+    BookPopularComponent
   ],
   templateUrl: './the-populars-page.component.html',
   styleUrl: './the-populars-page.component.css'
@@ -27,17 +29,18 @@ export interface ExampleTab {
 export class ThePopularsPageComponent {
   asyncTabs: Observable<ExampleTab[]>;
 
-  constructor() {
+  constructor(){
     this.asyncTabs = new Observable((observer: Observer<ExampleTab[]>) => {
       setTimeout(() => {
         observer.next([
-          {label: 'Todo', content: 'Content 0'},
-          {label: 'Romance', content: 'Content 1'},
-          {label: 'Fantasia', content: 'Content 2'},
-          {label: 'Comedia', content: 'Content 3'},
+          {label: 'Todo', content:''},
+          {label: 'Romance', content: ''},
+          {label: 'Fantasia', content: ''},
+          {label: 'Comedia', content: ''},
         ]);
       }, 1000);
     });
   }
+
 
 }

@@ -1,45 +1,188 @@
 {
-  "books": [
+  "chat": [
     {
-      "id": "1",
-      "title": "Boulevard",
-      "authors": [
-        {
-          "id": 2,
-          "name": "Flor M Salvador"
-        },
-        {
-          "id": 3,
-          "name": "MMIVens"
-        }
-      ],
-      "summary": "¿Quién dijo que después de la tormenta sale el sol cuando puede haber un rayo? Vuelve el fenómeno literario de mayor éxito de los últimos tiempos en una edición revisada por la autora. Luke Howland, lleno de problemas y sumido en una desesperación profunda, y Hasley Weigel, tan despistada como optimista, no se ajustan al prototipo de pareja perfecta. Como si cada uno fuese un cielo uno es tormenta y el otro un día soleado: él es oscuridad. Ella un rayo de sol. Y, sin embargo, juntos deciden ponerle nombre a lo que habían creado: un boulevard teñido de tonos grisáceos, celestes y azules eléctricos preparándose para la tormenta. Ella era para él y él era para ella. Una historia de amor tan única que te marcará para el resto de tus días.",
-      "genre": "Romance",
-      "imageUrl": "https://tse1.mm.bing.net/th?id=OIP.Haxl0dIB2Tn5T3nHGwM9HwHaLb&pid=Api&P=0&h=180",
-      "publishDate": "2021-06-01T00:00:00.000Z",
-      "likes": 0
-    }
-  ],
-  "users": [
-    {
-      "id": "1",
-      "firstName": "Rodrigo",
-      "lastName": "Navarrete",
-      "email": "elionavarrete@gmail.com",
-      "type": "Artist",
-      "subscription": true,
-      "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.Hln0nbZFcCfaUNHmRl0AcAAAAA&pid=Api&P=0&h=180",
-      "password": "opensource1234"
+      "id": 1,
+      "chatRoom_id": 1,
+      "title": 123,
+      "created_at": "2024-04-09"
     },
     {
-      "id": "2",
-      "firstName": "diego",
-      "lastName": "Diaz",
-      "email": "elionavarrete@gmail.com",
-      "type": "Artist",
-      "subscription": true,
-      "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.Hln0nbZFcCfaUNHmRl0AcAAAAA&pid=Api&P=0&h=180",
-      "password": "opensource1234"
+      "id": 2,
+      "chatRoom_id": 2,
+      "title": 456,
+      "created_at": "2024-04-10"
+    }
+  ],
+  "chatRoom": [
+    {
+      "id": 1,
+      "created_date": "2024-04-09",
+      "end_date": null,
+      "topic": 789,
+      "active": true
+    },
+    {
+      "id": 2,
+      "created_date": "2024-04-10",
+      "end_date": null,
+      "topic": 101112,
+      "active": true
+    }
+  ],
+  "commission": [
+    {
+      "id": 1,
+      "amount": 100.00,
+      "content": "Lorem ipsum",
+      "get_date": "2024-04-09",
+      "rewards_id": 1
+    },
+    {
+      "id": 2,
+      "amount": 200.00,
+      "content": "Dolor sit amet",
+      "get_date": "2024-04-10",
+      "rewards_id": 2
+    }
+  ],
+  "message": [
+    {
+      "id": 1,
+      "content": "Hello!",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": 2,
+      "content": "Hi there!",
+      "chat_id": 2,
+      "isRead": false,
+      "isSend": true
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "reader_id": 1,
+      "create_at": "2024-04-09",
+      "title": "Portfolio 1",
+      "description": "Description 1",
+      "quantity": 10
+    },
+    {
+      "id": 2,
+      "reader_id": 2,
+      "create_at": "2024-04-10",
+      "title": "Portfolio 2",
+      "description": "Description 2",
+      "quantity": 20
+    }
+  ],
+  "reader": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "username": "johndoe",
+      "email": "john@example.com",
+      "password": "password1",
+      "type": "type1",
+      "suscription_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "email": "jane@example.com",
+      "password": "password2",
+      "type": "type2",
+      "suscription_id": 2
+    }
+  ],
+  "reward": [
+    {
+      "id": 1,
+      "type": 1,
+      "amount": 50,
+      "reader_id": 1
+    },
+    {
+      "id": 2,
+      "type": 2,
+      "amount": 100,
+      "reader_id": 2
+    }
+  ],
+  "suscription": [
+    {
+      "flag": true,
+      "id": 1,
+      "type": "Type A"
+    },
+    {
+      "flag": true,
+      "id": 2,
+      "type": "Type B"
+    }
+  ],
+  "template": [
+    {
+      "title": "Boulevard",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit mauris ornare malesuada himenaeos eleifend morbi, vivamus nostra faucibus platea nisl nec lacinia hendrerit ultricies id maecenas diam. Eget vel aliquet nam penatibus vulputate felis dapibus magnis montes auctor ut, augue placerat praesent class condimentum litora eros sociis iaculis. ",
+      "date_publish": "2024-04-09",
+      "type": "book",
+      "templateState_id": 1,
+      "template_History_id": 1,
+      "imgUrl": "https://m.media-amazon.com/images/I/51i7Iq5Mb4L.jpg",
+      "id": 1,
+      "portfolio_id": 1
+    },
+    {
+      "title": "Template 2",
+      "description": "Description 2",
+      "date_publish": "2024-04-10",
+      "type": "ilustration",
+      "templateState_id": 2,
+      "template_History_id": 2,
+      "imgUrl": "",
+      "id": 2,
+      "portfolio_id": 2
+    }
+  ],
+  "templateState": [
+    {
+      "id": 1,
+      "flag": true
+    },
+    {
+      "id": 2,
+      "flag": false
+    }
+  ],
+  "template_History": [
+    {
+      "id": 1,
+      "modified_at": null,
+      "delete_at": null
+    },
+    {
+      "id": 2,
+      "modified_at": null,
+      "delete_at": null
+    }
+  ],
+  "userPerRoom": [
+    {
+      "Reader_id": 1,
+      "last_activity_date": "2024-04-09",
+      "first_activity_date": "2024-04-09",
+      "chatRoom_id": 1
+    },
+    {
+      "reader_id": 2,
+      "last_activity_date": "2024-04-10",
+      "first_activity_date": "2024-04-10",
+      "chatRoom_id": 2
     }
   ]
 }

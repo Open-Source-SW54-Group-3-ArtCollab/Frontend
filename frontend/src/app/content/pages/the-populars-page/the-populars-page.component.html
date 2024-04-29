@@ -1,11 +1,11 @@
 <navbar-content/>
 <div class="hero-controller">
   <h1> Más popular por género</h1>
-  <mat-tab-group class="flex flex-col lg:flex-row">
+  <mat-tab-group>
       @for (tab of asyncTabs | async; track tab) {
           <mat-tab>
            <ng-template  mat-tab-label>{{tab.label}}</ng-template>
-           {{tab.content}}
+           <book-popular/>
           </mat-tab>
       }
   </mat-tab-group>
