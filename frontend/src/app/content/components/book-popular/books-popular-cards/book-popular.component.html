@@ -6,15 +6,17 @@
       <p> {{books[books.length-1].description}}</p>
     </div>
   </div>
-  <div class="w-80 h-10 flex gap-10">
- @for(book of books; track book){
-     <div class="w-96 h-20">
-       <img [ngSrc]="book.imgUrl" height="10" width="100" alt="book-image"/>
-      </div>
-     <div>
-       <h1 class="text-sm">{{book.title}}</h1>
-     </div>
- }
-  </div>
+ <div class="flex flex-col gap-36">
+     @for(book of books; track book){
+       <div class="w-96 h-10 flex gap-10">
+       <div class="w-96 h-10">
+         <img [ngSrc]="book.imgUrl" height="10" width="100" alt="book-image"/>
+       </div>
+       <div class="flex flex-col justify-start">
+         <h1 class="text-sm">{{book.title}}</h1>
+       </div>
+       </div>
+     }
+ </div>
 
 </div>

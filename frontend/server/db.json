@@ -147,6 +147,28 @@
       "imgUrl": "",
       "id": 2,
       "portfolio_id": 2
+    },
+    {
+      "title": "Cien años de soledad",
+      "description": "Cien años de soledad narra la historia de la familia Buendía a lo largo de varias generaciones en el ficticio pueblo de Macondo. La novela combina realismo mágico con elementos históricos y sociales, creando un mundo rico y evocador.",
+      "date_publish": "1967-05-30",
+      "type": "book",
+      "templateState_id": 3,
+      "template_History_id": 3,
+      "imgUrl": "https://tse4.mm.bing.net/th?id=OIP.nwenpbzxiX1rdwotc1lv5QHaK-&pid=Api&P=0&h=180",
+      "id": 3,
+      "portfolio_id": 3
+    },
+    {
+      "title": "El principito",
+      "description": "El principito es un cuento filosófico que narra el encuentro entre un piloto perdido en el desierto del Sahara y un joven príncipe proveniente de otro planeta. A través de su viaje, el principito descubre lecciones sobre la amistad, el amor y la importancia de ver más allá de lo superficial.",
+      "date_publish": "1943-04-06",
+      "type": "book",
+      "templateState_id": 4,
+      "template_History_id": 4,
+      "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.fHF9K1mCC7iI22YtYRm33QHaJd&pid=Api&P=0&h=180",
+      "id": 4,
+      "portfolio_id": 4
     }
   ],
   "templateState": [
