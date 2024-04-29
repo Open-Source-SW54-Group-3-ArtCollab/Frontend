@@ -13,11 +13,15 @@ import {WriterProfileComponent} from "./user/pages/writer-profile/writer-profile
 import {
   TheWriterProfileEditComponent
 } from "./user/components/the-writer-profile-edit/the-writer-profile-edit.component";
+import {IllustratorProfileComponent} from "./user/pages/illustrator-profile/illustrator-profile.component";
+import {
+  TheIllustratorProfileComponent
+} from "./user/components/the-illustrator-profile/the-illustrator-profile.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent],
+  imports: [RouterOutlet, NavbarContentComponent, FooterContentComponent, TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent, IllustratorProfileComponent, TheIllustratorProfileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
