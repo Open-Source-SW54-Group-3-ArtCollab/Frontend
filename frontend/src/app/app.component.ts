@@ -17,6 +17,9 @@ import {
 import {
   TheMainPagePopularArtistComponent
 } from "./content/components/main-page/the-main-page-popular-artist/the-main-page-popular-artist.component";
+import {
+  BookPublishStepperComponent
+} from "./content/components/publish/book-publish-stepper/book-publish-stepper.component";
 
 @Component({
   selector: 'app-root',
@@ -26,7 +29,7 @@ import {
     FooterContentComponent,
     TheMainPageBannerComponent,
     TheMainPageGenresComponent,
-    TheMainPagePopularityComponent, TheMainPageRecentBookComponent, TheMainPagePopularArtistComponent,
+    TheMainPagePopularityComponent, TheMainPageRecentBookComponent, TheMainPagePopularArtistComponent, BookPublishStepperComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
