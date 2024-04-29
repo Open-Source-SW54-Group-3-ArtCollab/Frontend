@@ -3,7 +3,7 @@
   <div class=" flex flex-wrap mt-10 items-center justify-center">
 
     <div class=" p-16">
-      <img src="{{books[0].cover}}" alt="boulevar book cover" width="300" height="400">
+      <img src="{{books[0].cover}}" alt="{{books[0].cover}}" width="300" height="400">
     </div>
 
     <div class=" flex flex-col items-start justify-center ">
@@ -16,7 +16,7 @@
 
   <div class="flex justify-between items-start history-container flex-wrap w-4/5">
 
-    <mat-card class="p-2 w-6/12 m-10 card divide-y divide-black cards-container  " aria-label="Artist subscription card">
+    <mat-card class="p-2 w-6/12 m-10 card divide-y divide-black cards-container" aria-label="Book profile card">
       <mat-card-header class="flex flex-col " aria-label="Book information card header">
         <div class="flex ">
           <h2 class="text-black"> Tabla de contenidos </h2>
@@ -175,7 +175,7 @@
       </p>
 
       <mat-card class="card border button-container flex box cursor-pointer">
-        <mat-card-content >
+        <mat-card-content aria-label="Button card chapter">
           <div class="flex flex-row justify-between">
             <h2> Primer capítulo </h2>
             <div class="flex flex-row ">
