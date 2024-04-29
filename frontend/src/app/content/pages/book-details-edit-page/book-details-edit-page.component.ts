@@ -4,6 +4,9 @@ import {FooterContentComponent} from "../../../public/components/footer-content/
 import {
   TheBookDetailsEditTabviewComponent
 } from "../../components/the-book-details-edit/the-book-details-edit-tabview/the-book-details-edit-tabview.component";
+import {
+  TheBookDetailsEditCoverComponent
+} from "../../components/the-book-details-edit/the-book-details-edit-cover/the-book-details-edit-cover.component";
 
 @Component({
   selector: 'book-details-edit-page',
@@ -11,7 +14,8 @@ import {
   imports: [
     NavbarContentComponent,
     FooterContentComponent,
-    TheBookDetailsEditTabviewComponent
+    TheBookDetailsEditTabviewComponent,
+    TheBookDetailsEditCoverComponent
   ],
   templateUrl: './book-details-edit-page.component.html',
   styleUrl: './book-details-edit-page.component.css'
