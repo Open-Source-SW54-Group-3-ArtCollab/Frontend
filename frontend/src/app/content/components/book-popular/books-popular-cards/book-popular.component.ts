@@ -26,7 +26,7 @@ export class BookPopularComponent implements OnInit{
     this.bookService.getAll().subscribe((data:any) => {
       data.forEach((template:any) => {
         if(template.type === 'book'){
-          this.bookData = new Book(template.title, template.description,template.date_publish, template.type, template.id, template.imgUrl);
+          this.bookData = new Book(template.title, template.description,template.date_publish, template.type, template.id, template.imgUrl, template.likes, template.views);
           this.books.push(this.bookData);
         }
       });

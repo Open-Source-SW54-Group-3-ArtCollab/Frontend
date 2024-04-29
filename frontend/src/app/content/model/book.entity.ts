@@ -5,14 +5,18 @@ export class Book {
   private _type: any;
   private _id: any;
   private _imgUrl:any;
+  private _likes: any;
+  private _views:any;
 
-  constructor(title: any, description: any, date_publish: any, type: any, id: any, imgUrl:any) {
+  constructor(title: any, description: any, date_publish: any, type: any, id: any, imgUrl:any, likes:any, views:any) {
     this._title = title;
     this._description = description;
     this._date_publish = date_publish;
     this._type = type;
     this._id = id;
     this._imgUrl = imgUrl;
+    this._likes=likes;
+    this._views=views;
   }
 
   get title() {
@@ -61,5 +65,21 @@ export class Book {
 
   set imgUrl(value: any) {
     this._imgUrl = value;
+  }
+
+  get likes() {
+    return this._likes;
+  }
+
+  set likes(value: any) {
+    this._likes = value;
+  }
+
+  get views() {
+    return this._views;
+  }
+
+  set views(value: any) {
+    this._views = value;
   }
 }

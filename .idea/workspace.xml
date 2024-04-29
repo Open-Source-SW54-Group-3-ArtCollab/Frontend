@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/the-book-profile/the-book-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/the-book-profile/the-book-profile.component.html" afterDir="false" />
-    </list>
+    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +105,7 @@
       <workItem from="1714342924937" duration="220000" />
       <workItem from="1714366091704" duration="1945000" />
       <workItem from="1714371518305" duration="140000" />
+      <workItem from="1714372094047" duration="1606000" />
     </task>
     <servers />
   </component>
