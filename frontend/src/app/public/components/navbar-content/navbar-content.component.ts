@@ -6,8 +6,11 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListItem, MatNavList} from "@angular/material/list";
 import {MediaMatcher} from "@angular/cdk/layout";
 import {RouterLink} from "@angular/router";
-import {TheUserLoginComponent} from "../../../user/components/the-user-login/the-user-login.component";
 import {NgIf} from "@angular/common";
+import {User} from "../../../shared/model/user.entity";
+import {UsersService} from "../../../shared/service/users.service";
+import {TheUserLoginEmailComponent} from "../../../user/components/the-user-login-email/the-user-login-email.component";
+import {TheUserLoginComponent} from "../../../user/components/the-user-login/the-user-login.component";
 
 @Component({
   selector: 'navbar-content',
@@ -20,8 +23,9 @@ import {NgIf} from "@angular/common";
     MatNavList,
     MatListItem,
     RouterLink,
-    TheUserLoginComponent,
-    NgIf
+    TheUserLoginEmailComponent,
+    NgIf,
+    TheUserLoginComponent
   ],
   templateUrl: './navbar-content.component.html',
   styleUrl: './navbar-content.component.css'
@@ -29,12 +33,27 @@ import {NgIf} from "@angular/common";
 export class NavbarContentComponent {
   mobileQuery: MediaQueryList;
 
+  loggedInUser: User|null = null;
+
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private usersService: UsersService) {
+    this.usersService.getLoggedInUser().subscribe((user) => {
+      this.loggedInUser = user;
+      console.log(this.loggedInUser);
+    });
     this.mobileQuery = media.matchMedia('(max-width: 1024px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
+  }
+
+  isLoggedIn() {
+    return this.loggedInUser !== null;
+
+  }
+
+  ngOnInit(): void {
+
   }
 
   ngOnDestroy(): void {

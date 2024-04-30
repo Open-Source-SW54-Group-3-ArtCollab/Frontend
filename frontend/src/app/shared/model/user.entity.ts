@@ -2,19 +2,21 @@ export class User {
    _id: any;
    _firstName: any;
   _lastName: any;
+  _username: any;
    _email: any;
    _type: any;
-   _subscription: any;
+   _subscription_id: any;
    _imgUrl: any;
    _password: any;
 
-  constructor(id: any, firstName: any, lastName: any, email: any, type: any, subscription: any, imgUrl: any, password: any) {
+  constructor(id: any, firstName: any, lastName: any, email: any, type: any, subscription: any, imgUrl: any, password: any, username: any) {
     this._id = id;
+    this._username = username;
     this._firstName = firstName;
     this._lastName = lastName;
     this._email = email;
     this._type = type;
-    this._subscription = subscription;
+    this._subscription_id = subscription;
     this._imgUrl = imgUrl;
     this._password = password;
   }
@@ -60,11 +62,11 @@ export class User {
   }
 
   get getSubscription() {
-    return this._subscription;
+    return this._subscription_id;
   }
 
   set subscription(value: any) {
-    this._subscription = value;
+    this._subscription_id = value;
   }
 
   get getImgUrl() {

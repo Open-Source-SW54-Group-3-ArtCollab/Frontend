@@ -8,11 +8,11 @@
         <div class="flex flex-col gap-1">
           <mat-form-field class="w-full">
             <mat-label>Correo electrónico</mat-label>
-            <input matInput placeholder="Ingresar correo electrónico" aria-label="Campo de correo electrónico">
+            <input matInput [formControl]="email" placeholder="Ingresar correo electrónico" aria-label="Campo de correo electrónico">
           </mat-form-field>
           <mat-form-field class="w-full">
             <mat-label>Contraseña</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'">
+            <input matInput [formControl]="password" [type]="hide ? 'password' : 'text'">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
@@ -21,7 +21,7 @@
             <button mat-raised-button class="w-full bg-white" (click)="backToLogin()" aria-label="Botón para volver">
               Atrás
             </button>
-            <button mat-raised-button class="w-full bg-white" aria-label="Botón para iniciar sesión">
+            <button mat-raised-button class="w-full bg-white" aria-label="Botón para iniciar sesión" (click)="login()">
               Iniciar sesión
             </button>
           </div>

@@ -38,6 +38,12 @@ export class TheUserRegisterComponent implements OnInit{
   confirm_password = new FormControl('', [Validators.required]);
   username = new FormControl('', [Validators.required, Validators.maxLength(20)]);
   artist = new FormControl(false);
+  first_name = '';
+  last_name = '';
+  imgUrl = '';
+  type = 'reader';
+
+
   hide = true;
   hideConfirm = true;
   protected readonly faFacebook = faFacebook;
@@ -51,6 +57,10 @@ export class TheUserRegisterComponent implements OnInit{
 
   // Método para registrar un nuevo usuario.
   register() {
+    if (this.artist.value) {
+      this.type = 'artist';
+    }
+
     if (!this.email.valid || !this.password.valid || !this.confirm_password.valid || !this.username.valid) {
       return;
     }
@@ -64,7 +74,10 @@ export class TheUserRegisterComponent implements OnInit{
       email: this.email.value,
       password: this.password.value,
       username: this.username.value,
-      artist: this.artist.value
+      firstName: this.first_name,
+      lastName: this.last_name,
+      imgUrl: this.imgUrl,
+      type: this.type
     }).subscribe(
       response => console.log('Usuario registrado con éxito', response),
       error => console.error('Error al registrar el usuario', error)

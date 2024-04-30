@@ -99,21 +99,31 @@
       "suscription_id": 2
     },
     {
-      "id": "4e7c",
-      "password": "gustavoabc123",
-      "username": "gustavoHC",
-      "artist": true
-    },
-    {
-      "id": "67b5",
-      "email": ""
-    },
-    {
       "id": "1801",
       "email": "gustavo@123.com",
       "password": "123456",
       "username": "gustavohc",
       "artist": false
+    },
+    {
+      "id": "20",
+      "name": "Flor M. Salvador",
+      "email": "florsalvador@gmail.com",
+      "password": "123456",
+      "username": "flor_salvador01",
+      "type": "writer",
+      "imgURL": "../src/assets/images/flor-profile.png",
+      "subscription_id": 1
+    },
+    {
+      "id": "21",
+      "name": "Miriam Bonastre",
+      "email": "miriam_bonastre@gmail.com",
+      "password": "123456",
+      "username": "miriam_01",
+      "type": "illustrator",
+      "imgURL": "../src/assets/images/miriam.png",
+      "subscription_id": 1
     }
   ],
   "reward": [
@@ -200,6 +210,19 @@
       "first_activity_date": "2024-04-10",
       "chatRoom_id": 2,
       "id": "6929"
+    }
+  ],
+  "login": [
+    {
+      "id": "d327",
+      "_email": "flor_",
+      "_password": "123456",
+      "_firstName": "Miriam",
+      "_lastName": "Bonastre",
+      "_username": "flor_salvador01",
+      "_type": "writer",
+      "_subscription_id": "1",
+      "_imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/cb26f6d87e9ad5e5d5d1ff05263f034c0a6c96b7/frontend/src/assets/images/flor-profile.png?raw=true"
     }
   ]
 }
