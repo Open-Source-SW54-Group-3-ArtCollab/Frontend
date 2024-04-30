@@ -5,12 +5,13 @@ import {faLock} from "@fortawesome/free-solid-svg-icons";
 import {faHeart} from "@fortawesome/free-solid-svg-icons";
 import {faEye} from "@fortawesome/free-solid-svg-icons";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import {NgForOf, NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-the-book-profile',
   standalone: true,
-  imports: [ MatCardModule,
-    FontAwesomeModule],
+  imports: [MatCardModule,
+    FontAwesomeModule, NgOptimizedImage, NgForOf],
   templateUrl: './the-book-profile.component.html',
   styleUrl: './the-book-profile.component.css'
 })
@@ -31,6 +32,17 @@ export class TheBookProfileComponent {
         '        de tonos grisáceos, celestes y azules eléctricos preparándose para la tormenta. Ella era para él y él era para' +
         '        ella. Una historia de amor tan única que te marcará para el resto de tus días.',
       views:'33 M',
-      likes:'15 M',}
+      likes:'15 M',
+      chapters: 10,
+    }
   ]
+
+  getChapters(totalChapters: number): number[] {
+    const chapterNumbers: number[] = [];
+    for (let i = 1; i <= totalChapters; i++) {
+      chapterNumbers.push(i);
+    }
+    return chapterNumbers;
+  }
+
 }
