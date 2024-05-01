@@ -36,7 +36,7 @@ export class TheBookDetailsComponent {
     this.bookService.getAll().subscribe((data: any) => {
       data.forEach((template: any) => {
         if (template.type === 'book') {
-          const bookData = new Book(template.title, template.description, template.date_publish, template.type, template.id, template.imgUrl, template.likes, template.views);
+          const bookData = new Book(template.title, template.description, template.date_publish, template.type, template.id, template.imgUrl, template.likes, template.views, template.revenue);
           this.books.push(bookData);
         }
       });
