@@ -1,0 +1,21 @@
+<div class="flex justify-between p-2">
+  <div class="flex gap-6">
+     <fa-icon [icon]="faArrowLeft"  [style.font-size.px]="22"></fa-icon>
+     <div class="flex flex-col">
+       <h4 class="text-stone-500"> Editar detalles de la historia</h4>
+       <h2 class="font-bold "> {{books[0].title}} </h2>
+     </div>
+  </div>
+  <div class="flex flex-col lg:flex-row gap-10 mt-7 mx-10">
+    <button class="bg-cyan-400 text-xs lg:text-md h-11 px-7  lg:px-10 rounded-3xl"> Cancelar </button>
+    <button  class="bg-cyan-600 text-white text-xs h-11 lg:text-md px-7  lg:px-10 rounded-3xl"> Guardar </button>
+  </div>
+</div>
+<hr class="p-0.5 bg-gray-500" />
+
+<div class="flex justify-evenly items-center my-10">
+  <img [src]="books[0].cover" width="200" height="20"/>
+  <div>
+
+  </div>
+</div>
