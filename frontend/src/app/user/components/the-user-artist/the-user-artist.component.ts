@@ -21,13 +21,30 @@ import {UsersService} from "../../../shared/service/users.service";
   styleUrl: './the-user-artist.component.css'
 })
 export class TheUserArtistComponent implements OnInit{
-  Artists: User[] = [];
+  artists: User[] = [];
   constructor(private artistsService: UsersService) {
   }
 
   ngOnInit(): void {
-    this.artistsService.getAll().subscribe((data: User[]) => {
-      this.Artists = data;
-    });
+    this.getArtists();
+  }
+  getArtists(){
+    this.artistsService.getAll().subscribe((res:any)=>{
+      if(res){
+        res.forEach((artist: any) => {
+          const artistObj = new User(
+            artist.id,
+            artist.name,
+            artist.email,
+            artist.type,
+            artist.subscription_id,
+            artist.imgUrl,
+            artist.password,
+            artist.username,
+          );
+          this.artists.push(artistObj);
+        });
+      }
+    })
   }
 }

@@ -126,9 +126,14 @@
       "subscription_id": 1
     },
     {
-      "id": "10",
+      "id": "1",
       "name": "Laila Lopez",
-      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/bounded-context/user/frontend/src/assets/images/lala-lopez.png?raw=true"
+      "imgUrl": "https://raw.githubusercontent.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/bounded-context/user/frontend/src/assets/images/lala-lopez.png"
+    },
+    {
+      "id": "2",
+      "name": "Hola",
+      "imgUrl": "https://raw.githubusercontent.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/bounded-context/user/frontend/src/assets/images/lala-lopez.png"
     }
   ],
   "reward": [

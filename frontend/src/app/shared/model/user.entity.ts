@@ -1,7 +1,6 @@
 export class User {
    _id: any;
-   _firstName: any;
-  _lastName: any;
+   _name: any;
   _username: any;
    _email: any;
    _type: any;
@@ -9,11 +8,11 @@ export class User {
    _imgUrl: any;
    _password: any;
 
-  constructor(id: any, firstName: any, lastName: any, email: any, type: any, subscription: any, imgUrl: any, password: any, username: any) {
+  constructor(id: any, name: any, email: any, type: any, subscription: any, imgUrl: any, password: any, username: any) {
     this._id = id;
     this._username = username;
-    this._firstName = firstName;
-    this._lastName = lastName;
+    this._name = name;
+
     this._email = email;
     this._type = type;
     this._subscription_id = subscription;
@@ -30,20 +29,13 @@ export class User {
   }
 
   get getFirstName() {
-    return this._firstName;
+    return this._name;
   }
 
   set firstName(value: any) {
-    this._firstName = value;
+    this._name = value;
   }
 
-  get getLastName() {
-    return this._lastName;
-  }
-
-  set lastName(value: any) {
-    this._lastName = value;
-  }
 
   get getEmail() {
     return this._email;
