@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
+import {BookService} from "../../../service/book.service";
+import {Book} from "../../../model/book.entity";
 
 @Component({
   selector: 'the-book-details-edit-cover',
@@ -10,13 +12,21 @@ import {MatIcon} from "@angular/material/icon";
   templateUrl: './the-book-details-edit-cover.component.html',
   styleUrl: './the-book-details-edit-cover.component.css'
 })
-export class TheBookDetailsEditCoverComponent {
-  books=[
-    {cover:'https://m.media-amazon.com/images/I/81mUJVc1MkL._AC_UF1000,1000_QL80_DpWeblab_.jpg',
-      title:'Boulevard',
-      authors:'Flor M. Salvador / MMIvens',
-      date:'Actualizada abr. 02, 2024 10:11 AM',
-      views:'33 M',
-      likes:'15 M',}
-  ]
+export class TheBookDetailsEditCoverComponent implements OnInit {
+  bookData:any;
+  constructor(private bookService: BookService) {}
+
+  ngOnInit(): void {
+     this.getBooks();
+  }
+
+  getBooks(){
+     this.bookService.getAll().subscribe((data: any) => {
+         data.forEach((book: any) => {
+               if(book.type === 'book' && book.title === 'Boulevard'){
+                 this.bookData = new Book(book.title, book.description, book.date_publish, book.type, book.id, book.imgUrl, book.likes, book.views, book.revenue);
+               }
+         });
+     });
+  }
 }

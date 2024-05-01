@@ -11,4 +11,10 @@ export class BookService {
   getAll(){
     return this.http.get(this.baseUrl + '/template');
   }
+  getChapters(){
+    return this.http.get(this.baseUrl + '/chapters');
+  }
+  editChapter(id: number, data: any){
+    return this.http.patch(this.baseUrl + '/chapters/' + id, {title: data});
+  }
 }

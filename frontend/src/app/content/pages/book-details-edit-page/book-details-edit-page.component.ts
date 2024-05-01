@@ -10,6 +10,8 @@ import {
 import {
   TheBookDetailsEditToolbarComponent
 } from "../../components/the-book-details-edit/the-book-details-edit-toolbar/the-book-details-edit-toolbar.component";
+import {faCommenting} from "@fortawesome/free-solid-svg-icons";
+import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 
 @Component({
   selector: 'book-details-edit-page',
@@ -19,11 +21,13 @@ import {
     FooterContentComponent,
     TheBookDetailsEditTabviewComponent,
     TheBookDetailsEditCoverComponent,
-    TheBookDetailsEditToolbarComponent
+    TheBookDetailsEditToolbarComponent,
+    FaIconComponent
   ],
   templateUrl: './book-details-edit-page.component.html',
   styleUrl: './book-details-edit-page.component.css'
 })
 export class BookDetailsEditPageComponent {
 
+    protected readonly faCommenting = faCommenting;
 }

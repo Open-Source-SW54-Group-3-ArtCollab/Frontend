@@ -10,11 +10,49 @@
       <div class="flex flex-col space-y-4">
         <mat-label>Descripción</mat-label>
         <mat-form-field class="chapter-content min-w-36 max-w-lg w-full ">
-          <textarea matInput rows="10" placeholder="Descripción">¿Quién dijo que después de la tormenta sale el sol cuando puede haber un rayo? Vuelve el fenómeno literario de mayor éxito de los últimos tiempos en una edición revisada por la autora. Luke Howland, lleno de problemas y sumido en una desesperación profunda, y Hasley Weigel, tan despistada como optimista, no se ajustan al prototipo de pareja perfecta. Como si cada uno fuese un cielo uno es tormenta y el otro un día soleado: él es oscuridad. Ella un rayo de sol. Y, sin embargo, juntos deciden ponerle nombre a lo que habían creado: un boulevard teñido de tonos grisáceos, celestes y azules eléctricos preparándose para la tormenta. Ella era para él y él era para ella. Una historia de amor tan única que te marcará para el resto de tus días.</textarea>
+          <textarea matInput rows="10" placeholder="Descripción">{{description}}</textarea>
         </mat-form-field>
       </div>
     </div>
   </mat-tab>
-  <mat-tab label="Tabla de contenidos">Content 2</mat-tab>
-  <mat-tab label="Ingresos obtenidos">Content 3</mat-tab>
+  <mat-tab label="Tabla de contenidos">
+       @for(chapter of bookChapters; track chapter){
+         <div class="flex justify-between mx-6 mt-3">
+           @if(!editMode){
+             <h3>{{chapter.title}} </h3>
+             <div class="flex gap-6">
+               <div class="rounded-full  flex justify-center items-center w-10 h-10 hover:cursor-pointer hover:scale-110 hover:bg-red-500">
+                 <fa-icon [icon]="faHeart" class="text-lg"></fa-icon>
+               </div>
+               <h3> {{bookData.likes}} </h3>
+               <div class="bg-cyan-500 rounded-full text-white flex justify-center items-center w-10 h-10 hover:cursor-pointer hover:scale-110">
+                 <fa-icon [icon]="faPencil" class="text-lg" (click)="setEditMode()"></fa-icon>
+               </div>
+             </div>
+           }
+           @else{
+             <input type="text" [(ngModel)]="currentTitle">
+             <div class="flex gap-6">
+               <div class="rounded-full  flex justify-center items-center w-10 h-10 hover:cursor-pointer hover:scale-110 hover:bg-red-500">
+                 <fa-icon [icon]="faHeart" class="text-lg"></fa-icon>
+               </div>
+               <h3> {{bookData.likes}} </h3>
+               <div class="bg-cyan-500 rounded-full text-white flex justify-center items-center w-10 h-10 hover:cursor-pointer hover:scale-110">
+                 <fa-icon [icon]="faPencil" class="text-lg" (click)="setEditMode()"></fa-icon>
+               </div>
+               <button class="bg-cyan-500 text-white px-6 rounded-lg" (click)="editTitle(chapter.id)"> Update </button>
+             </div>
+           }
+         </div>
+       }
+  </mat-tab>
+
+  <mat-tab label="Ingresos obtenidos">
+     <div class="bg-cyan-100 flex justify-center items-center w-72 h-52 rounded-lg">
+       <div class="absolute">
+         <img width="170" src="./assets/images/reward-icon.png"/>
+       </div>
+         <h1> S/. {{bookData.revenue}}</h1>
+     </div>
+  </mat-tab>
 </mat-tab-group>
