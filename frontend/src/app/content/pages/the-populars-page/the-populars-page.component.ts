@@ -5,6 +5,15 @@ import {MatTab, MatTabGroup, MatTabLabel} from "@angular/material/tabs";
 import {Observable, Observer} from "rxjs";
 import {AsyncPipe} from "@angular/common";
 import {BookPopularComponent} from "../../components/book-popular/books-popular-cards/book-popular.component";
+import {
+  BookPopularComedyComponent
+} from "../../components/book-popular/book-popular-comedy/book-popular-comedy.component";
+import {
+  BookPopularRomanceComponent
+} from "../../components/book-popular/book-popular-romance/book-popular-romance.component";
+import {
+  BookPopularFantasyComponent
+} from "../../components/book-popular/book-popular-fantasy/book-popular-fantasy.component";
 
 export interface ExampleTab {
   label: string;
@@ -21,7 +30,10 @@ export interface ExampleTab {
     MatTab,
     MatTabLabel,
     AsyncPipe,
-    BookPopularComponent
+    BookPopularComponent,
+    BookPopularComedyComponent,
+    BookPopularRomanceComponent,
+    BookPopularFantasyComponent
   ],
   templateUrl: './the-populars-page.component.html',
   styleUrl: './the-populars-page.component.css'
