@@ -3,7 +3,8 @@
     {
       "id": "1",
       "title": "Las lunas",
-      "book_id": 1
+      "book_id": 1,
+      "likes": 2
     }
   ],
   "chat": [
@@ -138,7 +139,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit mauris ornare malesuada himenaeos eleifend morbi, vivamus nostra faucibus platea nisl nec lacinia hendrerit ultricies id maecenas diam. Eget vel aliquet nam penatibus vulputate felis dapibus magnis montes auctor ut, augue placerat praesent class condimentum litora eros sociis iaculis. ",
       "date_publish": "2024-04-09",
       "type": "book",
-      "likes": 10,
+      "likes": 17,
       "views": 20,
       "templateState_id": 1,
       "template_History_id": 1,
@@ -165,7 +166,7 @@
       "description": "Cien años de soledad narra la historia de la familia Buendía a lo largo de varias generaciones en el ficticio pueblo de Macondo. La novela combina realismo mágico con elementos históricos y sociales, creando un mundo rico y evocador.",
       "date_publish": "1967-05-30",
       "type": "book",
-      "likes": 1000,
+      "likes": 6,
       "views": 20000,
       "templateState_id": 3,
       "template_History_id": 3,
@@ -204,7 +205,7 @@
       "description": "Harry Potter y la Piedra Filosofal es el primer libro de la serie Harry Potter escrita por J.K. Rowling. Narra la historia de Harry Potter, un joven mago que descubre su verdadera identidad y se aventura en el mundo mágico.",
       "date_publish": "2024-04-15",
       "type": "book",
-      "likes": 3500,
+      "likes": 15,
       "views": 20300,
       "templateState_id": 7,
       "template_History_id": 7,
@@ -282,7 +283,7 @@
       "description": "Cien Años de Soledad es una obra maestra de la literatura escrita por Gabriel García Márquez. Narra la historia de la familia Buendía en el ficticio pueblo de Macondo.",
       "date_publish": "2024-04-21",
       "type": "book",
-      "likes": 510,
+      "likes": 2,
       "views": 1400,
       "templateState_id": 13,
       "template_History_id": 13,
@@ -308,7 +309,7 @@
       "description": "1984 es una novela distópica escrita por George Orwell que sigue la historia de Winston Smith en un mundo totalitario y vigilado constantemente.",
       "date_publish": "2024-04-23",
       "type": "book",
-      "likes": 845,
+      "likes": 2,
       "views": 1250,
       "templateState_id": 15,
       "template_History_id": 15,
@@ -334,7 +335,7 @@
       "description": "El Alquimista es una novela escrita por Paulo Coelho que sigue la historia de Santiago, un joven pastor que emprende un viaje en busca de su tesoro personal.",
       "date_publish": "2024-04-25",
       "type": "book",
-      "likes": 120,
+      "likes": 3,
       "views": 512,
       "templateState_id": 17,
       "template_History_id": 17,
