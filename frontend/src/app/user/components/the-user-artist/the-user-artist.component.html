@@ -9,40 +9,10 @@
   </mat-card>
 
   <mat-grid-list cols="3" rowHeight="2:2">
-    <mat-grid-tile>
+    <mat-grid-tile *ngFor="let artist of artists">
       <mat-card class="flex w-80 mx-auto">
-        <img mat-card-image src="../../../../assets/images/lala-lopez.png" class="w-80 contain-content">
+        <img mat-card-image [src]="artist.imgURL" class="w-80 contain-content">
         <mat-card-content class="text-center font-semibold text-2xl mt-5">Laila López</mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="flex w-80 mx-auto">
-        <img mat-card-image src="../../../../assets/images/picolo.png" class="w-80 contain-content">
-        <mat-card-content class="text-center font-semibold text-2xl mt-5">Gabriel Picolo</mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="flex w-80 mx-auto">
-        <img mat-card-image src="../../../../assets/images/Mieria.png" class="w-80 contain-content">
-        <mat-card-content class="text-center font-semibold text-2xl mt-5">Mireia Martínez</mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="flex w-80 mx-auto">
-        <img mat-card-image src="../../../../assets/images/cid.png" class="w-80 contain-content">
-        <mat-card-content class="text-center font-semibold text-2xl mt-5">Cristina Cid</mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="flex w-80 mx-auto">
-        <img mat-card-image src="../../../../assets/images/miriam.png" class="w-80 contain-content">
-        <mat-card-content class="text-center font-semibold text-2xl mt-5">Miriam Bonastre</mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <mat-card class="flex w-80 mx-auto">
-        <img mat-card-image src="../../../../assets/images/mmivens.png" class="w-80 contain-content">
-        <mat-card-content class="text-center font-semibold text-2xl mt-5">MMIvens</mat-card-content>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>

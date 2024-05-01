@@ -124,6 +124,11 @@
       "type": "illustrator",
       "imgURL": "../src/assets/images/miriam.png",
       "subscription_id": 1
+    },
+    {
+      "id": "10",
+      "name": "Laila Lopez",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/bounded-context/user/frontend/src/assets/images/lala-lopez.png?raw=true"
     }
   ],
   "reward": [
