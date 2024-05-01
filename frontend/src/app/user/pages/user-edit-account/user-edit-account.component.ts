@@ -4,15 +4,16 @@ import { FooterContentComponent } from "../../../public/components/footer-conten
 import { TheUserEditAccountComponent } from "../../components/the-user-edit-account/the-user-edit-account.component";
 
 @Component({
-  selector: 'app-the-user-edit-account',
+  selector: 'app-user-edit-account',
   standalone: true,
   imports: [
     NavbarContentComponent,
     FooterContentComponent,
+    TheUserEditAccountComponent
   ],
-  templateUrl: './the-user-edit-account.component.html',
-  styleUrl: './the-user-edit-account.component.css'
+  templateUrl: './user-edit-account.component.html',
+  styleUrl: './user-edit-account.component.css'
 })
-export class TheUserEditAccountComponent {
+export class UserEditAccountComponent {
 
 }
