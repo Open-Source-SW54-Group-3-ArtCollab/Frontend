@@ -23,12 +23,18 @@
   .cards-container{
     width: 80%;
   }
+  .button-container{
+    width: 80%;
+  }
 }
-
 
 @media (width>=430px) and (width<=932px){
   .cards-container{
     width: 80%;
+  }
+  .info-container{
+    width: 80%;
+    margin-right: 2.5rem;
   }
 }
 
@@ -37,25 +43,7 @@
     width: 90%;
     margin:1.5rem;
   }
-}
-
-@media (width>=430px) and (width<=932px){
-  .info-container{
-    width: 80%;
-    margin-right: 2.5rem;
-  }
-}
-
-@media (width>=375px) and (width<=844px){
   .info-container{
     width: 90%;
-  }
-}
-
-
-
-@media (width>=932px) and (width<=1204px){
-  .button-container{
-    width: 80%;
   }
 }
