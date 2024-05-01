@@ -6,6 +6,8 @@ import {faHeart} from "@fortawesome/free-solid-svg-icons";
 import {faEye} from "@fortawesome/free-solid-svg-icons";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {NgForOf, NgOptimizedImage} from "@angular/common";
+import {BookService} from "../../service/book.service";
+import {Book} from "../../model/book.entity";
 
 @Component({
   selector: 'app-the-book-profile',
@@ -21,21 +23,26 @@ export class TheBookProfileComponent {
   faLock = faLock;
   faHeart = faHeart;
 
-  books=[
-    {cover:'https://m.media-amazon.com/images/I/81mUJVc1MkL._AC_UF1000,1000_QL80_DpWeblab_.jpg',
-      title:'Boulevard',
-      authors:'Flor M. Salvador / MMIvens',
-      summary:'¿Quién dijo que después de la tormenta sale el sol cuando puede haber un rayo? Vuelve el fenómeno literario demayor éxito de los últimos tiempos en una edición revisada por la autora. Luke Howland, lleno de problemas y' +
-        'sumido en una desesperación profunda, y Hasley Weigel, tan despistada como optimista, no se ajustan al prototipo' +
-        '        de pareja perfecta. Como si cada uno fuese un cielo uno es tormenta y el otro un día soleado: él es oscuridad.' +
-        '        Ella un rayo de sol. Y, sin embargo, juntos deciden ponerle nombre a lo que habían creado: un boulevard teñido' +
-        '        de tonos grisáceos, celestes y azules eléctricos preparándose para la tormenta. Ella era para él y él era para' +
-        '        ella. Una historia de amor tan única que te marcará para el resto de tus días.',
-      views:'33 M',
-      likes:'15 M',
-      chapters: 10,
-    }
-  ]
+  books:Book[] = [];
+
+  constructor(private bookService: BookService) {
+  }
+
+  ngOnInit(): void {
+    this.getBooks();
+  }
+
+  getBooks() {
+    this.bookService.getAll().subscribe((data: any) => {
+      data.forEach((template: any) => {
+        if (template.type === 'book') {
+          const bookData = new Book(template.title, template.description, template.date_publish, template.type, template.id, template.imgUrl, template.likes, template.views);
+          this.books.push(bookData);
+        }
+      });
+    });
+    this.books = this.books.slice(0,1);
+  }
 
   getChapters(totalChapters: number): number[] {
     const chapterNumbers: number[] = [];
