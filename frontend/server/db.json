@@ -2,14 +2,9 @@
   "chapters": [
     {
       "id": "1",
-<<<<<<< HEAD
       "title": "Prologo",
-      "book_id": 1
-=======
-      "title": "Las lunas",
       "book_id": 1,
       "likes": 2
->>>>>>> b1455ae1b58f34acd14b4e7a451043b47caa37e0
     }
   ],
   "chat": [
