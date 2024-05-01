@@ -24,6 +24,7 @@ import { TheBookDetailsComponent } from './shared/components/the-book-details/th
 import {BookPublishPageComponent} from "./content/pages/book-publish-page/book-publish-page.component";
 import {TheDetailsPageComponent} from "./shared/pages/the-details-page/the-details-page.component";
 import {BookDetailsEditPageComponent} from "./content/pages/book-details-edit-page/book-details-edit-page.component";
+import {MainPageComponent} from "./content/pages/main-page/main-page.component";
 
 @Component({
   selector: 'app-root',
@@ -38,7 +39,7 @@ import {BookDetailsEditPageComponent} from "./content/pages/book-details-edit-pa
     TheMainPageRecentBookComponent,
     TheMainPagePopularArtistComponent,
     TheBookProfileComponent,
-    TheBookDetailsComponent, BookPublishPageComponent, TheDetailsPageComponent,  BookDetailsEditPageComponent,
+    TheBookDetailsComponent, BookPublishPageComponent, TheDetailsPageComponent, BookDetailsEditPageComponent, MainPageComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

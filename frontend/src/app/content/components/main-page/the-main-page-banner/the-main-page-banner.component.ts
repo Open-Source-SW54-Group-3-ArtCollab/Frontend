@@ -2,9 +2,11 @@ import {Component, OnInit, ViewChild, AfterViewInit} from '@angular/core';
 import {GalleryModule, GalleryComponent, GalleryItem, ImageItem} from "ng-gallery";
 import {MatCard, MatCardModule} from "@angular/material/card";
 import {MatButton, MatButtonModule} from "@angular/material/button";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {faChevronDown, faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import {BookService} from "../../../service/book.service";
+import {Book} from "../../../model/book.entity";
 
 @Component({
   selector: 'app-the-main-page-banner',
@@ -14,29 +16,59 @@ import {faChevronDown, faChevronLeft, faChevronRight} from "@fortawesome/free-so
     MatCardModule,
     MatButtonModule,
     NgForOf,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgIf
   ],
   templateUrl: './the-main-page-banner.component.html',
   styleUrl: './the-main-page-banner.component.css'
 })
-export class TheMainPageBannerComponent {
+export class TheMainPageBannerComponent implements OnInit{
 
-  items = [
-    {url: 'https://picsum.photos/id/237/200/300', alt: 'Image 1'},
-    {url: 'https://picsum.photos/id/238/200/300', alt: 'Image 2'},
-    {url: 'https://picsum.photos/id/239/200/300', alt: 'Image 3'},
-    {url: 'https://picsum.photos/id/240/200/300', alt: 'Image 4'},
-    {url: 'https://picsum.photos/id/241/200/300', alt: 'Image 5'},
-  ];
+  books: any[] = [];
+
+  images: { url: string, alt: string }[] = [];
+
+  bookData:any;
+
+  constructor(private bookService: BookService) {
+
+  }
+
+  ngOnInit() {
+    this.books = [];
+    this.bookService.getAll().subscribe((res:any) => {
+      if (res){
+        res.slice(0,8).forEach((book: any) => {
+          if (book.type === 'book') {
+            this.bookData = new Book(
+              book.title,
+              book.description,
+              book.date_publish,
+              book.type,
+              book.id,
+              book.imgUrl,
+              book.likes,
+              book.views,
+              book.revenue,
+              book.genre
+            );
+            this.books.push(this.bookData);
+            this.images.push({url: book.imgUrl, alt: book.title});
+          }
+        });
+      }
+
+    });
+  }
 
   currentImageIndex = 0;
 
   previousImage() {
-    this.currentImageIndex = (this.currentImageIndex - 1 + this.items.length) % this.items.length;
+    this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length; //% se usa para que no se pase del límite
   }
 
   nextImage() {
-    this.currentImageIndex = (this.currentImageIndex + 1) % this.items.length;
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
   }
 
   protected readonly faChevronDown = faChevronDown;

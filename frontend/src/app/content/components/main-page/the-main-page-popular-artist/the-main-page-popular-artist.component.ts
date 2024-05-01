@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import {MainPageCarouselsComponent} from "../main-page-carousels/main-page-carousels.component";
+import {BookService} from "../../../service/book.service";
+import {Book} from "../../../model/book.entity";
+import {UsersService} from "../../../../shared/service/users.service";
+import {User} from "../../../../shared/model/user.entity";
 
 @Component({
   selector: 'app-the-main-page-popular-artist',
@@ -11,11 +15,38 @@ import {MainPageCarouselsComponent} from "../main-page-carousels/main-page-carou
   styleUrl: './the-main-page-popular-artist.component.css'
 })
 export class TheMainPagePopularArtistComponent {
-  items = [
-    {url: 'https://picsum.photos/id/237/200/300', alt: 'Image 1', name: 'Artist 1'},
-    {url: 'https://picsum.photos/id/238/200/300', alt: 'Image 2', name: 'Artist 2'},
-    {url: 'https://picsum.photos/id/239/200/300', alt: 'Image 3', name: 'Artist 3'},
-    {url: 'https://picsum.photos/id/240/200/300', alt: 'Image 4', name: 'Artist 4'},
-    {url: 'https://picsum.photos/id/241/200/300', alt: 'Image 5', name: 'Artist 5'},
-  ];
+  imagesArtists: { url: string, alt: string }[] = [];
+
+  userData:any;
+
+  constructor(private usersService: UsersService) {
+
+  }
+
+  ngOnInit() {
+    this.getPopularArtists();
+  }
+
+  getPopularArtists() {
+    this.usersService.getAll().subscribe((res: any) => {
+      if (res){
+        res.forEach((user: any) => {
+          if (user.type === 'artist') {
+            this.userData = new User(
+              user.id,
+              user.name,
+              user.email,
+              user.type,
+              user.subscription,
+              user.imgUrl,
+              user.password,
+              user.username
+            );
+            this.imagesArtists.push({url: user.imgUrl, alt: user.name});
+            console.log('Artista: ', this.userData);
+          }
+        });
+      }
+    });
+  }
 }

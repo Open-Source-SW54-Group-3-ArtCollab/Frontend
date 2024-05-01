@@ -32,7 +32,7 @@ export class TheBookDetailsEditTabviewComponent implements OnInit{
     this.bookService.getAll().subscribe((data:any) => {
       data.forEach((book: any) => {
         if(book.type === 'book' && book.title === 'Boulevard'){
-          this.bookData = new Book(book.title, book.description, book.date_publish, book.type, book.id, book.imgUrl, book.likes, book.views, book.revenue);
+          this.bookData = new Book(book.title, book.description, book.date_publish, book.type, book.id, book.imgUrl, book.likes, book.views, book.revenue, book.genre);
           this.value = this.bookData.title;
           this.description = this.bookData.description;
           this.getChapters();

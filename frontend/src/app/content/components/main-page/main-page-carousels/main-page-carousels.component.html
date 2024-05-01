@@ -5,7 +5,7 @@
       <button mat-button (click)="previousImage()"><fa-icon [icon]="faChevronLeft" [style.font-size.px]="13"></fa-icon></button>
       <ng-container *ngFor="let item of getImages()">
          <mat-card class="flex content-center items-center">
-           <img mat-card-image [src]="item.url" [alt]="item.alt">
+           <img mat-card-image [src]="item.url" [alt]="item.alt" height="300px" width="200px" class="cursor-pointer">
            <div *ngIf="item.name">{{item.name}}</div>
          </mat-card>
       </ng-container>
