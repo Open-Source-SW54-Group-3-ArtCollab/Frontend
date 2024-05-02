@@ -5,6 +5,7 @@ import {MatList, MatListItem} from "@angular/material/list";
 import {faInstagram, faTiktok, faXTwitter, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {MatIcon} from "@angular/material/icon";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-writer-profile',
@@ -17,7 +18,8 @@ import {MatIcon} from "@angular/material/icon";
     MatList,
     MatListItem,
     FaIconComponent,
-    MatIcon
+    MatIcon,
+    RouterLink
   ],
   templateUrl: './the-writer-profile.component.html',
   styleUrl: './the-writer-profile.component.css'

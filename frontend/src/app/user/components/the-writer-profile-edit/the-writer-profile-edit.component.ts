@@ -5,6 +5,7 @@ import {MatCard, MatCardContent, MatCardImage} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
 import {MatList, MatListItem} from "@angular/material/list";
 import {faInstagram, faTiktok, faXTwitter} from "@fortawesome/free-brands-svg-icons";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-writer-profile-edit',
@@ -19,7 +20,8 @@ import {faInstagram, faTiktok, faXTwitter} from "@fortawesome/free-brands-svg-ic
     MatList,
     MatListItem,
     MatFabButton,
-    MatAnchor
+    MatAnchor,
+    RouterLink
   ],
   templateUrl: './the-writer-profile-edit.component.html',
   styleUrl: './the-writer-profile-edit.component.css'

@@ -12,6 +12,10 @@ import {
 import {UserArtistComponent} from "./user/pages/user-artist/user-artist.component";
 import {TheBookDetailsComponent} from "./shared/components/the-book-details/the-book-details.component";
 import {BookPublishPageComponent} from "./content/pages/book-publish-page/book-publish-page.component";
+import {BookProfileComponent} from "./content/pages/book-profile-page/book-profile.component";
+import {ChapterComponent} from "./content/components/chapter/chapter/chapter.component";
+import {WriterProfileComponent} from "./user/pages/writer-profile/writer-profile.component";
+import {WriterProfileEditComponent} from "./user/pages/writer-profile-edit/writer-profile-edit.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -30,4 +34,8 @@ export const routes: Routes = [
   {path:'artist', component:UserArtistComponent},
   {path:'my-stories', component: TheBookDetailsComponent},
   {path:'publish-1', component: BookPublishPageComponent},
+  {path:'book-profile', component: BookProfileComponent},
+  {path:'chapter', component: ChapterComponent},
+  {path:'writer-profile', component: WriterProfileComponent},
+  {path:'writer-profile/edit', component: WriterProfileEditComponent},
 ];

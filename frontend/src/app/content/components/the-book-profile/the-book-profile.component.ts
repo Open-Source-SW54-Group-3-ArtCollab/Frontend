@@ -8,12 +8,13 @@ import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {NgForOf, NgOptimizedImage} from "@angular/common";
 import {BookService} from "../../service/book.service";
 import {Book} from "../../model/book.entity";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-book-profile',
   standalone: true,
   imports: [MatCardModule,
-    FontAwesomeModule, NgOptimizedImage, NgForOf],
+    FontAwesomeModule, NgOptimizedImage, NgForOf, RouterLink],
   templateUrl: './the-book-profile.component.html',
   styleUrl: './the-book-profile.component.css'
 })

@@ -29,7 +29,7 @@
         </div>
         <div class="logged-container flex gap-3 h-full" *ngIf="loggedInUser; else notLoggedIn">
           <button class="publish-btn bg-cyan-400 rounded-lg text-cyan-700 p-2 m-2" (click)="publish()"> Publicar </button>
-          <div class="user-info bg-cyan-600 text-white gap-3  rounded-lg flex align-middle justify-center p-2  m-2 px-4">
+          <div class="user-info bg-cyan-600 text-white gap-3  rounded-lg flex align-middle justify-center p-2  m-2 px-4" routerLink="/writer-profile">
             <img [src]="loggedInUser._imgUrl" alt="User profile picture" width="25px" height="25px">
             <span class="flex justify-center self-center">{{ loggedInUser._username }}</span>
           </div>
@@ -56,9 +56,9 @@
         <span> Artistas </span>
         <div class="login-container pt-10 flex flex-col gap-5" *ngIf="loggedInUser; else notLoggedIn">
           <button class="bg-cyan-400 rounded-lg text-cyan-700 p-2"> Publicar </button>
-          <div class="user-info">
+          <div class="user-info" routerLink="/writer-profile">
             <img [src]="loggedInUser._imgUrl" alt="User profile picture" width="50px">
-            <span>{{ loggedInUser._username }}</span>
+            <span >{{ loggedInUser._username }}</span>
           </div>
         </div>
         <ng-template #notLoggedIn>
