@@ -1,12 +1,12 @@
 export class User {
-   _id: any;
-   _name: any;
+  _id: any;
+  _name: any;
   _username: any;
-   _email: any;
-   _type: any;
-   _subscription_id: any;
-   _imgUrl: any;
-   _password: any;
+  _email: any;
+  _type: any;
+  _subscription_id: any;
+  _imgUrl: any;
+  _password: any;
 
   constructor(id: any, name: any, email: any, type: any, subscription: any, imgUrl: any, password: any, username: any) {
     this._id = id;
