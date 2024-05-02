@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -14,6 +14,7 @@ import {
   TheBookPublishSummaryTextareaComponent
 } from "../the-book-publish-summary-textarea/the-book-publish-summary-textarea.component";
 import {TheBookPublishThumbnailComponent} from "../the-book-publish-thumbnail/the-book-publish-thumbnail.component";
+import {MatIcon} from "@angular/material/icon";
 @Component({
   selector: 'app-book-publish-stepper',
   standalone: true,
@@ -22,7 +23,7 @@ import {TheBookPublishThumbnailComponent} from "../the-book-publish-thumbnail/th
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule, TheBookPublishGenresSelectComponent, TheBookPublishTitleInputComponent, TheBookPublishSummaryTextareaComponent, TheBookPublishThumbnailComponent,],
+    MatInputModule, TheBookPublishGenresSelectComponent, TheBookPublishTitleInputComponent, TheBookPublishSummaryTextareaComponent, TheBookPublishThumbnailComponent, MatIcon,],
   templateUrl: './book-publish-stepper.component.html',
   styleUrl: './book-publish-stepper.component.css'
 })
@@ -34,6 +35,23 @@ export class BookPublishStepperComponent {
     secondCtrl: ['', Validators.required],
   });
   isLinear = false;
+
+  @ViewChild('fileInput') fileInput!: ElementRef;
+
+  onIconClick() {
+    this.fileInput.nativeElement.click();
+  }
+
+  onFileSelected(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    if (inputElement.files && inputElement.files.length > 0) {
+      const file = inputElement.files[0];
+      if (!file.type.startsWith('image/')) {
+        alert('Por favor, sube solo imágenes.');
+        return;
+      }
+    }
+  }
 
   constructor(private _formBuilder: FormBuilder) {}
 }

@@ -49,6 +49,13 @@
           <textarea matInput rows="10" placeholder="Escribe el texto"></textarea>
         </mat-form-field>
       </div>
+      <div class="flex justify-center items-center pt-4">
+        <div class="flex flex-col items-center bg-gray-200 p-5 max-w-64">
+          <input type="file" #fileInput accept="image/*" style="display: none" (change)="onFileSelected($event)">
+          <mat-icon class="edit-icon mb-2" (click)="onIconClick()">arrow_upward</mat-icon>
+          <p class="text-center">Elige tus imágenes para subir</p>
+        </div>
+      </div>
       <div>
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
