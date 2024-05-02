@@ -37,10 +37,7 @@ export class MainPageCarouselsComponent{
 
   getImages() {
     let images = [];
-    let numImages = window.innerWidth <= 1200 ? 1 : 3; // Si la pantalla es pequeña, muestra solo una imagen
-    for (let i = 0; i < numImages; i++) {
-      images.push(this.items[(this.currentImageIndex + i) % this.items.length]);
-    }
+    images.push(this.items[(this.currentImageIndex) % this.items.length]);
     return images;
   }
 
