@@ -4,7 +4,7 @@ import { FooterContentComponent } from '../../../public/components/footer-conten
 import { TheArtistRoomComponent } from '../../components/the-artist-room/the-artist-room.component';
 
 @Component({
-  selector: 'app-artist-room',
+  selector: 'artist-room',
   standalone: true,
   imports: [NavbarContentComponent,FooterContentComponent,TheArtistRoomComponent],
   templateUrl: './artist-room.component.html',
