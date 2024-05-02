@@ -29,4 +29,10 @@ export class TheBookDetailsEditCoverComponent implements OnInit {
          });
      });
   }
+  editImage() {
+    const newImageUrl = prompt('Por favor, ingresa la nueva URL de la imagen');
+    if (newImageUrl) {
+      this.bookData.imgUrl = newImageUrl;
+    }
+  }
 }
