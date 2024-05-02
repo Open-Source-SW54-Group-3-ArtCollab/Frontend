@@ -9,13 +9,14 @@ import {
   faUser,
   faVideo
 } from "@fortawesome/free-solid-svg-icons";
-import {UsersService} from "../../../../shared/service/users.service";
-import {User} from "../../../../shared/model/user.entity";
+
 import {NgOptimizedImage} from "@angular/common";
 import {ChatService} from "../../service/chat.service";
 import {Message} from "../../models/message-entity/message.entity";
 import {FormsModule} from "@angular/forms";
 import {Chat} from "../../models/chat-entity/chat.entity";
+import {UsersService} from "../../../shared/service/users.service";
+import {User} from "../../../shared/model/user.entity";
 
 @Component({
   selector: 'the-chat-section',

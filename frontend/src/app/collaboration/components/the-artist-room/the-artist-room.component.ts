@@ -1,11 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {MatCard} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
-import {UsersService} from "../../../../shared/service/users.service";
-import {User} from "../../../../shared/model/user.entity";
+
 import {ChatService} from "../../service/chat.service";
 import {Chatroom} from "../../models/chatRoom-entity/chatroom.entity";
 import {NgOptimizedImage} from "@angular/common";
+import {UsersService} from "../../../shared/service/users.service";
+import {User} from "../../../shared/model/user.entity";
 
 @Component({
   selector: 'the-artist-room',

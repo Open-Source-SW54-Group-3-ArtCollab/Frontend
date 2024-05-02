@@ -51,7 +51,6 @@ import {
 import {
   TheMonetizationApplicationComponent
 } from "./monetization/pages/the-monetization-application/the-monetization-application.component";
-import {TestPageComponent} from "./public/components/test-page/test-page.component";
 
 @Component({
   selector: 'app-root',
@@ -72,7 +71,7 @@ import {TestPageComponent} from "./public/components/test-page/test-page.compone
 
     ArtistRoomComponent, TheChatPageComponent,
 
-    TheSubscriptionApplicationComponent, TheMonetizationApplicationComponent, TestPageComponent
+    TheSubscriptionApplicationComponent, TheMonetizationApplicationComponent
 
   ],
   templateUrl: './app.component.html',
