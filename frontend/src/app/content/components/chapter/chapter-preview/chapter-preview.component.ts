@@ -4,6 +4,7 @@ import {MatIcon} from "@angular/material/icon";
 import {MatInput} from "@angular/material/input";
 import {MatTab, MatTabGroup} from "@angular/material/tabs";
 import {MatToolbar} from "@angular/material/toolbar";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-chapter-preview',
@@ -84,6 +85,17 @@ export class ChapterPreviewComponent implements AfterViewInit {
     }
     this.isFirstSlide = this.currentPosition === 0;
     this.isLastSlide = this.currentPosition >= this.slidesCount;
+  }
+
+  constructor(private router: Router) {
+  }
+
+  publish(){
+    this.router.navigateByUrl('/books-profile');
+  }
+
+  goBack(){
+    this.router.navigateByUrl('/publish');
   }
 }
 

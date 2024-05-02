@@ -23,6 +23,7 @@ import {UserConnectArtistComponent} from "./user/pages/user-connect-artist/user-
 import {ArtistRoomComponent} from "./collaboration/pages/the-artist-room/artist-room.component";
 import {TheChatSectionComponent} from "./collaboration/components/the-chat-section/the-chat-section.component";
 import {TheChatPageComponent} from "./collaboration/pages/the-chat-page/the-chat-page.component";
+import {ChapterPreviewComponent} from "./content/components/chapter/chapter-preview/chapter-preview.component";
 import {BookDetailComponent} from "./content/pages/book-detail-page/book-detail.component";
 
 export const routes: Routes = [
@@ -56,6 +57,9 @@ export const routes: Routes = [
   {path:'boulevard-book', component: BookProfileComponent},
   {path:'illustrator-profile', component: UserConnectArtistComponent},
   {path:'artist-room', component: ArtistRoomComponent},
-  {path:'chat', component: TheChatPageComponent}
-
+  {path:'chat', component: TheChatPageComponent},
+  {path:'',redirectTo:'/boulevard-book', pathMatch:'full'},
+  {path:'books-profile', component: BookProfileComponent},
+  {path:'',redirectTo:'/chapter-preview', pathMatch:'full'},
+  {path:'chapter-preview', component: ChapterPreviewComponent}
 ];
