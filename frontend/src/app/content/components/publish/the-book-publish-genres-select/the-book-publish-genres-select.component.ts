@@ -3,6 +3,7 @@ import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {NgForOf} from "@angular/common";
 
 interface Genre {
   value: string;
@@ -12,7 +13,7 @@ interface Genre {
 @Component({
   selector: 'app-the-book-publish-genres-select',
   standalone: true,
-  imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule],
+  imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule, NgForOf],
   templateUrl: './the-book-publish-genres-select.component.html',
   styleUrl: './the-book-publish-genres-select.component.css'
 })
