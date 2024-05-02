@@ -102,6 +102,13 @@
       "chat_id": 1,
       "isRead": false,
       "isSend": true
+    },
+    {
+      "content": "Un gusto",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true,
+      "id": "errbKwe"
     }
   ],
   "portfolio": [
