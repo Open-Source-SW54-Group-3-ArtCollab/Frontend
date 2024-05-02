@@ -57,10 +57,14 @@ export class BookPublishStepperComponent {
   constructor(private _formBuilder: FormBuilder, private router: Router) {}
 
   publishBook(){
-    this.router.navigateByUrl('/boulevard-book');
+    this.router.navigateByUrl('/books-profile');
   }
 
   save() {
     this.router.navigateByUrl('/my-stories');
+  }
+
+  preview() {
+    this.router.navigateByUrl('/chapter-preview');
   }
 }
