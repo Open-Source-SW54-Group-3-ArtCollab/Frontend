@@ -45,6 +45,13 @@ import {IlustratorProfileEditComponent} from "./user/pages/ilustrator-profile-ed
 import {UserConnectArtistComponent} from "./user/pages/user-connect-artist/user-connect-artist.component";
 import {ArtistRoomComponent} from "./collaboration/pages/the-artist-room/artist-room.component";
 import {TheChatPageComponent} from "./collaboration/pages/the-chat-page/the-chat-page.component";
+import {
+  TheSubscriptionApplicationComponent
+} from "./monetization/pages/the-subscription-application/the-subscription-application.component";
+import {
+  TheMonetizationApplicationComponent
+} from "./monetization/pages/the-monetization-application/the-monetization-application.component";
+import {TestPageComponent} from "./public/components/test-page/test-page.component";
 
 @Component({
   selector: 'app-root',
@@ -63,7 +70,9 @@ import {TheChatPageComponent} from "./collaboration/pages/the-chat-page/the-chat
 
     TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent, IllustratorProfileComponent, TheIllustratorProfileComponent, IlustratorProfileEditComponent, UserConnectArtistComponent,
 
-    ArtistRoomComponent, TheChatPageComponent
+    ArtistRoomComponent, TheChatPageComponent,
+
+    TheSubscriptionApplicationComponent, TheMonetizationApplicationComponent, TestPageComponent
 
   ],
   templateUrl: './app.component.html',
