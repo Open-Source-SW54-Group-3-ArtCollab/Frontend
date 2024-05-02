@@ -4,6 +4,7 @@ import {MatGridList, MatGridTile} from "@angular/material/grid-list";
 import {NgForOf} from "@angular/common";
 import {User} from "../../../shared/model/user.entity";
 import {UsersService} from "../../../shared/service/users.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-user-artist',
@@ -15,7 +16,8 @@ import {UsersService} from "../../../shared/service/users.service";
     MatCardImage,
     MatGridList,
     MatGridTile,
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './the-user-artist.component.html',
   styleUrl: './the-user-artist.component.css'

@@ -6,6 +6,7 @@ import {Chatroom} from "../../models/chatRoom-entity/chatroom.entity";
 import {NgOptimizedImage} from "@angular/common";
 import {UsersService} from "../../../shared/service/users.service";
 import {User} from "../../../shared/model/user.entity";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'the-artist-room',
@@ -13,7 +14,8 @@ import {User} from "../../../shared/model/user.entity";
   imports: [
     MatCard,
     MatIcon,
-    NgOptimizedImage
+    NgOptimizedImage,
+    RouterLink
   ],
   templateUrl: './the-artist-room.component.html',
   styleUrl: './the-artist-room.component.css'

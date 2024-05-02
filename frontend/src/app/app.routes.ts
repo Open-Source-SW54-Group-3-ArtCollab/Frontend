@@ -18,6 +18,11 @@ import {WriterProfileComponent} from "./user/pages/writer-profile/writer-profile
 import {WriterProfileEditComponent} from "./user/pages/writer-profile-edit/writer-profile-edit.component";
 import {BookDetailsEditPageComponent} from "./content/pages/book-details-edit-page/book-details-edit-page.component";
 import {TheDetailsPageComponent} from "./shared/pages/the-details-page/the-details-page.component";
+import {IllustratorProfileComponent} from "./user/pages/illustrator-profile/illustrator-profile.component";
+import {UserConnectArtistComponent} from "./user/pages/user-connect-artist/user-connect-artist.component";
+import {ArtistRoomComponent} from "./collaboration/pages/the-artist-room/artist-room.component";
+import {TheChatSectionComponent} from "./collaboration/components/the-chat-section/the-chat-section.component";
+import {TheChatPageComponent} from "./collaboration/pages/the-chat-page/the-chat-page.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -47,5 +52,9 @@ export const routes: Routes = [
   {path:'',redirectTo:'/story-edit', pathMatch:'full'},
   {path:'story-edit', component: BookDetailsEditPageComponent},
   {path:'',redirectTo:'/boulevard-book', pathMatch:'full'},
-  {path:'boulevard-book', component: BookProfileComponent}
+  {path:'boulevard-book', component: BookProfileComponent},
+  {path:'illustrator-profile', component: UserConnectArtistComponent},
+  {path:'artist-room', component: ArtistRoomComponent},
+  {path:'chat', component: TheChatPageComponent}
+
 ];

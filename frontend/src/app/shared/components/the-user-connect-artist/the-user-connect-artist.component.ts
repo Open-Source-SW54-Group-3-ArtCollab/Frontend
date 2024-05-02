@@ -5,6 +5,7 @@ import {faInstagram, faTiktok, faXTwitter} from "@fortawesome/free-brands-svg-ic
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {MatIcon} from "@angular/material/icon";
 import {MatButton} from "@angular/material/button";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-user-connect-artist',
@@ -17,7 +18,8 @@ import {MatButton} from "@angular/material/button";
     FaIconComponent,
     MatIcon,
     MatButton,
-    MatCardImage
+    MatCardImage,
+    RouterLink
   ],
   templateUrl: './the-user-connect-artist.component.html',
   styleUrl: './the-user-connect-artist.component.css'
