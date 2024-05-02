@@ -46,6 +46,10 @@ export class TheBookDetailsComponent {
   }
 
   publish(){
-    this.router.navigateByUrl('/publish-1');
+    this.router.navigateByUrl('/publish');
+  }
+
+  edit(){
+    this.router.navigateByUrl('/story-edit');
   }
 }

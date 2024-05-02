@@ -33,8 +33,8 @@
     <form [formGroup]="secondFormGroup">
       <div class="buttons flex justify-end flex-wrap">
         <div class="px-6">
-          <button class="buttons-step2 rounded-2xl bg-cyan-800 border-none px-6 py-1 mx-2 text-white">Publicar</button>
-          <button class="buttons-step2 rounded-2xl bg-cyan-500 border-none px-6 py-1 mx-2 text-white">Guardar</button>
+          <button class="buttons-step2 rounded-2xl bg-cyan-800 border-none px-6 py-1 mx-2 text-white" (click)="publishBook()">Publicar</button>
+          <button class="buttons-step2 rounded-2xl bg-cyan-500 border-none px-6 py-1 mx-2 text-white" (click)="save()">Guardar</button>
           <button class="buttons-step2 rounded-2xl bg-cyan-500 border-none px-4 py-1 mx-2 text-white">Vista Previa</button>
         </div>
       </div>

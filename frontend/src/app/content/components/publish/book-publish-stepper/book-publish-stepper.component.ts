@@ -15,6 +15,7 @@ import {
 } from "../the-book-publish-summary-textarea/the-book-publish-summary-textarea.component";
 import {TheBookPublishThumbnailComponent} from "../the-book-publish-thumbnail/the-book-publish-thumbnail.component";
 import {MatIcon} from "@angular/material/icon";
+import {Router} from "@angular/router";
 @Component({
   selector: 'app-book-publish-stepper',
   standalone: true,
@@ -53,5 +54,13 @@ export class BookPublishStepperComponent {
     }
   }
 
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(private _formBuilder: FormBuilder, private router: Router) {}
+
+  publishBook(){
+    this.router.navigateByUrl('/boulevard-book');
+  }
+
+  save() {
+    this.router.navigateByUrl('/my-stories');
+  }
 }
