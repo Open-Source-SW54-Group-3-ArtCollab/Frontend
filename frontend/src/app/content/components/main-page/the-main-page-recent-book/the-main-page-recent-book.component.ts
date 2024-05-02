@@ -2,12 +2,14 @@ import {Component, OnInit} from '@angular/core';
 import {MainPageCarouselsComponent} from "../main-page-carousels/main-page-carousels.component";
 import {BookService} from "../../../service/book.service";
 import {Book} from "../../../model/book.entity";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-main-page-recent-book',
   standalone: true,
   imports: [
-    MainPageCarouselsComponent
+    MainPageCarouselsComponent,
+    RouterLink
   ],
   templateUrl: './the-main-page-recent-book.component.html',
   styleUrl: './the-main-page-recent-book.component.css'

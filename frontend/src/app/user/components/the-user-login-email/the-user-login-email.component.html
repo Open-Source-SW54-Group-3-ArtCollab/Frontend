@@ -21,7 +21,7 @@
             <button mat-raised-button class="w-full bg-white" (click)="backToLogin()" aria-label="Botón para volver">
               Atrás
             </button>
-            <button mat-raised-button class="w-full bg-white" aria-label="Botón para iniciar sesión" (click)="login()">
+            <button mat-raised-button class="w-full bg-white" aria-label="Botón para iniciar sesión" routerLink="/home" (click)="login(); closeLogin()" >
               Iniciar sesión
             </button>
           </div>

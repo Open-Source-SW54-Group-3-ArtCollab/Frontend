@@ -4,13 +4,15 @@ import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {MainPageCarouselsComponent} from "../main-page-carousels/main-page-carousels.component";
 import {BookService} from "../../../service/book.service";
 import {Book} from "../../../model/book.entity";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-main-page-genres',
   standalone: true,
   imports: [
     FontAwesomeModule,
-    MainPageCarouselsComponent
+    MainPageCarouselsComponent,
+    RouterLink
   ],
   templateUrl: './the-main-page-genres.component.html',
   styleUrl: './the-main-page-genres.component.css'

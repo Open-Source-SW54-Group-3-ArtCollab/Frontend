@@ -4,12 +4,14 @@ import {BookService} from "../../../service/book.service";
 import {Book} from "../../../model/book.entity";
 import {UsersService} from "../../../../shared/service/users.service";
 import {User} from "../../../../shared/model/user.entity";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-main-page-popular-artist',
   standalone: true,
   imports: [
-    MainPageCarouselsComponent
+    MainPageCarouselsComponent,
+    RouterLink
   ],
   templateUrl: './the-main-page-popular-artist.component.html',
   styleUrl: './the-main-page-popular-artist.component.css'

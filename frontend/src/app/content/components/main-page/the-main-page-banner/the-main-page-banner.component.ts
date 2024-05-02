@@ -7,6 +7,7 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {faChevronDown, faChevronLeft, faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {BookService} from "../../../service/book.service";
 import {Book} from "../../../model/book.entity";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-main-page-banner',
@@ -17,7 +18,8 @@ import {Book} from "../../../model/book.entity";
     MatButtonModule,
     NgForOf,
     FontAwesomeModule,
-    NgIf
+    NgIf,
+    RouterLink
   ],
   templateUrl: './the-main-page-banner.component.html',
   styleUrl: './the-main-page-banner.component.css'
