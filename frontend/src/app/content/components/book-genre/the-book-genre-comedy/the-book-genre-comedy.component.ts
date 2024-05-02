@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {NgForOf} from "@angular/common";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
-import {faHeart} from "@fortawesome/free-solid-svg-icons";
+import {faEye, faHeart} from "@fortawesome/free-solid-svg-icons";
 import {Book} from "../../../model/book.entity";
 import {BookService} from "../../../service/book.service";
 
@@ -38,5 +38,7 @@ export class TheBookGenreComedyComponent {
     });
     this.books = this.books.slice(0,6);
   }
+
+  protected readonly faEye = faEye;
 }
 
