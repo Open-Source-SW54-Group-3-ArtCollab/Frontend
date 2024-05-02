@@ -7,11 +7,14 @@ import {HttpClient} from "@angular/common/http";
 export class ChatService {
 
   constructor(private http: HttpClient) { }
-  createChatRoom(data: any) {
-      return this.http.post('http://localhost:3000/chatRoom', data);
+  createChat(data: any) {
+      return this.http.post('http://localhost:3000/chat', data);
   }
-  getChatRoomById(id: string) {
-    return this.http.get('http://localhost:3000/chatRoom/' + id);
+  getChatRoomById(id:any){
+      return this.http.get('http://localhost:3000/chatRoom/' + id);
+  }
+  deleteChatRoom(id: any) {
+      return this.http.delete('http://localhost:3000/chatRoom/' + id);
   }
   getChat(id:any) {
        return this.http.get('http://localhost:3000/chat/' + id);

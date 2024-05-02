@@ -20,7 +20,7 @@
   <mat-card class="border-noround bd-gray mb-5 mt-20">
     <div class="flex justify-content-end mx-10 gap-3">
       <h2>Iniciar nuevo chat</h2>
-      <mat-icon class="mt-1 hover:cursor-pointer hover:scale-110">add</mat-icon>
+      <mat-icon class="mt-1 hover:cursor-pointer hover:scale-110" (click)="createChat()">add</mat-icon>
     </div>
   </mat-card>
   <mat-card class="border-noround bd-gray mb-8">
@@ -35,5 +35,5 @@
       <p>6:19pm</p>
     </div>
   </mat-card>
-  <button class="border-noround text-red-700 mx-4 p-1">Eliminar Sala</button>
+  <button class="border-noround text-red-700 mx-4 p-1" (click)="deleteRoom()">Eliminar Sala</button>
 </div>
