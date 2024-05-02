@@ -44,9 +44,9 @@ export class TheBookProfileComponent {
     this.books = this.books.slice(0,1);
   }
 
-  getChapters(totalChapters: number): number[] {
+  getChapters(): number[] {
     const chapterNumbers: number[] = [];
-    for (let i = 1; i <= totalChapters; i++) {
+    for (let i = 1; i <= 1; i++) {
       chapterNumbers.push(i);
     }
     return chapterNumbers;

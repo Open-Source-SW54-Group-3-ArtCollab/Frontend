@@ -7,7 +7,7 @@
 
     <div class="flex flex-col items-start justify-center">
       <p class="text-5xl font-bold">{{book.title}}</p>
-<!--      <p class="text-2xl underline">{{book.authors}}</p>-->
+      <p class="text-2xl underline">Flor M. Salvador / MMIvens</p>
     </div>
 
   </div>
@@ -24,14 +24,12 @@
       <mat-card-content aria-label="Book information card content">
         <div class="mt-3" >
 
-          <!--<div *ngFor="let chapter of getChapters(book.chapters)" class="flex flex-row items-center justify-between">
+          <div *ngFor="let chapter of getChapters()" class="flex flex-row items-center justify-between">
             <h2 class="text-black"> Capítulo {{ chapter }} </h2>
             <div class="flex flex-row">
               <fa-icon [icon]="faLock" size="lg" class="p-2 w-10 h-8 blue-icon"></fa-icon>
-              <fa-icon [icon]="faHeart" size="lg" class="p-2 w-10 h-8 blue-icon"></fa-icon>
-              <h2 class="text-black">{{ book.likes }}</h2>
             </div>
-          </div>-->
+          </div>
 
         </div>
       </mat-card-content>
