@@ -15,6 +15,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {ChatService} from "../../service/chat.service";
 import {Message} from "../../models/message-entity/message.entity";
 import {FormsModule} from "@angular/forms";
+import {Chat} from "../../models/chat-entity/chat.entity";
 
 @Component({
   selector: 'the-chat-section',
@@ -35,12 +36,21 @@ export class TheChatSectionComponent implements OnInit{
   messages:any[]= [];
   messageData:any;
   message:string ='';
+  currentChatData:Chat = new Chat(0,0,'',0);
   constructor(private userService:UsersService, private chatService:ChatService) { }
   ngOnInit(): void {
     this.getArtist();
     this.getWriter();
-    this.getMessages();
+    this.getCurrentChat();
   }
+
+  getCurrentChat(){
+    this.chatService.getChat(1).subscribe((data:any)=>{
+        this.currentChatData = new Chat(data.id, data.chatRoom_id, data.title, data.created_at);
+        this.getMessages();
+    });
+  }
+
 
   getArtist(){
     this.userService.getAll().subscribe((data:any)=>{
@@ -64,7 +74,7 @@ export class TheChatSectionComponent implements OnInit{
   getMessages(){
     this.chatService.getMessages().subscribe((data:any)=>{
          data.forEach((message:any)=>{
-            if(message.chat_id === 1){
+           if(String(message.chat_id) === String(this.currentChatData.getId())){
               this.messageData = new Message(message.id, message.content, message.chat_id, message.isRead, message.isSend);
               this.messages.push(this.messageData);
             }
@@ -73,7 +83,7 @@ export class TheChatSectionComponent implements OnInit{
   }
 
   sendMessage(){
-    this.chatService.sendChatMessage({content: this.message, chat_id: 1, isRead:false,isSend:true }).subscribe((data:any)=>{
+    this.chatService.sendChatMessage({content: this.message, chat_id: this.currentChatData.getId(), isRead:false,isSend:true }).subscribe((data:any)=>{
 
     });
   }

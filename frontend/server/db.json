@@ -57,7 +57,7 @@
     {
       "id": "1",
       "content": "Hello!",
-      "chat_id": 1,
+      "chat_id": "1",
       "isRead": false,
       "isSend": true
     },
@@ -109,6 +109,13 @@
       "isRead": false,
       "isSend": true,
       "id": "errbKwe"
+    },
+    {
+      "content": "Un gusto Miriam",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true,
+      "id": "GKqDTBz"
     }
   ],
   "portfolio": [

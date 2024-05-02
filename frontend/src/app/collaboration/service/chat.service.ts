@@ -13,8 +13,8 @@ export class ChatService {
   getChatRoomById(id: string) {
     return this.http.get('http://localhost:3000/chatRoom/' + id);
   }
-  getChats() {
-       return this.http.get('http://localhost:3000/chat');
+  getChat(id:any) {
+       return this.http.get('http://localhost:3000/chat/' + id);
   }
   sendChatMessage(data: any) {
       return this.http.post('http://localhost:3000/message', data);
