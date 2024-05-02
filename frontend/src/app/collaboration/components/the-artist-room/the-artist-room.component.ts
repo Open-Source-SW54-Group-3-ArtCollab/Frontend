@@ -3,7 +3,7 @@ import {MatCard} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
 
 @Component({
-  selector: 'app-the-artist-room',
+  selector: 'the-artist-room',
   standalone: true,
     imports: [
         MatCard,
