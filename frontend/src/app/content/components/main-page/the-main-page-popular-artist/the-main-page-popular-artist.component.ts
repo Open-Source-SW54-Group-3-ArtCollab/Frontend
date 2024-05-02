@@ -15,7 +15,7 @@ import {User} from "../../../../shared/model/user.entity";
   styleUrl: './the-main-page-popular-artist.component.css'
 })
 export class TheMainPagePopularArtistComponent {
-  imagesArtists: { url: string, alt: string }[] = [];
+  imagesArtists: { url: string, alt: string, name: string }[] = [];
 
   userData:any;
 
@@ -42,7 +42,7 @@ export class TheMainPagePopularArtistComponent {
               user.password,
               user.username
             );
-            this.imagesArtists.push({url: user.imgUrl, alt: user.name});
+            this.imagesArtists.push({url: user.imgUrl, alt: user.name, name: user.name});
             console.log('Artista: ', this.userData);
           }
         });
