@@ -67,6 +67,41 @@
       "chat_id": 2,
       "isRead": false,
       "isSend": true
+    },
+    {
+      "id": "b92a",
+      "content": "Mucho gusto",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "16e9",
+      "content": "Es todo un placer",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "7273",
+      "content": "Hola",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "19f8",
+      "content": "Un gusto",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "5742",
+      "content": "Igualmente",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
     }
   ],
   "portfolio": [
@@ -158,7 +193,6 @@
       "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/mmivens.png?raw=true",
       "subscription_id": 1
     }
-
   ],
   "reward": [
     {
