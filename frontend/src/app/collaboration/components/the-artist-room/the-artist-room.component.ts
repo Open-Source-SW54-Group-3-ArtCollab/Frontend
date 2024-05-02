@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MatCard} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
-
 import {ChatService} from "../../service/chat.service";
 import {Chatroom} from "../../models/chatRoom-entity/chatroom.entity";
 import {NgOptimizedImage} from "@angular/common";

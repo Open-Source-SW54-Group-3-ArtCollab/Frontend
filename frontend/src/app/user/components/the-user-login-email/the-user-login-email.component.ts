@@ -7,6 +7,7 @@ import {FormControl, FormsModule, ReactiveFormsModule, Validators} from "@angula
 import {NgIf} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
 import {UsersService} from "../../../shared/service/users.service";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-user-login-email',
@@ -22,6 +23,7 @@ import {UsersService} from "../../../shared/service/users.service";
     MatIconButton,
     MatIcon,
     ReactiveFormsModule,
+    RouterLink,
   ],
   templateUrl: './the-user-login-email.component.html',
   styleUrl: './the-user-login-email.component.css'
