@@ -2,14 +2,9 @@
   "chapters": [
     {
       "id": "1",
-<<<<<<< HEAD
       "title": "Prologo",
-      "book_id": 1
-=======
-      "title": "Las lunas",
       "book_id": 1,
       "likes": 2
->>>>>>> b1455ae1b58f34acd14b4e7a451043b47caa37e0
     }
   ],
   "chat": [
@@ -94,23 +89,66 @@
   ],
   "reader": [
     {
-      "id": "1",
-      "name": "John Doe",
-      "username": "johndoe",
-      "email": "john@example.com",
-      "password": "password1",
-      "type": "type1",
-      "suscription_id": 1
+      "id": "3",
+      "name": "Miriam Bonastre",
+      "username": "miriam123",
+      "email": "miriam_bonastre@gmail.com",
+      "password": "password321",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/miriam.png?raw=true",
+      "subscription_id": 1
     },
     {
-      "id": "2",
-      "name": "Jane Smith",
-      "username": "janesmith",
-      "email": "jane@example.com",
-      "password": "password2",
-      "type": "type2",
-      "suscription_id": 2
+      "id": "4",
+      "name": "Laia López",
+      "username": "laialopez",
+      "email": "laia_lopez@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/lala-lopez.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "5",
+      "name": "Gabriel Picolo",
+      "username": "gabriel_picolo",
+      "email": "gabriel_picolo@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/picolo.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "6",
+      "name": "Mireia Martínez",
+      "username": "mireia_martinez",
+      "email": "mireia_martinez@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/Mieria.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "7",
+      "name": "Cristina Cid",
+      "username": "jordi_puig",
+      "email": "cristina@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/cid.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "8",
+      "name": "MMIvens",
+      "username": "mmivens",
+      "email": "mmivens@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/mmivens.png?raw=true",
+      "subscription_id": 1
     }
+
   ],
   "reward": [
     {
@@ -148,10 +186,10 @@
       "views": 20,
       "templateState_id": 1,
       "template_History_id": 1,
-      "imgUrl": "https://m.media-amazon.com/images/I/51i7Iq5Mb4L.jpg",
+      "imgUrl": "https://github.com/Aplicaciones-Web-WX53-Group2-ArtCollab/Frontend-/blob/bounded-context/content/src/assets/images/Boulevard-Cover.jpg?raw=true",
       "id": "1",
       "portfolio_id": 1,
-      "revenue": 1000
+      "genre": "Drama"
     },
     {
       "title": "Kid and Balloons",
@@ -177,7 +215,8 @@
       "template_History_id": 3,
       "imgUrl": "https://tse4.mm.bing.net/th?id=OIP.nwenpbzxiX1rdwotc1lv5QHaK-&pid=Api&P=0&h=180",
       "id": "3",
-      "portfolio_id": 3
+      "portfolio_id": 3,
+      "genre": "fantasía"
     },
     {
       "title": "El principito",
@@ -190,7 +229,8 @@
       "template_History_id": 4,
       "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.fHF9K1mCC7iI22YtYRm33QHaJd&pid=Api&P=0&h=180",
       "id": "4",
-      "portfolio_id": 4
+      "portfolio_id": 4,
+      "genre": "fantasía"
     },
     {
       "title": "Space Exploration",
@@ -216,7 +256,8 @@
       "template_History_id": 7,
       "imgUrl": "https://covers.alibrate.com/b/59872e9ccba2bce50c1cbcd7/34fe7d67-f9d6-421c-85f6-6ebc81532936/share",
       "id": "7",
-      "portfolio_id": 7
+      "portfolio_id": 7,
+      "genre": "fantasía"
     },
     {
       "title": "Cityscape",
@@ -242,7 +283,8 @@
       "template_History_id": 9,
       "imgUrl": "https://i.pinimg.com/originals/1d/53/f4/1d53f4a35b9004b3d1ce731a226f30e0.jpg",
       "id": "9",
-      "portfolio_id": 9
+      "portfolio_id": 9,
+      "genre": "romance"
     },
     {
       "title": "Enchanted Forest",
@@ -260,7 +302,7 @@
     {
       "title": "La Metamorfosis",
       "description": "La Metamorfosis es una novela corta escrita por Franz Kafka que sigue la historia de Gregor Samsa, quien se despierta una mañana convertido en un insecto.",
-      "date_publish": "2024-04-19",
+      "date_publish": "2024-04-03",
       "type": "book",
       "likes": 187,
       "views": 312,
@@ -268,7 +310,8 @@
       "template_History_id": 11,
       "imgUrl": "https://tse2.mm.bing.net/th?id=OIP.gsFT5jQkEOx-UDeaEVakPAHaLU&pid=Api&P=0&h=180",
       "id": "11",
-      "portfolio_id": 11
+      "portfolio_id": 11,
+      "genre": "drama"
     },
     {
       "title": "Underwater World",
@@ -294,7 +337,8 @@
       "template_History_id": 13,
       "imgUrl": "https://tse3.mm.bing.net/th?id=OIP.o7EweG8Sy9Qq7zLhRWYkmgHaMo&pid=Api&P=0&h=180",
       "id": "13",
-      "portfolio_id": 13
+      "portfolio_id": 13,
+      "genre": "drama"
     },
     {
       "title": "Fantasy Castle",
@@ -320,7 +364,8 @@
       "template_History_id": 15,
       "imgUrl": "https://tse2.mm.bing.net/th?id=OIP.L9GCrCznPuEmHSIHTIltkQHaLZ&pid=Api&P=0&h=180",
       "id": "15",
-      "portfolio_id": 15
+      "portfolio_id": 15,
+      "genre": "drama"
     },
     {
       "title": "Forest Spirit",
@@ -338,7 +383,7 @@
     {
       "title": "El Alquimista",
       "description": "El Alquimista es una novela escrita por Paulo Coelho que sigue la historia de Santiago, un joven pastor que emprende un viaje en busca de su tesoro personal.",
-      "date_publish": "2024-04-25",
+      "date_publish": "2024-04-10",
       "type": "book",
       "likes": 3,
       "views": 512,
@@ -346,12 +391,13 @@
       "template_History_id": 17,
       "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.uKXYEcaOZMGtNhEBVV77HgHaLH&pid=Api&P=0&h=180",
       "id": "17",
-      "portfolio_id": 17
+      "portfolio_id": 17,
+      "genre": "drama"
     },
     {
       "title": "Sunset",
       "description": "An illustration depicting a beautiful sunset over the ocean.",
-      "date_publish": "2024-04-26",
+      "date_publish": "2024-04-02",
       "type": "ilustration",
       "likes": 254,
       "views": 547,
@@ -364,7 +410,7 @@
     {
       "title": "El Señor de los Anillos",
       "description": "El Señor de los Anillos es una trilogía escrita por J.R.R. Tolkien que sigue la aventura de Frodo Bolsón y su misión de destruir el Anillo Único.",
-      "date_publish": "2024-04-27",
+      "date_publish": "2024-04-01",
       "type": "book",
       "likes": 1540,
       "views": 3120,
@@ -372,12 +418,13 @@
       "template_History_id": 19,
       "imgUrl": "https://tse3.mm.bing.net/th?id=OIP.0-k_Byjyd50llciwHceNKQHaLd&pid=Api&P=0&h=180",
       "id": "19",
-      "portfolio_id": 19
+      "portfolio_id": 19,
+      "genre": "fantasía"
     },
     {
       "title": "Starry Night",
       "description": "An illustration depicting a starry night sky with a silhouette of trees.",
-      "date_publish": "2024-04-28",
+      "date_publish": "2024-04-01",
       "type": "ilustration",
       "likes": 740,
       "views": 1248,

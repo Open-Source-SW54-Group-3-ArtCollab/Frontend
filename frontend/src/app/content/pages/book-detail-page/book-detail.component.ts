@@ -4,7 +4,7 @@ import {TheBookDetailsComponent} from "../../../shared/components/the-book-detai
 import {FooterContentComponent} from "../../../public/components/footer-content/footer-content.component";
 
 @Component({
-  selector: 'app-book-detail',
+  selector: 'app-book-detail-page',
   standalone: true,
   imports: [
     NavbarContentComponent,

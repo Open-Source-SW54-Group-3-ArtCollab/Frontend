@@ -17,7 +17,7 @@ export class BookPopularComponent implements OnInit{
 
   books: any[] = [];
   bookData: any= null;
-  bookPopular: Book = new Book('','','','book',0,'',0,0,0);
+  bookPopular: Book = new Book('','','','book',0,'',0,0,0,'');
   ngOnInit(): void {
     this.getBooks();
   }
@@ -28,7 +28,7 @@ export class BookPopularComponent implements OnInit{
     this.bookService.getAll().subscribe((data:any) => {
       data.forEach((template:any) => {
         if(template.type === 'book'){
-          this.bookData = new Book(template.title, template.description,template.date_publish, template.type, template.id, template.imgUrl, template.likes, template.views, template.revenue);
+          this.bookData = new Book(template.title, template.description,template.date_publish, template.type, template.id, template.imgUrl, template.likes, template.views, template.revenue, template.genre);
           this.books.push(this.bookData);
           if(this.bookData.views > this.bookPopular.views){
             this.bookPopular = this.bookData;

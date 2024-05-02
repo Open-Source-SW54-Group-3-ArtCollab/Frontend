@@ -10,9 +10,9 @@ export class UsersService {
    baseUrl: string = environment.baseUrl;
   constructor(private http: HttpClient) { }
    getAll(){
-     return this.http.get(this.baseUrl);
+     return this.http.get(this.baseUrl+'/reader');
    }
    edit(id:any, name:any){
-     return this.http.patch(this.baseUrl +`/${id}`, {firstName:name} )
+     return this.http.patch(this.baseUrl+ '/reader'+`/${id}`, {firstName:name} )
    }
 }

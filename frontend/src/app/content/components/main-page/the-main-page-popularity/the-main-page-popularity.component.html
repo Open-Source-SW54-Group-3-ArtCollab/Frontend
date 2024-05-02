@@ -5,7 +5,7 @@
       <span class="font-bold flex md:self-center self-start "> Más popular por género</span>
       <button class="border-0 w-auto" mat-button [matMenuTriggerFor]="menu">Género <fa-icon [icon]="faChevronDown" [style.font-size.px]="13"></fa-icon></button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item *ngFor="let genre of genres" (click)="onGenreChange(genre.name)">
+        <button mat-menu-item *ngFor="let genre of genres" (click)="onGenreChange(genre.id)">
           {{genre.name}}
         </button>
       </mat-menu>
@@ -13,10 +13,9 @@
     </h3>
     <div class="books flex flex-col gap-5">
       <app-main-page-book-cards *ngFor="let book of books; let i = index"
-                                [bookCover]="book.bookCover"
+                                [bookCover]="book._imgUrl"
                                 [position]="i + 1"
-                                [bookGenre]="book.bookGenre"
-                                [bookTitle]="book.bookTitle"
+                                [bookTitle]="book._title"
                                 [bookWriter]="book.bookWriter"
                                 [bookIllustrator]="book.bookIllustrator"/>
     </div>
@@ -27,11 +26,11 @@
       <span class="font-bold flex md:self-center">Top 3 de hoy</span>
     </h3>
     <div class="books flex flex-col gap-5">
-      <app-main-page-book-cards *ngFor="let book of books; let i = index"
-                                [bookCover]="book.bookCover"
+      <app-main-page-book-cards *ngFor="let book of topBooks; let i = index"
+                                [bookCover]="book._imgUrl"
                                 [position]="i + 1"
-                                [bookGenre]="book.bookGenre"
-                                [bookTitle]="book.bookTitle"
+                                [bookGenre]="book._genre"
+                                [bookTitle]="book._title"
                                 [bookWriter]="book.bookWriter"
                                 [bookIllustrator]="book.bookIllustrator"/>
     </div>

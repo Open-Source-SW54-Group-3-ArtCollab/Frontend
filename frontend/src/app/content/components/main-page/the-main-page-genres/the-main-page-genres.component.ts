@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
 import {MainPageCarouselsComponent} from "../main-page-carousels/main-page-carousels.component";
+import {BookService} from "../../../service/book.service";
+import {Book} from "../../../model/book.entity";
 
 @Component({
   selector: 'app-the-main-page-genres',
@@ -13,23 +15,57 @@ import {MainPageCarouselsComponent} from "../main-page-carousels/main-page-carou
   templateUrl: './the-main-page-genres.component.html',
   styleUrl: './the-main-page-genres.component.css'
 })
-export class TheMainPageGenresComponent {
+export class TheMainPageGenresComponent implements OnInit{
 
   protected readonly faChevronRight = faChevronRight;
+  imagesDrama: { url: string, alt: string }[] = [];
+  imagesFantasy: { url: string, alt: string }[] = [];
+  bookData:any;
 
-  items = [
-    {url: 'https://picsum.photos/id/237/200/300', alt: 'Image 1'},
-    {url: 'https://picsum.photos/id/238/200/300', alt: 'Image 2'},
-    {url: 'https://picsum.photos/id/239/200/300', alt: 'Image 3'},
-    {url: 'https://picsum.photos/id/240/200/300', alt: 'Image 4'},
-    {url: 'https://picsum.photos/id/241/200/300', alt: 'Image 5'},
-  ];
+  constructor(private bookService: BookService) {
 
-  items2 = [
-    {url: 'https://picsum.photos/id/242/200/300', alt: 'Image 6'},
-    {url: 'https://picsum.photos/id/243/200/300', alt: 'Image 7'},
-    {url: 'https://picsum.photos/id/244/200/300', alt: 'Image 8'},
-    {url: 'https://picsum.photos/id/245/200/300', alt: 'Image 9'},
-    {url: 'https://picsum.photos/id/246/200/300', alt: 'Image 10'},
-  ];
+  }
+
+  ngOnInit() {
+    this.bookService.getAll().subscribe((res:any) => {
+      if (res){
+        res.filter((book: any) => book.genre === 'drama').forEach((book: any) => {
+          if (book.type === 'book') {
+            this.bookData = new Book(
+              book.title,
+              book.description,
+              book.date_publish,
+              book.type,
+              book.id,
+              book.imgUrl,
+              book.likes,
+              book.views,
+              book.revenue,
+              book.genre
+            );
+            this.imagesDrama.push({url: book.imgUrl, alt: book.title});
+          }
+        });
+        res.filter((book: any) => book.genre === 'fantasía').forEach((book: any) => {
+          if (book.type === 'book') {
+            this.bookData = new Book(
+              book.title,
+              book.description,
+              book.date_publish,
+              book.type,
+              book.id,
+              book.imgUrl,
+              book.likes,
+              book.views,
+              book.revenue,
+              book.genre
+            );
+            this.imagesFantasy.push({url: book.imgUrl, alt: book.title});
+          }
+        });
+      }
+
+    });
+  }
+
 }
