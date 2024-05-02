@@ -18,7 +18,72 @@
       "id": "2",
       "chatRoom_id": 2,
       "title": 456,
-      "created_at": "2024-04-10"
+      "created_at": "2024-04-10",
+    },
+    {
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "ALWW942"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "jQA-m5o"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "W7TeOnC"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "nIXR4QX"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "tmRbz64"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "AqUV1gw"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "aY--u43"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "WPEKwWW"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "XAPn-ms"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "iiOL9W1"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "Qjidu1Z"
     }
   ],
   "chatRoom": [
@@ -67,6 +132,55 @@
       "chat_id": 2,
       "isRead": false,
       "isSend": true
+    },
+    {
+      "id": "b92a",
+      "content": "Mucho gusto",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "16e9",
+      "content": "Es todo un placer",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "7273",
+      "content": "Hola",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "19f8",
+      "content": "Un gusto",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "5742",
+      "content": "Igualmente",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "content": "Un gusto",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true,
+      "id": "errbKwe"
+    },
+    {
+      "content": "Un gusto Miriam",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true,
+      "id": "GKqDTBz"
     }
   ],
   "portfolio": [
@@ -147,8 +261,17 @@
       "type": "artist",
       "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/mmivens.png?raw=true",
       "subscription_id": 1
+    },
+    {
+      "id": "9",
+      "name": "Flor Salvador",
+      "username": "Flor M. Salvador",
+      "email": "mmivens@gmail.com",
+      "password": "password123",
+      "type": "writer",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/mmivens.png?raw=true",
+      "subscription_id": 1
     }
-
   ],
   "reward": [
     {

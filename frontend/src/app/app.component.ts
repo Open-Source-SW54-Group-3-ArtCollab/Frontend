@@ -43,6 +43,8 @@ import {
 } from "./user/components/the-illustrator-profile/the-illustrator-profile.component";
 import {IlustratorProfileEditComponent} from "./user/pages/ilustrator-profile-edit/ilustrator-profile-edit.component";
 import {UserConnectArtistComponent} from "./user/pages/user-connect-artist/user-connect-artist.component";
+import {ArtistRoomComponent} from "./collaboration/pages/the-artist-room/artist-room.component";
+import {TheChatPageComponent} from "./collaboration/pages/the-chat-page/the-chat-page.component";
 
 @Component({
   selector: 'app-root',
@@ -59,8 +61,9 @@ import {UserConnectArtistComponent} from "./user/pages/user-connect-artist/user-
     TheBookProfileComponent,
     TheBookDetailsComponent, BookPublishPageComponent, TheDetailsPageComponent, BookDetailsEditPageComponent, MainPageComponent, BookGenrePageComponent,
 
-    TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent, IllustratorProfileComponent, TheIllustratorProfileComponent, IlustratorProfileEditComponent, UserConnectArtistComponent
+    TheUserLoginComponent, TheUserRegisterComponent, TheUserRecoverPasswordComponent, UserArtistComponent, TheWriterProfileComponent, WriterProfileComponent, TheWriterProfileEditComponent, IllustratorProfileComponent, TheIllustratorProfileComponent, IlustratorProfileEditComponent, UserConnectArtistComponent,
 
+    ArtistRoomComponent, TheChatPageComponent
 
   ],
   templateUrl: './app.component.html',
