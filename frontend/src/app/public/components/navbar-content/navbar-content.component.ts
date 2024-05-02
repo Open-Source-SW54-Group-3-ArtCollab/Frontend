@@ -5,7 +5,7 @@ import {MatIconButton} from "@angular/material/button";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListItem, MatNavList} from "@angular/material/list";
 import {MediaMatcher} from "@angular/cdk/layout";
-import {RouterLink, RouterOutlet} from "@angular/router";
+import {Router, RouterLink, RouterOutlet} from "@angular/router";
 import {NgIf} from "@angular/common";
 import {User} from "../../../shared/model/user.entity";
 import {UsersService} from "../../../shared/service/users.service";
@@ -38,7 +38,7 @@ export class NavbarContentComponent {
 
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private usersService: UsersService) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private usersService: UsersService, private router: Router) {
     this.usersService.getLoggedInUser().subscribe((user) => {
       this.loggedInUser = user;
     });
@@ -72,6 +72,10 @@ export class NavbarContentComponent {
 
   handleCloseEmailLogin() {
     this.showEmailLogin = false;
+  }
+
+  publish(){
+    this.router.navigateByUrl('/my-stories');
   }
 
 }

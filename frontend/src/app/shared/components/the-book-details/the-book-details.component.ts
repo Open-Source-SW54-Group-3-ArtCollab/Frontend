@@ -6,6 +6,7 @@ import {MatButton} from "@angular/material/button";
 import {NgForOf, NgOptimizedImage} from "@angular/common";
 import {Book} from "../../../content/model/book.entity";
 import {BookService} from "../../../content/service/book.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-the-book-details',
@@ -25,7 +26,7 @@ export class TheBookDetailsComponent {
 
   books:Book[] = [];
 
-  constructor(private bookService: BookService) {
+  constructor(private bookService: BookService, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -44,4 +45,7 @@ export class TheBookDetailsComponent {
     this.books = this.books.slice(0,3);
   }
 
+  publish(){
+    this.router.navigateByUrl('/publish-1');
+  }
 }

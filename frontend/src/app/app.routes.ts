@@ -10,6 +10,8 @@ import {
   TheMonetizationApplicationComponent
 } from "./monetization/pages/the-monetization-application/the-monetization-application.component";
 import {UserArtistComponent} from "./user/pages/user-artist/user-artist.component";
+import {TheBookDetailsComponent} from "./shared/components/the-book-details/the-book-details.component";
+import {BookPublishPageComponent} from "./content/pages/book-publish-page/book-publish-page.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -26,4 +28,6 @@ export const routes: Routes = [
   {path:'monetization', component: TheMonetizationApplicationComponent},
   {path:'',redirectTo:'/artist', pathMatch:'full'},
   {path:'artist', component:UserArtistComponent},
+  {path:'my-stories', component: TheBookDetailsComponent},
+  {path:'publish-1', component: BookPublishPageComponent},
 ];
