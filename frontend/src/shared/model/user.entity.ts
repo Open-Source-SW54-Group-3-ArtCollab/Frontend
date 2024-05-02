@@ -12,7 +12,6 @@ export class User {
     this._id = id;
     this._username = username;
     this._name = name;
-
     this._email = email;
     this._type = type;
     this._subscription_id = subscription;
@@ -28,12 +27,20 @@ export class User {
     this._id = value;
   }
 
-  get getFirstName() {
+  get getName() {
     return this._name;
   }
 
-  set firstName(value: any) {
+  set name(value: any) {
     this._name = value;
+  }
+
+  get getUsername() {
+    return this._username;
+  }
+
+  set username(value: any) {
+    this._username = value;
   }
 
 

@@ -147,6 +147,16 @@
       "type": "artist",
       "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/mmivens.png?raw=true",
       "subscription_id": 1
+    },
+    {
+      "id": "9",
+      "name": "Flor Salvador",
+      "username": "Flor M. Salvador",
+      "email": "mmivens@gmail.com",
+      "password": "password123",
+      "type": "writer",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/mmivens.png?raw=true",
+      "subscription_id": 1
     }
 
   ],

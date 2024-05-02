@@ -4,7 +4,7 @@ import {faEye, faHeart} from "@fortawesome/free-solid-svg-icons";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {MatButton} from "@angular/material/button";
 import {NgForOf, NgOptimizedImage} from "@angular/common";
-import {Book} from "../../../content/model/book.entity";
+import {Book} from "../../../content/models/book.entity";
 import {BookService} from "../../../content/service/book.service";
 
 @Component({
