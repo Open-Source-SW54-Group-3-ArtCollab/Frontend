@@ -76,9 +76,9 @@ export class TheUserRegisterComponent implements OnInit{
       email: this.email.value,
       password: this.password.value,
       username: this.username.value,
-      firstName: this.first_name,
-      lastName: this.last_name,
+      name: this.first_name + ' ' + this.last_name,
       imgUrl: this.imgUrl,
+      subscription_id: 1,
       type: this.type
     }).subscribe(
       response => console.log('Usuario registrado con éxito', response),
