@@ -23,6 +23,7 @@ import {UserConnectArtistComponent} from "./user/pages/user-connect-artist/user-
 import {ArtistRoomComponent} from "./collaboration/pages/the-artist-room/artist-room.component";
 import {TheChatSectionComponent} from "./collaboration/components/the-chat-section/the-chat-section.component";
 import {TheChatPageComponent} from "./collaboration/pages/the-chat-page/the-chat-page.component";
+import {BookDetailComponent} from "./content/pages/book-detail-page/book-detail.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -39,7 +40,7 @@ export const routes: Routes = [
   {path:'monetization', component: TheMonetizationApplicationComponent},
   {path:'',redirectTo:'/artist', pathMatch:'full'},
   {path:'artist', component:UserArtistComponent},
-  {path:'my-stories', component: TheBookDetailsComponent},
+  {path:'my-stories', component: BookDetailComponent},
   {path:'publish-1', component: BookPublishPageComponent},
   {path:'book-profile', component: BookProfileComponent},
   {path:'chapter', component: ChapterComponent},
