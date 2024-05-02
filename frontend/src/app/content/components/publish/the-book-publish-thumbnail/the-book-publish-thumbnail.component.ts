@@ -2,7 +2,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 
 @Component({
-  selector: 'app-the-book-publish-thumbnail',
+  selector: 'the-book-publish-thumbnail',
   standalone: true,
     imports: [
         MatIcon

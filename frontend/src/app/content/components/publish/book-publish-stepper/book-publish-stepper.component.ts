@@ -13,6 +13,7 @@ import {
 import {
   TheBookPublishSummaryTextareaComponent
 } from "../the-book-publish-summary-textarea/the-book-publish-summary-textarea.component";
+import {TheBookPublishThumbnailComponent} from "../the-book-publish-thumbnail/the-book-publish-thumbnail.component";
 @Component({
   selector: 'app-book-publish-stepper',
   standalone: true,
@@ -21,7 +22,7 @@ import {
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule, TheBookPublishGenresSelectComponent, TheBookPublishTitleInputComponent, TheBookPublishSummaryTextareaComponent,],
+    MatInputModule, TheBookPublishGenresSelectComponent, TheBookPublishTitleInputComponent, TheBookPublishSummaryTextareaComponent, TheBookPublishThumbnailComponent,],
   templateUrl: './book-publish-stepper.component.html',
   styleUrl: './book-publish-stepper.component.css'
 })
