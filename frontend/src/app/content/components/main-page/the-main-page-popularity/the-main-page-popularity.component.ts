@@ -39,7 +39,6 @@ export class TheMainPagePopularityComponent implements OnInit{
 
   onGenreChange(genre: any) {
     this.currentGenre = genre;
-    console.log(this.currentGenre);
     this.getBooks();
   }
 

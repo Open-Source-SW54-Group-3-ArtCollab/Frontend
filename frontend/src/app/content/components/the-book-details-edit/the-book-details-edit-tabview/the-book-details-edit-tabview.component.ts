@@ -43,13 +43,10 @@ export class TheBookDetailsEditTabviewComponent implements OnInit{
   getChapters(){
     this.bookService.getChapters().subscribe((data:any) => {
            data.forEach((chapter: any) => {
-             console.log(chapter.book_id);
-             console.log(this.bookData.id);
              if(String(chapter.book_id) === String(this.bookData.id)){
                this.bookChapters.push(chapter);
              }
            });
-      console.log(this.bookChapters);
     });
   }
   setEditMode(){

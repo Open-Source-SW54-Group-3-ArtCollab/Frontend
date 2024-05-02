@@ -7,6 +7,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faGoogle, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-user-login',
@@ -18,6 +19,7 @@ import {faFacebook, faGoogle, faTwitter} from "@fortawesome/free-brands-svg-icon
     TheUserLoginEmailComponent,
     MatIconModule,
     FontAwesomeModule,
+    RouterLink,
   ],
   templateUrl: './the-user-login.component.html',
   styleUrl: './the-user-login.component.css'

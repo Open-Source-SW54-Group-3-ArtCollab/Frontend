@@ -37,7 +37,6 @@ export class TheArtistRoomComponent implements OnInit {
                     this.artistData = new User( user.id,user.name, user.email, user.type,user.subscription_id, user.imgUrl, user.password, user.username);
                }
            });
-          console.log(this.artistData)
       });
   }
   getWriter(){
@@ -51,9 +50,7 @@ export class TheArtistRoomComponent implements OnInit {
   }
 
   createChat(){
-     this.chatService.createChat({ chatRoom_id:1,title:'New Chat',created_date:'2024-05-02'}).subscribe((data:any)=>{
-          console.log(data);
-     });
+     this.chatService.createChat({ chatRoom_id:1,title:'New Chat',created_date:'2024-05-02'}).subscribe((data:any)=>{});
   }
 
   getCurrentChatRoom(){

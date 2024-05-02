@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MainPageCarouselsComponent} from "../main-page-carousels/main-page-carousels.component";
 import {BookService} from "../../../service/book.service";
 import {Book} from "../../../model/book.entity";
@@ -14,7 +14,7 @@ import {User} from "../../../../shared/model/user.entity";
   templateUrl: './the-main-page-popular-artist.component.html',
   styleUrl: './the-main-page-popular-artist.component.css'
 })
-export class TheMainPagePopularArtistComponent {
+export class TheMainPagePopularArtistComponent implements OnInit{
   imagesArtists: { url: string, alt: string, name: string }[] = [];
 
   userData:any;
@@ -43,7 +43,6 @@ export class TheMainPagePopularArtistComponent {
               user.username
             );
             this.imagesArtists.push({url: user.imgUrl, alt: user.name, name: user.name});
-            console.log('Artista: ', this.userData);
           }
         });
       }

@@ -11,6 +11,7 @@ import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {UsersService} from "../../../shared/service/users.service";
 import {NgIf} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-the-user-register',
@@ -27,7 +28,8 @@ import {NgIf} from "@angular/common";
     FaIconComponent,
     NgIf,
     ReactiveFormsModule,
-    MatError
+    MatError,
+    RouterLink
   ],
   templateUrl: './the-user-register.component.html',
   styleUrl: './the-user-register.component.css'

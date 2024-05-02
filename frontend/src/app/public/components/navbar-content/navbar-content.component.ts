@@ -5,7 +5,7 @@ import {MatIconButton} from "@angular/material/button";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListItem, MatNavList} from "@angular/material/list";
 import {MediaMatcher} from "@angular/cdk/layout";
-import {RouterLink} from "@angular/router";
+import {RouterLink, RouterOutlet} from "@angular/router";
 import {NgIf} from "@angular/common";
 import {User} from "../../../shared/model/user.entity";
 import {UsersService} from "../../../shared/service/users.service";
@@ -25,7 +25,8 @@ import {TheUserLoginComponent} from "../../../user/components/the-user-login/the
     RouterLink,
     TheUserLoginEmailComponent,
     NgIf,
-    TheUserLoginComponent
+    TheUserLoginComponent,
+    RouterOutlet
   ],
   templateUrl: './navbar-content.component.html',
   styleUrl: './navbar-content.component.css'
@@ -40,7 +41,6 @@ export class NavbarContentComponent {
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private usersService: UsersService) {
     this.usersService.getLoggedInUser().subscribe((user) => {
       this.loggedInUser = user;
-      console.log(this.loggedInUser);
     });
     this.mobileQuery = media.matchMedia('(max-width: 1024px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
@@ -52,9 +52,6 @@ export class NavbarContentComponent {
 
   }
 
-  ngOnInit(): void {
-
-  }
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
@@ -71,9 +68,7 @@ export class NavbarContentComponent {
     this.showLogin = false;
   }
 
-  openEmailLogin() {
-    this.showEmailLogin = true;
-  }
+
 
   handleCloseEmailLogin() {
     this.showEmailLogin = false;

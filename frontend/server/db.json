@@ -305,7 +305,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit mauris ornare malesuada himenaeos eleifend morbi, vivamus nostra faucibus platea nisl nec lacinia hendrerit ultricies id maecenas diam. Eget vel aliquet nam penatibus vulputate felis dapibus magnis montes auctor ut, augue placerat praesent class condimentum litora eros sociis iaculis. ",
       "date_publish": "2024-04-09",
       "type": "book",
-      "likes": 17,
+      "likes": 21,
       "views": 20,
       "templateState_id": 1,
       "template_History_id": 1,
@@ -332,7 +332,7 @@
       "description": "Cien años de soledad narra la historia de la familia Buendía a lo largo de varias generaciones en el ficticio pueblo de Macondo. La novela combina realismo mágico con elementos históricos y sociales, creando un mundo rico y evocador.",
       "date_publish": "1967-05-30",
       "type": "book",
-      "likes": 6,
+      "likes": 10,
       "views": 20000,
       "templateState_id": 3,
       "template_History_id": 3,
@@ -597,16 +597,6 @@
     }
   ],
   "login": [
-    {
-      "id": "d327",
-      "_email": "flor_",
-      "_password": "123456",
-      "_firstName": "Miriam",
-      "_lastName": "Bonastre",
-      "_username": "flor_salvador01",
-      "_type": "writer",
-      "_subscription_id": "1",
-      "_imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/cb26f6d87e9ad5e5d5d1ff05263f034c0a6c96b7/frontend/src/assets/images/flor-profile.png?raw=true"
-    }
+    {}
   ]
 }

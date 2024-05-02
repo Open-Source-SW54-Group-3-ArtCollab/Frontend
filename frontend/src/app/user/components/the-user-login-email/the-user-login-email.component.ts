@@ -60,7 +60,6 @@ export class TheUserLoginEmailComponent {
         imgUrl: "../src/assets/images/flor-profile.png"
 
       }).subscribe((user) => {
-        console.log(user);
       });
     }
   }
