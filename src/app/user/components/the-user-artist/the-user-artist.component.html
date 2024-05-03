@@ -8,12 +8,12 @@
     <p class="text-3xl font-bold text-center" aria-label="Artistas">Artistas</p>
   </mat-card>
 
-  <mat-grid-list cols="3" rowHeight="2:2">
-    <mat-grid-tile *ngFor="let artist of artists">
-      <mat-card class="flex w-80 mx-auto cursor-pointer" routerLink="/illustrator-profile">
-        <img mat-card-image [src]="artist._imgUrl" class="w-80 contain-content">
+  <div class="flex flex-col flex-wrap gap-20 md:gap-36 lg:gap-52 lg:flex-row">
+    <div *ngFor="let artist of artists">
+      <mat-card class="flex justify-center items-center w-80 mx-auto cursor-pointer" routerLink="/illustrator-profile">
+        <img mat-card-image [src]="artist._imgUrl" class=" w-56 lg:w-80 contain-content">
         <mat-card-content class="text-center font-semibold text-2xl mt-5">{{artist._name}}</mat-card-content>
       </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+    </div>
+  </div>
 </section>
