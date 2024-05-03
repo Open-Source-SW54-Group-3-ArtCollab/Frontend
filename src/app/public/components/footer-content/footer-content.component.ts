@@ -10,7 +10,8 @@ import {RouterLink} from "@angular/router";
   standalone: true,
   imports: [
     MatIcon,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterLink
   ],
   templateUrl: './footer-content.component.html',
   styleUrl: './footer-content.component.css'
