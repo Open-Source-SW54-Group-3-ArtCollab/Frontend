@@ -6,7 +6,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListItem, MatNavList} from "@angular/material/list";
 import {MediaMatcher} from "@angular/cdk/layout";
 import {Router, RouterLink, RouterOutlet} from "@angular/router";
-import {NgIf} from "@angular/common";
+import {NgIf, NgOptimizedImage} from "@angular/common";
 import {User} from "../../../shared/model/user.entity";
 import {UsersService} from "../../../shared/service/users.service";
 import {TheUserLoginEmailComponent} from "../../../user/components/the-user-login-email/the-user-login-email.component";
@@ -26,7 +26,8 @@ import {TheUserLoginComponent} from "../../../user/components/the-user-login/the
     TheUserLoginEmailComponent,
     NgIf,
     TheUserLoginComponent,
-    RouterOutlet
+    RouterOutlet,
+    NgOptimizedImage
   ],
   templateUrl: './navbar-content.component.html',
   styleUrl: './navbar-content.component.css'
