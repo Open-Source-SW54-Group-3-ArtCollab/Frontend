@@ -17,6 +17,7 @@ import {FormsModule} from "@angular/forms";
 import {Chat} from "../../models/chat-entity/chat.entity";
 import {UsersService} from "../../../shared/service/users.service";
 import {User} from "../../../shared/model/user.entity";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'the-chat-section',
@@ -24,7 +25,8 @@ import {User} from "../../../shared/model/user.entity";
   imports: [
     FaIconComponent,
     NgOptimizedImage,
-    FormsModule
+    FormsModule,
+    RouterLink
   ],
   templateUrl: './the-chat-section.component.html',
   styleUrl: './the-chat-section.component.css'

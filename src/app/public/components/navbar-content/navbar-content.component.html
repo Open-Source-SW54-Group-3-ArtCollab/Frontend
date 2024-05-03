@@ -47,7 +47,7 @@
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list class="sidenav-list">
-        <img src="./assets/logo.png"  class="logo" width="60" height="50" alt="Artcollab Logo">
+        <img src="./assets/logo.png" routerLink="/home"  class="logo" width="60" height="50" alt="Artcollab Logo">
         <span routerLink="/genre"> Géneros </span>
         <span routerLink="/populars">Populares </span>
         <span routerLink="/subscription"> Suscripciones  </span>
