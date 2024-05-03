@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/public/components/footer-content/footer-content.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/public/components/footer-content/footer-content.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/public/components/navbar-content/navbar-content.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/public/components/navbar-content/navbar-content.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/public/components/navbar-content/navbar-content.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/public/components/navbar-content/navbar-content.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/the-user-connect-artist/the-user-connect-artist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/the-user-connect-artist/the-user-connect-artist.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/user/components/the-illustrator-profile/the-illustrator-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/user/components/the-illustrator-profile/the-illustrator-profile.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LordMathi2741"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend.git",
+    "accountId": "a07131e3-8f1c-451b-b3a1-f8db89910fc4"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -56,7 +70,7 @@
     "npm.ng.executor": "Run",
     "npm.start.executor": "Run",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "/Users/lordmathi2741/Documents/Cursos/Open Source-Upc/Frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -95,6 +109,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -116,6 +137,7 @@
       <workItem from="1714678005248" duration="5925000" />
       <workItem from="1714684388763" duration="1645000" />
       <workItem from="1714696918969" duration="978000" />
+      <workItem from="1714705977950" duration="2617000" />
     </task>
     <servers />
   </component>
