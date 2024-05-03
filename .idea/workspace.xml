@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/collaboration/components/the-artist-room/the-artist-room.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collaboration/components/the-artist-room/the-artist-room.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/collaboration/components/the-chat-section/the-chat-section.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collaboration/components/the-chat-section/the-chat-section.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/collaboration/components/the-chat-section/the-chat-section.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collaboration/components/the-chat-section/the-chat-section.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/public/components/navbar-content/navbar-content.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/public/components/navbar-content/navbar-content.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +136,7 @@
       <workItem from="1714705977950" duration="2764000" />
       <workItem from="1714713038361" duration="3784000" />
       <workItem from="1714716859797" duration="226000" />
-      <workItem from="1714745416291" duration="355000" />
+      <workItem from="1714745416291" duration="666000" />
     </task>
     <servers />
   </component>
