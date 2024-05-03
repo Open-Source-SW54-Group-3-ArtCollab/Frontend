@@ -53,14 +53,14 @@ export class TheUserLoginEmailComponent {
 
     if (this.email.value === 'miriam_bonastre@gmail.com' && this.password.value === '123456') {
       this.usersService.loginUser({
-        "_email": this.email.value,
-       "_password": this.password.value,
-        "_name": "Flor M. Salvador",
-        "_username": "flor_salvador01",
-        "_type": "writer",
-        "_subscription_id": "1",
-        "_imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/d048f86736011fa911c88e559fe396244bb8c426/frontend/src/assets/images/flor-profile.png?raw=true",
-        "id": "d327",
+        email: this.email.value,
+       password: this.password.value,
+        name: "Flor M. Salvador",
+        _username: "flor_salvador01",
+        type: "writer",
+        subscription_id: "1",
+        _imgUrl: "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/d048f86736011fa911c88e559fe396244bb8c426/frontend/src/assets/images/flor-profile.png?raw=true",
+        id: "d327",
       }).subscribe((user) => {
 
         console.log('User logged in', user);
