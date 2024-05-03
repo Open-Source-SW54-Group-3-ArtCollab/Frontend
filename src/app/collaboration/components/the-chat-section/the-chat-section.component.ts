@@ -58,6 +58,7 @@ export class TheChatSectionComponent implements OnInit{
       data.forEach((user:any)=>{
         if(user.type==='artist' && user.name === 'Miriam Bonastre'){
           this.artistData = new User( user.id,user.name, user.email, user.type,user.subscription_id, user.imgUrl, user.password, user.username);
+          console.log(this.artistData)
         }
       });
     });
@@ -90,13 +91,11 @@ export class TheChatSectionComponent implements OnInit{
   }
 
 
-
   protected readonly faPhone = faPhone;
   protected readonly faVideo = faVideo;
-  protected readonly faImage = faImage;
-  protected readonly faFaceSmile = faFaceSmile;
-
   protected readonly faUser = faUser;
   protected readonly faSearch = faSearch;
   protected readonly faChevronRight = faChevronRight;
+  protected readonly faImage = faImage;
+  protected readonly faFaceSmile = faFaceSmile;
 }

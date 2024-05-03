@@ -48,12 +48,11 @@
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list class="sidenav-list">
         <img src="./assets/logo.png"  class="logo" width="60" height="50" alt="Artcollab Logo">
-        <span> Géneros </span>
-        <span>Populares </span>
-        <span> Suscripciones </span>
-        <span> Recomendaciones </span>
-        <span> Monetización </span>
-        <span> Artistas </span>
+        <span routerLink="/genre"> Géneros </span>
+        <span routerLink="/populars">Populares </span>
+        <span routerLink="/subscription"> Suscripciones  </span>
+        <span routerLink="/monetization"> Monetización </span>
+        <span routerLink="/artist"> Artistas </span>
         <div class="login-container pt-10 flex flex-col gap-5" *ngIf="loggedInUser; else notLoggedIn">
           <button class="bg-cyan-400 rounded-lg text-cyan-700 p-2"> Publicar </button>
           <div class="user-info" routerLink="/writer-profile">
