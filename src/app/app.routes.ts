@@ -25,6 +25,7 @@ import {TheChatSectionComponent} from "./collaboration/components/the-chat-secti
 import {TheChatPageComponent} from "./collaboration/pages/the-chat-page/the-chat-page.component";
 import {ChapterPreviewComponent} from "./content/components/chapter/chapter-preview/chapter-preview.component";
 import {BookDetailComponent} from "./content/pages/book-detail-page/book-detail.component";
+import {TheAboutPageComponent} from "./content/pages/about-page/the-about-page/the-about-page.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -61,5 +62,7 @@ export const routes: Routes = [
   {path:'',redirectTo:'/boulevard-book', pathMatch:'full'},
   {path:'books-profile', component: BookProfileComponent},
   {path:'',redirectTo:'/chapter-preview', pathMatch:'full'},
-  {path:'chapter-preview', component: ChapterPreviewComponent}
+  {path:'chapter-preview', component: ChapterPreviewComponent},
+  {path:'',redirectTo:'/about', pathMatch:'full'},
+  {path:'about', component: TheAboutPageComponent}
 ];
