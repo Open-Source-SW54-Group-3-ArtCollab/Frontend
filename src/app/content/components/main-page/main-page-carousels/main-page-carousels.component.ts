@@ -4,6 +4,7 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {MatButton} from "@angular/material/button";
 import {MatCard, MatCardImage} from "@angular/material/card";
 import {NgForOf, NgIf} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-main-page-carousels',
@@ -14,7 +15,8 @@ import {NgForOf, NgIf} from "@angular/common";
     MatCard,
     MatCardImage,
     NgForOf,
-    NgIf
+    NgIf,
+    RouterLink
   ],
   templateUrl: './main-page-carousels.component.html',
   styleUrl: './main-page-carousels.component.css'
@@ -23,6 +25,7 @@ export class MainPageCarouselsComponent{
 
   @Input() title!: string;
   @Input() items: {url: string, alt: string, name?: string}[] = [];
+  @Input() link!: string;
 
 
   currentImageIndex = 0;
