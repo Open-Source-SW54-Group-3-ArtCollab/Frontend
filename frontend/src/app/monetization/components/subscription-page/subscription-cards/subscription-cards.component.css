@@ -17,15 +17,11 @@ button{
   font-family: Nunito Sans;
 }
 
-@media (width>=430px) and (width<=932px){
-  .cards-container{
-    width: 80%;
-  }
-}
-
-@media (width>=375px) and (width<=844px){
+@media screen and (max-width: 600px){
   .cards-container{
     width: 90%;
   }
 }
+
+
 

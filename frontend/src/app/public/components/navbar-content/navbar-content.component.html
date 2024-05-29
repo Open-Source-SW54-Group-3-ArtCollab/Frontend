@@ -17,16 +17,6 @@
         </div>
       </div>
       <div class="flex justify-center items-center gap-4 w-full">
-        <div class="search-input">
-          <div class="flex">
-            <div class="search-btn mt-1">
-              <mat-icon>search</mat-icon>
-            </div>
-            <div class="input-btn">
-              <input class="lg:p-1" type="text"/>
-            </div>
-          </div>
-        </div>
         <div class="logged-container flex gap-3 h-full" *ngIf="loggedInUser; else notLoggedIn">
           <button class="publish-btn bg-cyan-400 rounded-lg text-cyan-700 p-2 m-2" (click)="publish()"> Publicar </button>
           <div class="user-info bg-cyan-600 text-white gap-3  rounded-lg flex align-middle justify-center p-2  m-2 px-4" routerLink="/writer-profile">
