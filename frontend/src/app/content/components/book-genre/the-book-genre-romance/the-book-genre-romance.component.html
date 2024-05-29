@@ -12,7 +12,7 @@
         <p class="text-2xl">{{ book.title }}</p>
         <div class="flex flex-row justify-start">
           <div class="flex justify-center items-center">
-            <fa-icon [icon]="faHeart" size="xl" class=" mb-3 mr-2"></fa-icon>
+            <fa-icon [icon]="faHeart" (click)="increaseLikes(book.id, book)" size="xl" class=" mb-3 mr-2"></fa-icon>
           </div>
           <p class="text-xl">{{ book.likes }}</p>
 
