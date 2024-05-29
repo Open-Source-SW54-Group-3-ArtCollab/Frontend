@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/content/components/book-genre/the-book-genre-fantasy/the-book-genre-fantasy.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/content/components/book-genre/the-book-genre-fantasy/the-book-genre-fantasy.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/content/components/book-genre/the-book-genre-fantasy/the-book-genre-fantasy.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/content/components/book-genre/the-book-genre-fantasy/the-book-genre-fantasy.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/content/components/chapter/chapter/chapter.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/content/components/chapter/chapter/chapter.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/content/service/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/content/service/book.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/public/components/footer-content/footer-content.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/public/components/footer-content/footer-content.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environtments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environtments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +115,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
       </set>
     </attachedChunks>
   </component>
@@ -137,6 +144,10 @@
       <workItem from="1714713038361" duration="3784000" />
       <workItem from="1714716859797" duration="226000" />
       <workItem from="1714745416291" duration="666000" />
+      <workItem from="1714766634630" duration="166000" />
+      <workItem from="1714767076743" duration="1176000" />
+      <workItem from="1714788571292" duration="2000" />
+      <workItem from="1716991128429" duration="971000" />
     </task>
     <servers />
   </component>

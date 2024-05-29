@@ -190,35 +190,35 @@
   margin-left: 4rem;
 }
 .bluebg{
-  background-color: #7AC8D0 !important;
+  background-color: #7AC8D0;
 }
 .items-center {
-  align-items: center !important;
+  align-items: center;
 }
 .justify-center{
-  justify-content: center !important;
+  justify-content: center;
 
 }
 .colorblue{
-  background-color: blue !important;
+  background-color: blue;
 }
 .text-white{
-  color: white; !important;
+  color: white;
 }
 .colorblack{
-  background-color: black !important;
+  background-color: black;
 }
 .justify-content-between{
-  justify-content: space-between !important;
+  justify-content: space-between;
 }
 .btn-white{
   background-color: transparent;
-  color: white !important;
+  color: white;
   border-radius: 10%;
 }
 .btn-personalizado {
   background-color: #097682;
-  color: white !important;
+  color: white;
   border-radius: 10%;
 }
 .btn-regresar {

@@ -18,6 +18,6 @@ export class BookService {
     return this.http.patch(this.baseUrl + '/chapters/' + id, {title: data});
   }
   increaseLike(id: number, likes:number){
-    return this.http.patch(this.baseUrl + '/template/' + id , {likes: likes});
+    return this.http.patch(this.baseUrl + '/template/' + id , {likes: likes + 1});
   }
 }
