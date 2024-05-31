@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
@@ -10,5 +10,9 @@ import {FormsModule} from '@angular/forms';
   styleUrl: './the-book-publish-title-input.component.css'
 })
 export class TheBookPublishTitleInputComponent {
+  @Output() titleChanged = new EventEmitter<string>();
 
+  onTitleChange(title: string) {
+    this.titleChanged.emit(title);
+  }
 }

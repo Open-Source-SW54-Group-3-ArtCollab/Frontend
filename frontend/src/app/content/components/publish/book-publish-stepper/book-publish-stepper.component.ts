@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import {FormBuilder, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -53,5 +53,31 @@ export class BookPublishStepperComponent {
     }
   }
 
+  selectedGenre1!: string;
+  selectedGenre2!: string;
+  title!: string;
+  summary!: string;
+
   constructor(private _formBuilder: FormBuilder) {}
+
+  onGenre1Selected(genre: string) {
+    this.selectedGenre1 = genre;
+    console.log('Género 1 seleccionado: ', this.selectedGenre1);
+  }
+
+  onGenre2Selected(genre: string) {
+    this.selectedGenre2 = genre;
+    console.log('Género 2 seleccionado: ', this.selectedGenre2);
+  }
+
+  onTitleChanged(title: string) {
+    this.title = title;
+    console.log('Título: ', this.title);
+  }
+
+  onSummaryChanged(summary: string) {
+    this.summary = summary;
+    console.log('Resumen: ', this.summary);
+  }
+
 }

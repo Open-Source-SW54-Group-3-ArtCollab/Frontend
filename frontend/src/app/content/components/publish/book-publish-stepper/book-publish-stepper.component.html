@@ -9,16 +9,16 @@
         <div class="step-1">
           <div class="flex flex-col">
             <div class="mt-4 mb-16">
-              <app-the-book-publish-genres-select/>
+              <app-the-book-publish-genres-select (genre1Selected)="onGenre1Selected($event)" (genre2Selected)="onGenre2Selected($event)"/>
             </div>
             <div class="input-textarea flex flex-col space-y-14 ">
               <div class="flex flex-col space-y-4">
                 <mat-label>Título</mat-label>
-                <app-the-book-publish-title-input/>
+                <app-the-book-publish-title-input (titleChanged)="onTitleChanged($event)"/>
               </div>
               <div class="flex flex-col space-y-4">
                 <mat-label>Resumen</mat-label>
-                <app-the-book-publish-summary-textarea/>
+                <app-the-book-publish-summary-textarea (summaryChanged)="onSummaryChanged($event)"></app-the-book-publish-summary-textarea>
               </div>
             </div>
           </div>

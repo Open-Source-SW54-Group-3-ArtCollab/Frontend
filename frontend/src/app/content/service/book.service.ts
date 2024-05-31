@@ -20,4 +20,13 @@ export class BookService {
   increaseLike(id: number, likes:number){
     return this.http.patch(this.baseUrl + '/template/' + id , {likes: likes});
   }
+  createBook(data: any){
+    return this.http.post(this.baseUrl + '/template', {title: data});
+  }
+  updateBook(id: number, data: any){
+    return this.http.put(this.baseUrl + '/template/' + id, {title: data});
+  }
+  deleteBook(id: number){
+    return this.http.delete(this.baseUrl + '/template/' + id);
+  }
 }
