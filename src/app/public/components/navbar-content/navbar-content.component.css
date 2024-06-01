@@ -1,13 +1,13 @@
 .navbar-tools img{
   cursor: pointer;
-  ;
+;
 }
 .example-icon {
   display: none;
 }
 span:hover{
-   color: #11AEBF;
-   cursor: pointer;
+  color: #11AEBF;
+  cursor: pointer;
 }
 
 span{
@@ -133,4 +133,3 @@ button{
     width: 100px;
   }
 }
-

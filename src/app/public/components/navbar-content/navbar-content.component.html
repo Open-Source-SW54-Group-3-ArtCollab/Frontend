@@ -7,26 +7,16 @@
             <mat-icon>menu</mat-icon>
           </button>
         </div>
-          <div class="toolbar-sections flex justify-center items-center gap-8">
-            <img routerLink="/home" src="./assets/logo.png"  class="logo hidden lg:block cursor-pointer" width="60" height="50" alt="Artcollab Logo">
-            <span routerLink="/genre"> Géneros </span>
-            <span routerLink="/populars">Populares </span>
-            <span routerLink="/subscription"> Suscripciones  </span>
-            <span routerLink="/monetization"> Monetización </span>
-            <span routerLink="/artist"> Artistas </span>
-          </div>
+        <div class="toolbar-sections flex justify-center items-center gap-8">
+          <img routerLink="/home" src="./assets/logo.png"  class="logo hidden lg:block cursor-pointer" width="60" height="50" alt="Artcollab Logo">
+          <span routerLink="/genre"> Géneros </span>
+          <span routerLink="/populars">Populares </span>
+          <span routerLink="/subscription"> Suscripciones  </span>
+          <span routerLink="/monetization"> Monetización </span>
+          <span routerLink="/artist"> Artistas </span>
+        </div>
       </div>
       <div class="flex justify-center items-center gap-4 w-full">
-        <div class="search-input">
-          <div class="flex">
-            <div class="search-btn mt-1">
-              <mat-icon>search</mat-icon>
-            </div>
-            <div class="input-btn">
-              <input class="lg:p-1" type="text"/>
-            </div>
-          </div>
-        </div>
         <div class="logged-container flex gap-3 h-full" *ngIf="loggedInUser; else notLoggedIn">
           <button class="publish-btn bg-cyan-400 rounded-lg text-cyan-700 p-2 m-2" (click)="publish()"> Publicar </button>
           <div class="user-info bg-cyan-600 text-white gap-3  rounded-lg flex align-middle justify-center p-2  m-2 px-4" routerLink="/writer-profile">
