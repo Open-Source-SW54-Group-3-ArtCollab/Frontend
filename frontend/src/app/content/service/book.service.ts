@@ -17,8 +17,8 @@ export class BookService {
   editChapter(id: number, data: any){
     return this.http.patch(this.baseUrl + '/chapters/' + id, {title: data});
   }
-  increaseLike(id: number, likes:number){
-    return this.http.patch(this.baseUrl + '/template/' + id , {likes: likes + 1});
+  increaseLike(id: number,  data:any){
+    return this.http.put(this.baseUrl + '/template/' + id , data);
   }
   createBook(data: any){
     return this.http.post(this.baseUrl + '/template', data);

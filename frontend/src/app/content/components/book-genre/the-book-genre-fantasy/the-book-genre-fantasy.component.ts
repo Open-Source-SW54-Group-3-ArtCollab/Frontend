@@ -1,23 +1,24 @@
 import { Component } from '@angular/core';
-import {NgForOf} from "@angular/common";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
+import {NgForOf} from "@angular/common";
 import {faEye, faHeart} from "@fortawesome/free-solid-svg-icons";
 import {Book} from "../../../model/book.entity";
 import {BookService} from "../../../service/book.service";
 
 @Component({
-  selector: 'app-the-book-genre-comedy',
+  selector: 'app-the-book-genre-fantasy',
   standalone: true,
-  imports: [
-    NgForOf,
-    FaIconComponent
-  ],
-  templateUrl: './the-book-genre-comedy.component.html',
-  styleUrl: './the-book-genre-comedy.component.css'
+    imports: [
+        FaIconComponent,
+        NgForOf
+    ],
+  templateUrl: './the-book-genre-fantasy.component.html',
+  styleUrl: './the-book-genre-fantasy.component.css'
 })
-export class TheBookGenreComedyComponent {
+export class TheBookGenreFantasyComponent {
 
   protected readonly faHeart = faHeart;
+
   books:Book[] = [];
 
   constructor(private bookService: BookService) {
@@ -39,12 +40,11 @@ export class TheBookGenreComedyComponent {
     this.books = this.books.slice(0,6);
   }
 
-  increaseLikes(id: number, likes: number) {
-    this.bookService.increaseLike(id, likes).subscribe((data: any) => {
-      this.getBooks();
+  increaseLikes(id: number, book: any) {
+    this.bookService.increaseLike(id,{likes: book.likes + 1}).subscribe((data: any) => {
+      book.likes = book.likes + 1;
     });
   }
 
   protected readonly faEye = faEye;
 }
-
