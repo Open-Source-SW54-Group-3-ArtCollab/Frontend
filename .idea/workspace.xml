@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="" />
+    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/server/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/book-publish-stepper/book-publish-stepper.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/book-publish-stepper/book-publish-stepper.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/book-publish-stepper/book-publish-stepper.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/book-publish-stepper/book-publish-stepper.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-thumbnail/the-book-publish-thumbnail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-thumbnail/the-book-publish-thumbnail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-thumbnail/the-book-publish-thumbnail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-thumbnail/the-book-publish-thumbnail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/model/book.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/model/book.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/service/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/service/book.service.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,33 +35,36 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2fWp0K7Q9YJvv5eMDjp3VbNLw0f" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;bounded-context/content&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CAMILA/UPC/Ciclo 6/Open source/Proyecto/Frontend/Frontend/frontend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.ng.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\SAMIR\\repos\\Frontend\\frontend\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "bounded-context/content",
+    "last_opened_file_path": "D:/CAMILA/UPC/Ciclo 6/Open source/Angular Proyectos/peliculas-crud",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.ng.executor": "Run",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "D:\\CAMILA\\UPC\\Ciclo 6\\Open source\\Proyecto\\FrontendOriginal\\Frontend\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gustavo\OpenSource\TP\Frontend\frontend\src\assets\images" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.ng">
     <configuration name="ng" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/frontend/package.json" />
       <command value="run" />
@@ -84,7 +97,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
       </set>
     </attachedChunks>
   </component>
@@ -106,6 +119,12 @@
       <workItem from="1714366091704" duration="1945000" />
       <workItem from="1714371518305" duration="140000" />
       <workItem from="1714372094047" duration="1606000" />
+      <workItem from="1717114891690" duration="4761000" />
+      <workItem from="1717119777775" duration="4270000" />
+      <workItem from="1717174819640" duration="599000" />
+      <workItem from="1717183640174" duration="2531000" />
+      <workItem from="1717192695125" duration="79000" />
+      <workItem from="1717196645899" duration="3899000" />
     </task>
     <servers />
   </component>
