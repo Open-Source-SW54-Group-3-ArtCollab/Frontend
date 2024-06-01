@@ -15,6 +15,8 @@ import {
 } from "../the-book-publish-summary-textarea/the-book-publish-summary-textarea.component";
 import {TheBookPublishThumbnailComponent} from "../the-book-publish-thumbnail/the-book-publish-thumbnail.component";
 import {MatIcon} from "@angular/material/icon";
+import {BookService} from "../../../service/book.service";
+import {Book} from "../../../model/book.entity";
 @Component({
   selector: 'app-book-publish-stepper',
   standalone: true,
@@ -57,27 +59,70 @@ export class BookPublishStepperComponent {
   selectedGenre2!: string;
   title!: string;
   summary!: string;
+  bookCover!: string;
 
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(private _formBuilder: FormBuilder, private bookService: BookService) {}
 
   onGenre1Selected(genre: string) {
     this.selectedGenre1 = genre;
-    console.log('Género 1 seleccionado: ', this.selectedGenre1);
   }
 
   onGenre2Selected(genre: string) {
     this.selectedGenre2 = genre;
-    console.log('Género 2 seleccionado: ', this.selectedGenre2);
   }
 
   onTitleChanged(title: string) {
     this.title = title;
-    console.log('Título: ', this.title);
   }
 
   onSummaryChanged(summary: string) {
     this.summary = summary;
-    console.log('Resumen: ', this.summary);
+  }
+
+  onBookCoverChanged(bookCover: string) {
+    this.bookCover = bookCover;
+  }
+
+  onPublishClick() {
+    this.bookService.getAll().subscribe((data: any) => {
+      const maxId = data.reduce((max: number, book: any) => Number(book.id) > max ? Number(book.id) : max, 0);
+
+      const newBook = new Book(
+        this.title,
+        this.summary, // Asume que este es el campo de descripción
+        new Date().toISOString().slice(0,10),
+        'book', // Actualiza esto con el tipo correcto
+        (maxId + 1).toString(), // Asigna al nuevo libro un ID que sea uno mayor que el máximo actual
+        this.bookCover,
+        0, // Asume que este es el campo de likes
+        0, // Asume que este es el campo de vistas
+        0, // Asume que este es el campo de ingresos
+        this.selectedGenre1
+      );
+
+      // Crear un objeto con los datos del libro utilizando los métodos getter
+      const bookData = {
+        title: newBook.title,
+        description: newBook.description,
+        date_publish: newBook.date_publish,
+        type: newBook.type,
+        id: newBook.id,
+        imgUrl: newBook.imgUrl,
+        likes: newBook.likes,
+        views: newBook.views,
+        revenue: newBook.revenue,
+        genre: newBook.genre
+      };
+
+      this.bookService.createBook(bookData).subscribe(
+        response => {
+          console.log('Libro creado con éxito: ', response);
+        },
+        error => {
+          console.error('Error al crear el libro: ', error);
+        }
+      );
+    });
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 
 @Component({
@@ -11,20 +11,15 @@ import {MatIcon} from "@angular/material/icon";
   styleUrl: './the-book-publish-thumbnail.component.css'
 })
 export class TheBookPublishThumbnailComponent {
-  @ViewChild('fileInput') fileInput!: ElementRef;
+  bookData:any= {};
+
+  @Output() bookCoverChanged = new EventEmitter<any>();
 
   onIconClick() {
-    this.fileInput.nativeElement.click();
-  }
-
-  onFileSelected(event: Event) {
-    const inputElement = event.target as HTMLInputElement;
-    if (inputElement.files && inputElement.files.length > 0) {
-      const file = inputElement.files[0];
-      if (!file.type.startsWith('image/')) {
-        alert('Por favor, sube solo imágenes.');
-        return;
-      }
+    const newImageUrl = prompt('Por favor, ingresa la nueva URL de la imagen');
+    if (newImageUrl) {
+      this.bookData.imgUrl = newImageUrl;
+      this.bookCoverChanged.emit(this.bookData.imgUrl);
     }
   }
 }
