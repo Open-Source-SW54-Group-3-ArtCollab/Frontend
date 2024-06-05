@@ -11,12 +11,5 @@ import {MatIcon} from "@angular/material/icon";
   styleUrl: './the-book-publish-thumbnail.component.css'
 })
 export class TheBookPublishThumbnailComponent {
-  bookData:any= {};
 
-  onIconClick() {
-    const newImageUrl = prompt('Por favor, ingresa la nueva URL de la imagen');
-    if (newImageUrl) {
-      this.bookData.imgUrl = newImageUrl;
-    }
-  }
 }
