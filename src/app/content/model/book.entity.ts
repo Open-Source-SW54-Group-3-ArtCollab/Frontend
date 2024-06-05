@@ -96,11 +96,4 @@ export class Book {
     this._revenue = value;
   }
 
-  get genre() {
-    return this._genre;
-  }
-
-  set genre(value: any) {
-    this._genre = value;
-  }
 }

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component} from '@angular/core';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
@@ -10,9 +10,5 @@ import {FormsModule} from '@angular/forms';
   styleUrl: './the-book-publish-summary-textarea.component.css'
 })
 export class TheBookPublishSummaryTextareaComponent {
-  @Output() summaryChanged = new EventEmitter<string>();
 
-  onSummaryChange(summary: string) {
-    this.summaryChanged.emit(summary);
-  }
 }

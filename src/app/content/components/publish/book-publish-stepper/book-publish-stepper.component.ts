@@ -16,8 +16,6 @@ import {
 import {TheBookPublishThumbnailComponent} from "../the-book-publish-thumbnail/the-book-publish-thumbnail.component";
 import {MatIcon} from "@angular/material/icon";
 import {Router} from "@angular/router";
-import {BookService} from "../../../service/book.service";
-import {Book} from "../../../model/book.entity";
 @Component({
   selector: 'app-book-publish-stepper',
   standalone: true,
@@ -56,7 +54,7 @@ export class BookPublishStepperComponent {
     }
   }
 
-  constructor(private _formBuilder: FormBuilder, private router: Router, private bookService: BookService) {}
+  constructor(private _formBuilder: FormBuilder, private router: Router) {}
 
   publishBook(){
     this.router.navigateByUrl('/books-profile');
@@ -68,73 +66,6 @@ export class BookPublishStepperComponent {
 
   preview() {
     this.router.navigateByUrl('/chapter-preview');
-  }
-  selectedGenre1!: string;
-  selectedGenre2!: string;
-  title!: string;
-  summary!: string;
-  bookCover!: string;
-
-  onGenre1Selected(genre: string) {
-    this.selectedGenre1 = genre;
-  }
-
-  onGenre2Selected(genre: string) {
-    this.selectedGenre2 = genre;
-  }
-
-  onTitleChanged(title: string) {
-    this.title = title;
-  }
-
-  onSummaryChanged(summary: string) {
-    this.summary = summary;
-  }
-
-  onBookCoverChanged(bookCover: string) {
-    this.bookCover = bookCover;
-  }
-
-  onPublishClick() {
-    this.bookService.getAll().subscribe((data: any) => {
-      const maxId = data.reduce((max: number, book: any) => Number(book.id) > max ? Number(book.id) : max, 0);
-
-      const newBook = new Book(
-        this.title,
-        this.summary, // Asume que este es el campo de descripción
-        new Date().toISOString().slice(0,10),
-        'book', // Actualiza esto con el tipo correcto
-        (maxId + 1).toString(), // Asigna al nuevo libro un ID que sea uno mayor que el máximo actual
-        this.bookCover,
-        0, // Asume que este es el campo de likes
-        0, // Asume que este es el campo de vistas
-        0, // Asume que este es el campo de ingresos
-        this.selectedGenre1
-      );
-
-      // Crear un objeto con los datos del libro utilizando los métodos getter
-      const bookData = {
-        title: newBook.title,
-        description: newBook.description,
-        date_publish: newBook.date_publish,
-        type: newBook.type,
-        id: newBook.id,
-        imgUrl: newBook.imgUrl,
-        likes: newBook.likes,
-        views: newBook.views,
-        revenue: newBook.revenue,
-        genre: newBook.genre
-      };
-
-      this.bookService.createBook(bookData).subscribe(
-        response => {
-          console.log('Libro creado con éxito: ', response);
-        },
-        error => {
-          console.error('Error al crear el libro: ', error);
-        }
-      );
-    });
   }
 
 }

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component} from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 
 @Component({
@@ -13,13 +13,10 @@ import {MatIcon} from "@angular/material/icon";
 export class TheBookPublishThumbnailComponent {
   bookData:any= {};
 
-  @Output() bookCoverChanged = new EventEmitter<any>();
-
   onIconClick() {
     const newImageUrl = prompt('Por favor, ingresa la nueva URL de la imagen');
     if (newImageUrl) {
       this.bookData.imgUrl = newImageUrl;
-      this.bookCoverChanged.emit(this.bookData.imgUrl);
     }
   }
 }
