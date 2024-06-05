@@ -40,7 +40,7 @@ export class TheBookGenreRomanceComponent {
     this.books = this.books.slice(0,6);
   }
 
-  increaseLikes(id: number, book: any) {
+  increaseLikes(id: number, book: Book) {
     this.bookService.increaseLike(id,{likes:book.likes +1}).subscribe((data: any) => {
         book.likes = book.likes + 1;
     });
