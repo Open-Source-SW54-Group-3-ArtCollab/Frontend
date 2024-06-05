@@ -39,9 +39,9 @@ export class TheBookGenreComedyComponent {
     this.books = this.books.slice(0,6);
   }
 
-  increaseLikes(id: number, book: any) {
-    this.bookService.increaseLike(id,{likes: book.likes + 1}).subscribe((data: any) => {
-      book.likes = book.likes + 1;
+  increaseLikes(id: number, likes: number) {
+    this.bookService.increaseLike(id, likes).subscribe((data: any) => {
+      this.getBooks();
     });
   }
 

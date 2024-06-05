@@ -34,4 +34,16 @@ export class BookPopularFantasyComponent implements OnInit {
 
   protected readonly faHeart = faHeart;
 
+  update(id:any){
+    this.increase(id)
+  }
+
+  increase(id:any) {
+    const bookToUpdate = this.books.find(book => book.id === id);
+    if(bookToUpdate){
+      this.bookService.increaseLike(id, bookToUpdate.likes + 1 ).subscribe((data:any) => {
+        bookToUpdate.likes = data.likes;
+      });
+    }
+  }
 }
