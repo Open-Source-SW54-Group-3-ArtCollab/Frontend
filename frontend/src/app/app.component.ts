@@ -51,6 +51,10 @@ import {
 import {
   TheMonetizationApplicationComponent
 } from "./monetization/pages/the-monetization-application/the-monetization-application.component";
+import {PaymentInformationComponent} from "./monetization/components/payment-page/payment-information/payment-information.component";
+import {
+  ThePaymentSuccessApplicationComponent
+} from "./monetization/pages/the-payment-success-application/the-payment-success-application.component";
 
 @Component({
   selector: 'app-root',
@@ -71,7 +75,7 @@ import {
 
     ArtistRoomComponent, TheChatPageComponent,
 
-    TheSubscriptionApplicationComponent, TheMonetizationApplicationComponent
+    TheSubscriptionApplicationComponent, TheMonetizationApplicationComponent, PaymentInformationComponent, ThePaymentSuccessApplicationComponent
 
   ],
   templateUrl: './app.component.html',
