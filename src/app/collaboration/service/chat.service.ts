@@ -10,19 +10,19 @@ export class ChatService {
 
   constructor(private http: HttpClient) { }
   createChat(data: any) {
-      return this.http.post('http://localhost:3000/chat', data);
+      return this.http.post(this.baseUrl+'/chat', data);
   }
   getChatRoomById(id:any){
       return this.http.get(this.baseUrl+'/chatRoom/'+id);
   }
   deleteChatRoom(id: any) {
-      return this.http.delete('http://localhost:3000/chatRoom/' + id);
+      return this.http.delete(this.baseUrl+'/chatRoom/' + id);
   }
   getChat(id:any) {
        return this.http.get(this.baseUrl + '/chat/' + id);
   }
   sendChatMessage(data: any) {
-      return this.http.post('http://localhost:3000/message', data);
+      return this.http.post(this.baseUrl+'/message', data);
   }
   getMessages() {
       return this.http.get(this.baseUrl + '/message');

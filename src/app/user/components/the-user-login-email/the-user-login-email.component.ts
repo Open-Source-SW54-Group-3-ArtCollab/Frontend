@@ -8,6 +8,8 @@ import {NgIf} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
 import {UsersService} from "../../../shared/service/users.service";
 import {RouterLink} from "@angular/router";
+import {AuthenticationService} from "../../../shared/service/authentication.service";
+import {SignInRequest} from "../../../shared/model/sign-in.request";
 
 @Component({
   selector: 'app-the-user-login-email',
@@ -29,7 +31,7 @@ import {RouterLink} from "@angular/router";
   styleUrl: './the-user-login-email.component.css'
 })
 export class TheUserLoginEmailComponent {
-  email = new FormControl('', [Validators.required, Validators.email]);
+  username = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [Validators.required]);
 
   hide = true;
@@ -38,34 +40,25 @@ export class TheUserLoginEmailComponent {
   @Input() showEmailLogin !: boolean;
   @Output() close = new EventEmitter<void>();
 
-  constructor(private usersService: UsersService) { }
+  constructor(private usersService: UsersService, private authenticationService: AuthenticationService) { }
 
 
   login() {
-    if (this.email.value === null || this.password.value === null) {
+    if (this.username.value === null || this.password.value === null) {
       console.error('Email and password must not be null');
       return;
     }
-    if (this.email.invalid || this.password.invalid) {
+    if (this.username.invalid || this.password.invalid) {
       console.error('Email and password must be valid');
       return;
     }
 
-    if (this.email.value === 'miriam_bonastre@gmail.com' && this.password.value === '123456') {
-      this.usersService.loginUser({
-        email: this.email.value,
-       password: this.password.value,
-        name: "Flor M. Salvador",
-        _username: "flor_salvador01",
-        type: "writer",
-        subscription_id: "1",
-        _imgUrl: "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/d048f86736011fa911c88e559fe396244bb8c426/frontend/src/assets/images/flor-profile.png?raw=true",
-        id: "d327",
-      }).subscribe((user) => {
+    let username = this.username.value;
+    let password = this.password.value;
 
-        console.log('User logged in', user);
-      });
-    }
+    const signInRequest = new SignInRequest(username, password);
+
+    this.authenticationService.signIn(signInRequest);
   }
 
 

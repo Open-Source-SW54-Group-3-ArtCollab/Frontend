@@ -23,13 +23,13 @@
       <div *ngFor="let book of books" class="flex mt-5 flex-wrap justify-between contenedor">
         <div class="flex flex-row justify-center content">
           <div>
-            <img [ngSrc]="book.imgUrl" [alt]="book.imgUrl" width="150" height="150" class="mb-5 p-1">
+            <img *ngIf="book" [ngSrc]="book.imgUrl" [alt]="book.imgUrl" width="150" height="150" class="mb-5 p-1">
           </div>
           <div class="flex flex-col items-start ml-5 content">
             <div>
-              <p class="text-2xl ">{{ book.title }}</p>
+              <p *ngIf="book" class="text-2xl ">{{ book.title }}</p>
             </div>
-            <p class="text-gray-500 text-lg">{{ book.date_publish }}</p>
+            <p *ngIf="book" class="text-gray-500 text-lg">{{ book.date_publish }}</p>
             <div class="flex flex-row">
               <fa-icon [icon]="faEye" size="xl" class="p-2"></fa-icon>
               <h2>{{ book.views }}</h2>

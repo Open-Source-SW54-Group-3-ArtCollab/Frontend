@@ -10,7 +10,7 @@ import {
   faVideo
 } from "@fortawesome/free-solid-svg-icons";
 
-import {NgOptimizedImage} from "@angular/common";
+import {NgIf, NgOptimizedImage} from "@angular/common";
 import {ChatService} from "../../service/chat.service";
 import {Message} from "../../models/message-entity/message.entity";
 import {FormsModule} from "@angular/forms";
@@ -26,7 +26,8 @@ import {RouterLink} from "@angular/router";
     FaIconComponent,
     NgOptimizedImage,
     FormsModule,
-    RouterLink
+    RouterLink,
+    NgIf
   ],
   templateUrl: './the-chat-section.component.html',
   styleUrl: './the-chat-section.component.css'

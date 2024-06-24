@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatCard, MatCardContent, MatCardImage, MatCardTitle} from "@angular/material/card";
 import {MatGridList, MatGridTile} from "@angular/material/grid-list";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 import {User} from "../../../shared/model/user.entity";
 import {UsersService} from "../../../shared/service/users.service";
 import {RouterLink} from "@angular/router";
@@ -17,7 +17,8 @@ import {RouterLink} from "@angular/router";
     MatGridList,
     MatGridTile,
     NgForOf,
-    RouterLink
+    RouterLink,
+    NgIf
   ],
   templateUrl: './the-user-artist.component.html',
   styleUrl: './the-user-artist.component.css'

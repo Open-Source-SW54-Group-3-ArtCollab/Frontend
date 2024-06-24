@@ -12,6 +12,7 @@ import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {UsersService} from "../../../shared/service/users.service";
 import {NgIf} from "@angular/common";
 import {RouterLink} from "@angular/router";
+import {SignUpRequest} from "../../../shared/model/sign-up.request";
 
 @Component({
   selector: 'app-the-user-register',
@@ -59,6 +60,7 @@ export class TheUserRegisterComponent implements OnInit{
 
   // Método para registrar un nuevo usuario.
   register() {
+
     if (this.artist.value) {
       this.type = 'artist';
     }
@@ -84,6 +86,13 @@ export class TheUserRegisterComponent implements OnInit{
       response => console.log('Usuario registrado con éxito', response),
       error => console.error('Error al registrar el usuario', error)
     );
+
+    let username = this.username.value;
+    let password = this.password.value;
+
+    if (username !== null && password !== null) {
+      const signUpRequest = new SignUpRequest(username, password);
+    }
   }
 
 }

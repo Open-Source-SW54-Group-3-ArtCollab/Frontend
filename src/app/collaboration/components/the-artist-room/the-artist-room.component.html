@@ -7,12 +7,12 @@
       </div>
       <div class="flex flex-col lg:flex-row">
         <div>
-          <img [ngSrc]="artistData.getImgUrl" alt="Miriam" width="270" height="224"/>
-          <p class="text-xl font-bold"> {{artistData.getName}}</p>
+          <img *ngIf="artistData" [ngSrc]="artistData.getImgUrl" alt="Miriam" width="270" height="224"/>
+          <p *ngIf="artistData" class="text-xl font-bold"> {{artistData.getName}}</p>
         </div>
         <div>
-          <img [ngSrc]="writerData.getImgUrl" alt="Flor" width="270" height="224"/>
-          <p class="text-xl font-bold">{{writerData.getName}}</p>
+          <img *ngIf="writerData" [ngSrc]="writerData.getImgUrl" alt="Flor" width="270" height="224"/>
+          <p *ngIf="writerData" class="text-xl font-bold">{{writerData.getName}}</p>
         </div>
       </div>
     </div>
@@ -25,9 +25,9 @@
   </mat-card>
   <mat-card class="border-noround bd-gray mb-8 cursor-pointer" routerLink="/chat">
     <div class="flex justify-content-start">
-      <img  [src]="artistData.getImgUrl" alt="Miriam" width="70" height="20"/>
+      <img *ngIf="artistData" [src]="artistData.getImgUrl" alt="Miriam" width="70" height="20"/>
       <div class="mt-4 mx-3">
-        <p class="text-bold">Nuevo chat con {{artistData.getFirstName.split(' ')[0]}}</p>
+        <p *ngIf="artistData" class="text-bold">Nuevo chat con {{artistData.getFirstName.split(' ')[0]}}</p>
         <p>Tu: Perfecto</p>
       </div>
     </div>

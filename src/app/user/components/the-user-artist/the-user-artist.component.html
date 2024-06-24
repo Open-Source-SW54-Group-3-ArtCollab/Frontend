@@ -11,8 +11,8 @@
   <div class="flex flex-wrap justify-center gap-20 md:gap-36 lg:gap-52 mx-auto">
     <div class="flex justify-center" *ngFor="let artist of artists">
       <mat-card class="flex flex-col items-center w-80 mx-auto cursor-pointer" routerLink="/illustrator-profile">
-        <img mat-card-image [src]="artist._imgUrl" class="w-56 lg:w-80 contain-content">
-        <mat-card-content class="text-center font-semibold text-2xl mt-5">{{artist._name}}</mat-card-content>
+        <img *ngIf="artist" mat-card-image [src]="artist._imgUrl" class="w-56 lg:w-80 contain-content">
+        <mat-card-content *ngIf="artist" class="text-center font-semibold text-2xl mt-5">{{artist._name}}</mat-card-content>
       </mat-card>
     </div>
   </div>

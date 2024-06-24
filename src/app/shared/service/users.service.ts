@@ -12,19 +12,19 @@ export class UsersService {
 
   constructor(private http: HttpClient) { }
    getAll():Observable<any>{
-     return this.http.get(this.baseUrl+'/reader');
+     return this.http.get(this.baseUrl+'/readers');
    }
    edit(id:any, name:any){
-     return this.http.patch(this.baseUrl+'/reader' +`/${id}`, {firstName:name} )
+     return this.http.patch(this.baseUrl+'/readers' +`/${id}`, {firstName:name} )
    }
    createUser(item:any):Observable<User> {
-     return this.http.post<User>(this.baseUrl+'/reader', JSON.stringify(item))
+     return this.http.post<User>(this.baseUrl+'/readers', JSON.stringify(item))
    }
    loginUser(item:any):Observable<User>{
     return this.http.post<User>(this.baseUrl+'/login', JSON.stringify(item))
    }
    getLoggedInUser():Observable<User>{
-     return this.http.get<User>(this.baseUrl+'/login/d327')
+     return this.http.get<User>(this.baseUrl+'/readers'+`/${localStorage.getItem('id')}`)
    }
 
 }

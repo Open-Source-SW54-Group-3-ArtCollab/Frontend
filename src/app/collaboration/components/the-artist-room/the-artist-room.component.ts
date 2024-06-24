@@ -3,7 +3,7 @@ import {MatCard} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
 import {ChatService} from "../../service/chat.service";
 import {Chatroom} from "../../models/chatRoom-entity/chatroom.entity";
-import {NgOptimizedImage} from "@angular/common";
+import {NgIf, NgOptimizedImage} from "@angular/common";
 import {UsersService} from "../../../shared/service/users.service";
 import {User} from "../../../shared/model/user.entity";
 import {RouterLink} from "@angular/router";
@@ -11,12 +11,13 @@ import {RouterLink} from "@angular/router";
 @Component({
   selector: 'the-artist-room',
   standalone: true,
-  imports: [
-    MatCard,
-    MatIcon,
-    NgOptimizedImage,
-    RouterLink
-  ],
+    imports: [
+        MatCard,
+        MatIcon,
+        NgOptimizedImage,
+        RouterLink,
+        NgIf
+    ],
   templateUrl: './the-artist-room.component.html',
   styleUrl: './the-artist-room.component.css'
 })
@@ -55,7 +56,7 @@ export class TheArtistRoomComponent implements OnInit {
   }
 
   getCurrentChatRoom(){
-    this.chatService.getChatRoomById('-c711Rr').subscribe((data:any)=>{
+    this.chatService.getChatRoomById('1').subscribe((data:any)=>{
       try{
         this.currentChatRoom = new Chatroom(data.id, data.created_date, data.end_date, data.topic, data.active);
       }catch(e){
@@ -66,7 +67,7 @@ export class TheArtistRoomComponent implements OnInit {
   }
 
   deleteRoom(){
-    this.chatService.getChatRoomById('-c711Rr').subscribe((data:any)=>{
+    this.chatService.getChatRoomById('1').subscribe((data:any)=>{
       try{
         this.currentChatRoom = new Chatroom(data.id, data.created_date, data.end_date, data.topic, data.active);
         this.chatService.deleteChatRoom(this.currentChatRoom.getId()).subscribe((data:any)=>{});
