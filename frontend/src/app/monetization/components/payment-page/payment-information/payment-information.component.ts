@@ -2,14 +2,20 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {NgForOf, NgIf} from "@angular/common";
 import {PaymentService} from "../../../../shared/service/payment.service.service";
 import {Router} from "@angular/router";
+import {FaIconComponent} from "@fortawesome/angular-fontawesome";
+import {MatCard, MatCardHeader} from "@angular/material/card";
+import {faCheck} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'payment-information',
   standalone: true,
-  imports: [
-    NgForOf,
-    NgIf
-  ],
+    imports: [
+        NgForOf,
+        NgIf,
+        FaIconComponent,
+        MatCard,
+        MatCardHeader
+    ],
   templateUrl: './payment-information.component.html',
   styleUrl: './payment-information.component.css'
 })
@@ -55,4 +61,6 @@ export class PaymentInformationComponent implements OnInit {
       }
     ).render(this.paymentRef.nativeElement);
   }
+
+  protected readonly faCheck = faCheck;
 }

@@ -1,0 +1,11 @@
+.cards-container{
+  background-color: rgba(0, 206, 209, 0.4);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.boton{
+  margin:0 auto;
+  padding:20px 400px;
+}
