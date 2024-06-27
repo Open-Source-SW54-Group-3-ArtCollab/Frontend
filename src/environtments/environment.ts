@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   baseUrl: 'https://api-production-5c23.up.railway.app/api/v1'
 
 }
