@@ -33,18 +33,19 @@ export class TheMainPagePopularArtistComponent implements OnInit{
     this.usersService.getAll().subscribe((res: any) => {
       if (res){
         res.forEach((user: any) => {
-          if (user.type === 'artist') {
+          if (user.type === 'ilustrator') {
             this.userData = new User(
               user.id,
               user.name,
+              user.username,
               user.email,
               user.type,
-              user.subscription,
               user.imgUrl,
               user.password,
               user.username
             );
             this.imagesArtists.push({url: user.imgUrl, alt: user.name, name: user.name});
+
           }
         });
       }
