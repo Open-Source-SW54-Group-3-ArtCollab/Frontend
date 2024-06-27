@@ -25,7 +25,7 @@ export class UsersService {
     return this.http.post<User>(this.baseUrl+'/login', JSON.stringify(item), )
    }
    getLoggedInUser():Observable<User>{
-     return this.http.get<User>(this.baseUrl+'/readers'+`/${localStorage.getItem('id')}`, )
+     return this.http.get<User>(this.baseUrl+'/readers', )
    }
 
 }
