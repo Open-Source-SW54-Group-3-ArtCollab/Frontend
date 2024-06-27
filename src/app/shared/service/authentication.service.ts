@@ -70,7 +70,9 @@ export class AuthenticationService {
           this.signedIn.next(true);
           this.signedInUserId.next(response.id);
           this.signedInUsername.next(response.username);
-          localStorage.setItem('token', response.token);
+          if (typeof localStorage !== 'undefined') {
+            localStorage.setItem('token', response.token);
+          }
           console.log(`Signed in as ${response.username} with token ${response.token}`);
           this.router.navigate(['/']).then();
         },
@@ -84,16 +86,13 @@ export class AuthenticationService {
       });
   }
 
-  /**
-   * Sign out a user.
-   *
-   * This method signs out a user by clearing the token from local storage and navigating to the sign-in page.
-   */
   signOut() {
     this.signedIn.next(false);
     this.signedInUserId.next(0);
     this.signedInUsername.next('');
-    localStorage.removeItem('token');
+    if (typeof localStorage !== 'undefined') {
+      localStorage.removeItem('token');
+    }
     this.router.navigate(['/home']).then();
   }
 }

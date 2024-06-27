@@ -13,33 +13,28 @@ export class BookService {
 
   }
 
-  getHeaders() {
-    return {
-      'Authorization': 'Bearer ' + localStorage.getItem('token')
-    };
-  }
 
   getAll(){
-    return this.http.get(this.baseUrl + '/templates', { headers: this.getHeaders() });
+    return this.http.get(this.baseUrl + '/templates', );
   }
 
   getChapters(){
-    return this.http.get(this.baseUrl + '/chapters', { headers: this.getHeaders() });
+    return this.http.get(this.baseUrl + '/chapters', );
   }
 
   editChapter(id: number, data: any){
-    return this.http.patch(this.baseUrl + '/chapters/' + id, {title: data}, { headers: this.getHeaders() });
+    return this.http.patch(this.baseUrl + '/chapters/' + id, {title: data}, );
   }
 
   increaseLike(id: number, likes:number){
-    return this.http.patch(this.baseUrl + '/templates/' + id , {likes: likes + 1}, { headers: this.getHeaders() });
+    return this.http.patch(this.baseUrl + '/templates/' + id , {likes: likes + 1}, );
   }
 
   createBook(data: any){
-    return this.http.post(this.baseUrl + '/templates', data, { headers: this.getHeaders() });
+    return this.http.post(this.baseUrl + '/templates', data, );
   }
 
   updateBook(id: number, data: any){
-    return this.http.put(this.baseUrl + '/templates/' + id, data, { headers: this.getHeaders() });
+    return this.http.put(this.baseUrl + '/templates/' + id, data, );
   }
 }

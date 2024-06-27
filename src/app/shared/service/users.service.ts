@@ -9,31 +9,23 @@ import {map, Observable} from "rxjs";
 })
 export class UsersService {
    baseUrl: string = environment.baseUrl;
-   headers={
-     'Authorization': 'Bearer ' + localStorage.getItem('token')
-   }
-  getHeaders() {
-    return {
-      'Authorization': 'Bearer ' + localStorage.getItem('token')
-    };
-  }
   constructor(private http: HttpClient) {
 
   }
    getAll():Observable<any>{
-     return this.http.get(this.baseUrl+'/readers', {headers: this.getHeaders()});
+     return this.http.get(this.baseUrl+'/readers', );
    }
    edit(id:any, name:any){
-     return this.http.patch(this.baseUrl+'/readers' +`/${id}`, {firstName:name}, {headers: this.getHeaders()})
+     return this.http.patch(this.baseUrl+'/readers' +`/${id}`, {firstName:name}, )
    }
    createUser(item:any):Observable<User> {
-     return this.http.post<User>(this.baseUrl+'/readers', JSON.stringify(item), {headers: this.getHeaders()})
+     return this.http.post<User>(this.baseUrl+'/readers', JSON.stringify(item), )
    }
    loginUser(item:any):Observable<User>{
-    return this.http.post<User>(this.baseUrl+'/login', JSON.stringify(item), {headers: this.getHeaders()})
+    return this.http.post<User>(this.baseUrl+'/login', JSON.stringify(item), )
    }
    getLoggedInUser():Observable<User>{
-     return this.http.get<User>(this.baseUrl+'/readers'+`/${localStorage.getItem('id')}`, {headers: this.getHeaders()})
+     return this.http.get<User>(this.baseUrl+'/readers'+`/${localStorage.getItem('id')}`, )
    }
 
 }

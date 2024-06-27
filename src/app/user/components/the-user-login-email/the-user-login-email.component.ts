@@ -40,7 +40,7 @@ export class TheUserLoginEmailComponent {
   @Input() showEmailLogin !: boolean;
   @Output() close = new EventEmitter<void>();
 
-  constructor(private usersService: UsersService, private authenticationService: AuthenticationService) { }
+  constructor(private usersService: UsersService) { }
 
 
   login() {
@@ -58,7 +58,6 @@ export class TheUserLoginEmailComponent {
 
     const signInRequest = new SignInRequest(username, password);
 
-    this.authenticationService.signIn(signInRequest);
   }
 
 

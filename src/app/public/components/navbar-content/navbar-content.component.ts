@@ -39,9 +39,6 @@ export class NavbarContentComponent {
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private usersService: UsersService, private router: Router) {
-    this.usersService.getLoggedInUser().subscribe((user) => {
-      this.loggedInUser = user;
-    });
     this.mobileQuery = media.matchMedia('(max-width: 1024px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
@@ -49,7 +46,6 @@ export class NavbarContentComponent {
 
   isLoggedIn() {
     return this.loggedInUser !== null;
-
   }
 
 
