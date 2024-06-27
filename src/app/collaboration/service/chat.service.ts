@@ -8,7 +8,9 @@ import {environment} from "../../../environtments/environment";
 export class ChatService {
   baseUrl: string = environment.baseUrl;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+
+  }
   createChat(data: any) {
       return this.http.post(this.baseUrl+'/chat', data);
   }

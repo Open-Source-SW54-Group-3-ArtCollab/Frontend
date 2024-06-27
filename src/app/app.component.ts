@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {NavbarContentComponent} from "./public/components/navbar-content/navbar-content.component";
 import {FooterContentComponent} from "./public/components/footer-content/footer-content.component";
@@ -51,6 +51,7 @@ import {
 import {
   TheMonetizationApplicationComponent
 } from "./monetization/pages/the-monetization-application/the-monetization-application.component";
+import {AuthenticationService} from "./shared/service/authentication.service";
 
 @Component({
   selector: 'app-root',
@@ -77,7 +78,7 @@ import {
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent{
   title = 'frontend';
   showLogin = false;
 }

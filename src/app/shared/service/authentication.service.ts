@@ -23,9 +23,13 @@ export class AuthenticationService {
   private signedIn: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   private signedInUserId: BehaviorSubject<number> = new BehaviorSubject<number>(0);
   private signedInUsername: BehaviorSubject<string> = new BehaviorSubject<string>('');
-  private storageService= new StorageService();
 
-  constructor(private router: Router, private http: HttpClient) {
+  constructor(private router: Router, private http: HttpClient, private storageService: StorageService) {
+  }
+
+  initializeToken() {
+    const token = "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJndWVzdCIsImlhdCI6MTcxOTUwNTczNiwiZXhwIjoxNzIwMTEwNTM2fQ._wGefY1AwUHdFmgvez-EzYetuq5DncEYcx7_2wGQM60cmH-XiHXRmtTaTbe5xh0I"
+    this.storageService.setItem('token', token);
   }
 
   get isSignedIn() {
