@@ -26,7 +26,7 @@ export class TheMainPagePopularityComponent implements OnInit{
 
   genres = [
     {name: 'Drama', id: 'drama'},
-    {name: 'Fantasía', id: 'fantasía'},
+    {name: 'Fantasía', id: 'Fantasy'},
   ];
 
   books: any[] = [];

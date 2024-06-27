@@ -12,9 +12,6 @@ import {ChatService} from "./collaboration/service/chat.service";
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes), provideClientHydration(), provideAnimationsAsync(),
-  provideHttpClient(withInterceptors([authenticationInterceptor])),
-    UsersService,
-    BookService,
-    ChatService
+  provideHttpClient(withFetch(), withInterceptors([authenticationInterceptor])),
   ]
 };

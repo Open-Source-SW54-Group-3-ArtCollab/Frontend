@@ -47,7 +47,7 @@ export class TheMainPageGenresComponent implements OnInit{
             this.imagesDrama.push({url: book.imgURL, alt: book.title});
           }
         });
-        res.filter((book: any) => book.genre === 'fantasía').forEach((book: any) => {
+        res.filter((book: any) => book.genre === 'Fantasy').forEach((book: any) => {
           if (book.type === 'book') {
             this.bookData = new Book(
               book.title,

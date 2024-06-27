@@ -7,6 +7,7 @@ import {SignInRequest} from "../model/sign-in.request";
 import {SignInResponse} from "../model/sign-in.response";
 import {SignUpRequest} from "../model/sign-up.request";
 import {SignUpResponse} from "../model/sign-up.response";
+import { StorageService } from "./storage.service";
 
 /**
  * Service for authentication.
@@ -22,6 +23,7 @@ export class AuthenticationService {
   private signedIn: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   private signedInUserId: BehaviorSubject<number> = new BehaviorSubject<number>(0);
   private signedInUsername: BehaviorSubject<string> = new BehaviorSubject<string>('');
+  private storageService= new StorageService();
 
   constructor(private router: Router, private http: HttpClient) {
   }
@@ -70,9 +72,7 @@ export class AuthenticationService {
           this.signedIn.next(true);
           this.signedInUserId.next(response.id);
           this.signedInUsername.next(response.username);
-          if (typeof localStorage !== 'undefined') {
-            localStorage.setItem('token', response.token);
-          }
+          this.storageService.setItem('token', response.token);
           console.log(`Signed in as ${response.username} with token ${response.token}`);
           this.router.navigate(['/']).then();
         },
@@ -90,9 +90,7 @@ export class AuthenticationService {
     this.signedIn.next(false);
     this.signedInUserId.next(0);
     this.signedInUsername.next('');
-    if (typeof localStorage !== 'undefined') {
-      localStorage.removeItem('token');
-    }
+    this.storageService.removeItem('token');
     this.router.navigate(['/home']).then();
   }
 }
