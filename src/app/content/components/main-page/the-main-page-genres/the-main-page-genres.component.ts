@@ -42,10 +42,9 @@ export class TheMainPageGenresComponent implements OnInit{
               book.imgUrl,
               book.likes,
               book.views,
-              book.revenue,
               book.genre
             );
-            this.imagesDrama.push({url: book.imgUrl, alt: book.title});
+            this.imagesDrama.push({url: book.imgURL, alt: book.title});
           }
         });
         res.filter((book: any) => book.genre === 'fantasía').forEach((book: any) => {
@@ -56,13 +55,12 @@ export class TheMainPageGenresComponent implements OnInit{
               book.date_publish,
               book.type,
               book.id,
-              book.imgUrl,
+              book.imgURL,
               book.likes,
               book.views,
-              book.revenue,
               book.genre
             );
-            this.imagesFantasy.push({url: book.imgUrl, alt: book.title});
+            this.imagesFantasy.push({url: book.imgURL, alt: book.title});
           }
         });
       }

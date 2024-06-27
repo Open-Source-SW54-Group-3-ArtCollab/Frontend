@@ -24,7 +24,7 @@ export class TheBookDetailsEditCoverComponent implements OnInit {
      this.bookService.getAll().subscribe((data: any) => {
          data.forEach((book: any) => {
                if(book.type === 'book' && book.title === 'Boulevard'){
-                 this.bookData = new Book(book.title, book.description, book.date_publish, book.type, book.id, book.imgUrl, book.likes, book.views, book.revenue, book.genre);
+                 this.bookData = new Book(book.title, book.description, book.date_publish, book.type, book.id, book.imgURL, book.likes, book.views,  book.genre);
                }
          });
      });

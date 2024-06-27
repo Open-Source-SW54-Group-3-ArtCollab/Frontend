@@ -63,10 +63,9 @@ export class TheMainPagePopularityComponent implements OnInit{
               book.date_publish,
               book.type,
               book.id,
-              book.imgUrl,
+              book.imgURL,
               book.likes,
               book.views,
-              book.revenue,
               book.genre
             );
             this.books.push(this.bookData);
@@ -88,10 +87,9 @@ export class TheMainPagePopularityComponent implements OnInit{
               book.date_publish,
               book.type,
               book.id,
-              book.imgUrl,
+              book.imgURL,
               book.likes,
               book.views,
-              book.revenue,
               book.genre
             );
             this.topBooks.push(this.bookData);

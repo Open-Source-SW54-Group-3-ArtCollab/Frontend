@@ -48,14 +48,13 @@ export class TheMainPageBannerComponent implements OnInit{
               book.date_publish,
               book.type,
               book.id,
-              book.imgUrl,
+              book.imgURL,
               book.likes,
               book.views,
-              book.revenue,
               book.genre
             );
             this.books.push(this.bookData);
-            this.images.push({url: book.imgUrl, alt: book.title});
+            this.images.push({url: book.imgURL, alt: book.title});
           }
         });
       }
@@ -68,7 +67,7 @@ export class TheMainPageBannerComponent implements OnInit{
   currentImageIndex = 0;
 
   previousImage() {
-    this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length; //% se usa para que no se pase del límite
+    this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
   }
 
   nextImage() {

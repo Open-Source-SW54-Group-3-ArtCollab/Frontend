@@ -39,13 +39,12 @@ export class TheMainPageRecentBookComponent implements OnInit{
               book.date_publish,
               book.type,
               book.id,
-              book.imgUrl,
+              book.imgURL,
               book.likes,
               book.views,
-              book.revenue,
               book.genre
             );
-            this.imagesRecent.push({url: book.imgUrl, alt: book.title});
+            this.imagesRecent.push({url: book.imgURL, alt: book.title});
           }
         });
       }

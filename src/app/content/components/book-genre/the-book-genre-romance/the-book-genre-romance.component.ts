@@ -32,7 +32,7 @@ export class TheBookGenreRomanceComponent {
     this.bookService.getAll().subscribe((data: any) => {
       data.forEach((template: any) => {
         if (template.type === 'book') {
-          const bookData = new Book(template.title, template.description, template.date_publish, template.type, template.id, template.imgUrl, template.likes, template.views,template.revenue, template.genre);
+          const bookData = new Book(template.title, template.description, template.date_publish, template.type, template.id, template.imgURL, template.likes, template.views, template.genre);
           this.books.push(bookData);
         }
       });

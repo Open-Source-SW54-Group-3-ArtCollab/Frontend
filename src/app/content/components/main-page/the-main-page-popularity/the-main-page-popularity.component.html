@@ -13,9 +13,9 @@
     </h3>
     <div class="books flex flex-col gap-5 ">
       <app-main-page-book-cards class="popular-carousel" *ngFor="let book of books; let i = index"
-                                [bookCover]="book._imgUrl"
+                                [bookCover]="book.imgUrl"
                                 [position]="i + 1"
-                                [bookTitle]="book._title"
+                                [bookTitle]="book.title"
                                 [bookWriter]="book.bookWriter"
                                 [bookIllustrator]="book.bookIllustrator"/>
     </div>
@@ -29,10 +29,10 @@
     </h3>
     <div class="books flex flex-col gap-5">
       <app-main-page-book-cards *ngFor="let book of topBooks; let i = index"
-                                [bookCover]="book._imgUrl"
+                                [bookCover]="book.imgUrl"
                                 [position]="i + 1"
-                                [bookGenre]="book._genre"
-                                [bookTitle]="book._title"
+                                [bookGenre]="book.genre"
+                                [bookTitle]="book.title"
                                 [bookWriter]="book.bookWriter"
                                 [bookIllustrator]="book.bookIllustrator"/>
     </div>
