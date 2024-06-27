@@ -39,7 +39,7 @@ export class TheMainPageGenresComponent implements OnInit{
               book.date_publish,
               book.type,
               book.id,
-              book.imgUrl,
+              book.imgURL,
               book.likes,
               book.views,
               book.genre
