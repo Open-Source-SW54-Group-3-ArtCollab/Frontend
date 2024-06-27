@@ -45,7 +45,7 @@ img {
   }
 }
 
-@media (width<=350px){
+@media (width<=300px){
   h2{
     font-size: 15px;
   }
@@ -53,7 +53,7 @@ img {
     width: 90px;
   }
   .hero-container{
-    width: 400px;
+    width: 300px;
   }
 }
 
