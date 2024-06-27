@@ -23,11 +23,11 @@ export class BookService {
   }
 
   editChapter(id: number, data: any){
-    return this.http.patch(this.baseUrl + '/chapters/' + id, {title: data}, );
+    return this.http.put(this.baseUrl + '/chapters/' + id, {title: data}, );
   }
 
   increaseLike(id: number, likes:number){
-    return this.http.patch(this.baseUrl + '/templates/' + id , {likes: likes + 1}, );
+    return this.http.put(this.baseUrl + '/templates/' + id , {likes: likes + 1}, );
   }
 
   createBook(data: any){
