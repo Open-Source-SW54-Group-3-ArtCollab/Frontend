@@ -32,7 +32,7 @@
       </div>
     </div>
   </mat-toolbar>
-  <mat-sidenav-container class="sidenav-container"
+  <mat-sidenav-container class="sidenav-container w-10"
                          [style.margin-top.px]="mobileQuery.matches ? 56 : 0">
     <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
@@ -43,6 +43,11 @@
         <span routerLink="/subscription"> Suscripciones  </span>
         <span routerLink="/monetization"> Monetización </span>
         <span routerLink="/artist"> Artistas </span>
+        <ng-template #notLoggedIn>
+          <div class="login-container">
+            <button class="login-btn p-2 rounded-lg lg:block w-10" routerLink="/home" (click)="openLogin()" > Iniciar Sesión </button>
+          </div>
+        </ng-template>
         <div class="login-container pt-10 flex flex-col gap-5" *ngIf="loggedInUser; else notLoggedIn">
           <button class="bg-cyan-400 rounded-lg text-cyan-700 p-2"> Publicar </button>
           <div class="user-info" routerLink="/writer-profile">
@@ -50,11 +55,6 @@
             <span *ngIf="loggedInUser" >{{ loggedInUser._username }}</span>
           </div>
         </div>
-        <ng-template #notLoggedIn>
-          <div class="login-container">
-            <button class="login-btn p-2 rounded-lg hidden lg:block" routerLink="/home" (click)="openLogin()" > Iniciar Sesión </button>
-          </div>
-        </ng-template>
 
       </mat-nav-list>
     </mat-sidenav>
