@@ -61,6 +61,8 @@ export class TheMainPageBannerComponent implements OnInit{
       }
 
     });
+    let token = localStorage.getItem('token');
+    console.log(token);
   }
 
   currentImageIndex = 0;

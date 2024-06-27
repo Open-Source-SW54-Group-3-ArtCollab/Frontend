@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="" />
+    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collaboration/service/chat.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collaboration/service/chat.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/content/components/main-page/the-main-page-banner/the-main-page-banner.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/content/components/main-page/the-main-page-banner/the-main-page-banner.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/content/service/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/content/service/book.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/service/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/service/users.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environtments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environtments/environment.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +79,7 @@
     "npm.ng.executor": "Run",
     "npm.start.executor": "Run",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "ts.external.directory.path": "D:\\CAMILA\\UPC\\Ciclo 6\\Open source\\Proyecto\\Frontend2\\Frontend\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "/Users/lordmathi2741/Documents/Cursos/Open Source-Upc/Frontend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -120,7 +127,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
       </set>
     </attachedChunks>
   </component>
@@ -155,6 +162,7 @@
       <workItem from="1716991128429" duration="971000" />
       <workItem from="1717219180525" duration="5866000" />
       <workItem from="1717282198556" duration="2170000" />
+      <workItem from="1719457928577" duration="3249000" />
     </task>
     <servers />
   </component>

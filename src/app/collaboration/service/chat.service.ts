@@ -7,6 +7,9 @@ import {environment} from "../../../environtments/environment";
 })
 export class ChatService {
   baseUrl: string = environment.baseUrl;
+  headers={
+    'Authorization': 'Bearer ' + localStorage.getItem('token')
+  }
 
   constructor(private http: HttpClient) { }
   createChat(data: any) {
