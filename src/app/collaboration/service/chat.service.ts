@@ -11,22 +11,10 @@ export class ChatService {
   constructor(private http: HttpClient) {
 
   }
-  createChat(data: any) {
-      return this.http.post(this.baseUrl+'/chat', data);
-  }
-  getChatRoomById(id:any){
-      return this.http.get(this.baseUrl+'/chatRoom/'+id);
-  }
-  deleteChatRoom(id: any) {
-      return this.http.delete(this.baseUrl+'/chatRoom/' + id);
-  }
-  getChat(id:any) {
-       return this.http.get(this.baseUrl + '/chat/' + id);
-  }
   sendChatMessage(data: any) {
-      return this.http.post(this.baseUrl+'/message', data);
+      return this.http.post(this.baseUrl+'/collaboration', data);
   }
   getMessages() {
-      return this.http.get(this.baseUrl + '/message');
+      return this.http.get(this.baseUrl + '/collaboration');
   }
 }

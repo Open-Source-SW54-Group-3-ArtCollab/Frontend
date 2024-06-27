@@ -45,14 +45,7 @@ export class TheChatSectionComponent implements OnInit{
   ngOnInit(): void {
     this.getArtist();
     this.getWriter();
-    this.getCurrentChat();
-  }
-
-  getCurrentChat(){
-    this.chatService.getChat(1).subscribe((data:any)=>{
-        this.currentChatData = new Chat(data.id, data.chatRoom_id, data.title, data.created_at);
-        this.getMessages();
-    });
+    this.getMessages();
   }
 
 
@@ -61,7 +54,6 @@ export class TheChatSectionComponent implements OnInit{
       data.forEach((user:any)=>{
         if(user.type==='artist' && user.name === 'Miriam Bonastre'){
           this.artistData = new User( user.id,user.name, user.email, user.type,user.subscription_id, user.imgUrl, user.password, user.username);
-          console.log(this.artistData)
         }
       });
     });
@@ -79,17 +71,14 @@ export class TheChatSectionComponent implements OnInit{
   getMessages(){
     this.chatService.getMessages().subscribe((data:any)=>{
          data.forEach((message:any)=>{
-           if(String(message.chat_id) === String(this.currentChatData.getId())){
               this.messageData = new Message(message.id, message.content);
-              this.messages.push(this.messageData);
-            }
+              this.messages.push(this.messageData)
          });
     });
   }
 
   sendMessage(){
-    this.chatService.sendChatMessage({content: this.message, chat_id: this.currentChatData.getId(), isRead:false,isSend:true }).subscribe((data:any)=>{
-
+    this.chatService.sendChatMessage({content: this.message }).subscribe((data:any)=>{
     });
   }
 

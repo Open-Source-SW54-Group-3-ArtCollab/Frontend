@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MatCard} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
-import {ChatService} from "../../service/chat.service";
 import {NgIf, NgOptimizedImage} from "@angular/common";
 import {UsersService} from "../../../shared/service/users.service";
 import {User} from "../../../shared/model/user.entity";
@@ -23,9 +22,8 @@ import {RouterLink} from "@angular/router";
 export class TheArtistRoomComponent implements OnInit {
    artistData:any;
    writerData:any;
-   currentChatRoom:any;
 
-  constructor(private userService:UsersService, private chatService:ChatService) { }
+  constructor(private userService:UsersService) { }
   ngOnInit(): void {
       this.getArtist();
       this.getWriter();
@@ -49,9 +47,6 @@ export class TheArtistRoomComponent implements OnInit {
        });
   }
 
-  createChat(){
-     this.chatService.createChat({ chatRoom_id:1,title:'New Chat',created_date:'2024-05-02'}).subscribe((data:any)=>{});
-  }
 
 
 
