@@ -80,7 +80,7 @@ export class TheChatSectionComponent implements OnInit{
     this.chatService.getMessages().subscribe((data:any)=>{
          data.forEach((message:any)=>{
            if(String(message.chat_id) === String(this.currentChatData.getId())){
-              this.messageData = new Message(message.id, message.content, message.chat_id, message.isRead, message.isSend);
+              this.messageData = new Message(message.id, message.content);
               this.messages.push(this.messageData);
             }
          });

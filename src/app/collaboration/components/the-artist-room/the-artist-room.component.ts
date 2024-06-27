@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {MatCard} from "@angular/material/card";
 import {MatIcon} from "@angular/material/icon";
 import {ChatService} from "../../service/chat.service";
-import {Chatroom} from "../../models/chatRoom-entity/chatroom.entity";
 import {NgIf, NgOptimizedImage} from "@angular/common";
 import {UsersService} from "../../../shared/service/users.service";
 import {User} from "../../../shared/model/user.entity";
@@ -30,7 +29,6 @@ export class TheArtistRoomComponent implements OnInit {
   ngOnInit(): void {
       this.getArtist();
       this.getWriter();
-      this.getCurrentChatRoom();
   }
   getArtist(){
       this.userService.getAll().subscribe((data:any)=>{
@@ -55,27 +53,7 @@ export class TheArtistRoomComponent implements OnInit {
      this.chatService.createChat({ chatRoom_id:1,title:'New Chat',created_date:'2024-05-02'}).subscribe((data:any)=>{});
   }
 
-  getCurrentChatRoom(){
-    this.chatService.getChatRoomById('1').subscribe((data:any)=>{
-      try{
-        this.currentChatRoom = new Chatroom(data.id, data.created_date, data.end_date, data.topic, data.active);
-      }catch(e){
-        console.error('No chat room found');
-      }
 
-    });
-  }
-
-  deleteRoom(){
-    this.chatService.getChatRoomById('1').subscribe((data:any)=>{
-      try{
-        this.currentChatRoom = new Chatroom(data.id, data.created_date, data.end_date, data.topic, data.active);
-        this.chatService.deleteChatRoom(this.currentChatRoom.getId()).subscribe((data:any)=>{});
-      } catch (e){
-        console.error('No chat room found');
-      }
-    });
-  }
 
 }
 

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="" />
+    <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collaboration/components/the-artist-room/the-artist-room.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collaboration/components/the-artist-room/the-artist-room.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collaboration/components/the-artist-room/the-artist-room.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collaboration/components/the-artist-room/the-artist-room.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collaboration/components/the-chat-section/the-chat-section.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collaboration/components/the-chat-section/the-chat-section.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collaboration/models/chat-entity/chat.entity.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collaboration/models/chatRoom-entity/chatroom.entity.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collaboration/models/chatRoom-entity/chatroom.entity.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collaboration/models/message-entity/message.entity.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/collaboration/models/message-entity/message.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/collaboration/models/message-entity/message.entity.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,6 +167,7 @@
       <workItem from="1717282198556" duration="2170000" />
       <workItem from="1719457928577" duration="3547000" />
       <workItem from="1719510193418" duration="2000" />
+      <workItem from="1719520801292" duration="1881000" />
     </task>
     <servers />
   </component>
