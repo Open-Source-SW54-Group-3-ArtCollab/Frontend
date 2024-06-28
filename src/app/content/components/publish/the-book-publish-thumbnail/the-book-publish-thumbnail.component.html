@@ -1,6 +1,9 @@
 <div class="max-w-32">
-  <div class="flex flex-col justify-center items-center bg-gray-200 p-5">
-    <mat-icon class="edit-icon mb-2">arrow_upward</mat-icon>
+  <div class="upload-image flex flex-col justify-center items-center bg-gray-200 p-5">
+    <mat-icon class="edit-icon mb-2" (click)="onIconClick()">arrow_upward</mat-icon>
     <p class="text-center">Elige una imagen para subir</p>
+  </div>
+  <div *ngIf="bookData.imgUrl">
+    <img [src]="bookData.imgUrl" alt="Book Cover" />
   </div>
 </div>

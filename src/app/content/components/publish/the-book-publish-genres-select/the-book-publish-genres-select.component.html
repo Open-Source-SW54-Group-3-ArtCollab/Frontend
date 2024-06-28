@@ -3,7 +3,7 @@
     <h4>Género 1</h4>
     <mat-form-field>
       <mat-label>Selecciona un género</mat-label>
-      <mat-select required>
+      <mat-select required (selectionChange)="onGenre1Change($event)">
         <mat-option *ngFor="let genre of genres" [value]="genre.value">{{genre.viewValue}}</mat-option>
       </mat-select>
     </mat-form-field>
@@ -14,8 +14,8 @@
     </div>
     <mat-form-field>
       <mat-label>Selecciona un género</mat-label>
-        <mat-select>
-          <mat-option *ngFor="let genre of genres" [value]="genre.value">{{genre.viewValue}}</mat-option>
+      <mat-select (selectionChange)="onGenre2Change($event)">
+        <mat-option *ngFor="let genre of genres" [value]="genre.value">{{genre.viewValue}}</mat-option>
       </mat-select>
     </mat-form-field>
   </div>

@@ -15,7 +15,10 @@ import {
 } from "../the-book-publish-summary-textarea/the-book-publish-summary-textarea.component";
 import {TheBookPublishThumbnailComponent} from "../the-book-publish-thumbnail/the-book-publish-thumbnail.component";
 import {MatIcon} from "@angular/material/icon";
+import { MatSnackBar } from '@angular/material/snack-bar';
 import {Router} from "@angular/router";
+import {BookService} from "../../../service/book.service";
+import {Book} from "../../../model/book.entity";
 @Component({
   selector: 'app-book-publish-stepper',
   standalone: true,
@@ -54,7 +57,7 @@ export class BookPublishStepperComponent {
     }
   }
 
-  constructor(private _formBuilder: FormBuilder, private router: Router) {}
+  constructor(private _formBuilder: FormBuilder, private router: Router, private bookService: BookService, private _snackBar: MatSnackBar) {}
 
   publishBook(){
     this.router.navigateByUrl('/books-profile');
@@ -68,4 +71,54 @@ export class BookPublishStepperComponent {
     this.router.navigateByUrl('/chapter-preview');
   }
 
+  selectedGenre1!: string;
+  selectedGenre2!: string;
+  title!: string;
+  summary!: string;
+  bookCover!: string;
+
+  onGenre1Selected(genre: string) {
+    this.selectedGenre1 = genre;
+  }
+
+  onGenre2Selected(genre: string) {
+    this.selectedGenre2 = genre;
+  }
+
+  onTitleChanged(title: string) {
+    this.title = title;
+  }
+
+  onSummaryChanged(summary: string) {
+    this.summary = summary;
+  }
+
+  onBookCoverChanged(bookCover: string) {
+    this.bookCover = bookCover;
+  }
+
+  onPublishClick() {
+    let combinedGenres = this.selectedGenre1 + ', ' + this.selectedGenre2;
+    const bookData = {
+      title: this.title,
+      description: this.summary,
+      type: 'book',
+      imgUrl: this.bookCover,
+      views: 0,
+      likes: 0,
+      genre: combinedGenres
+    };
+
+    this.bookService.createBook(bookData).subscribe(
+      response => {
+        console.log('Libro creado con éxito: ', response);
+        this._snackBar.open('Libro creado con éxito', 'Cerrar', {
+          duration: 2000,
+        });
+      },
+      error => {
+        console.error('Error al crear el libro: ', error);
+      }
+    );
+  }
 }
