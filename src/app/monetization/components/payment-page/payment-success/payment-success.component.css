@@ -1,0 +1,11 @@
+.title{
+  font-size:26px;
+  font-weight: bold;
+}
+
+.button{
+  background-color: #11AEBF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
