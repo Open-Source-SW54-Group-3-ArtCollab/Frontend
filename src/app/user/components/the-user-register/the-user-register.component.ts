@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatError, MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {MatButton, MatIconButton} from "@angular/material/button";
@@ -11,7 +11,7 @@ import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {FaIconComponent} from "@fortawesome/angular-fontawesome";
 import {UsersService} from "../../../shared/service/users.service";
 import {NgIf} from "@angular/common";
-import {RouterLink} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {SignUpRequest} from "../../../shared/model/sign-up.request";
 
 @Component({
@@ -36,7 +36,8 @@ import {SignUpRequest} from "../../../shared/model/sign-up.request";
   styleUrl: './the-user-register.component.css'
 })
 export class TheUserRegisterComponent implements OnInit{
-  email = new FormControl('', [Validators.required, Validators.email]);
+  @ViewChild('registerForm') registerForm!: NgForm;
+  email  = new FormControl('', [Validators.required, Validators.email]);
   password = new FormControl('', [Validators.required, Validators.minLength(6), Validators.maxLength(16)]);
   confirm_password = new FormControl('', [Validators.required]);
   username = new FormControl('', [Validators.required, Validators.maxLength(20)]);
@@ -53,16 +54,19 @@ export class TheUserRegisterComponent implements OnInit{
   protected readonly faGoogle = faGoogle;
   protected readonly faTwitter = faTwitter;
 
-  constructor(private usersService: UsersService) { }// Inyecta el servicio UsersService para interactuar con la API.
+  constructor(private usersService: UsersService, private router: Router) {
+
+  }
 
   ngOnInit(): void {
   }
-
-  // Método para registrar un nuevo usuario.
   register() {
 
     if (this.artist.value) {
-      this.type = 'artist';
+      this.type = 'ILUSTRATOR';
+    }
+    else{
+      this.type = 'READER';
     }
 
     if (!this.email.valid || !this.password.valid || !this.confirm_password.valid || !this.username.valid) {
@@ -78,14 +82,17 @@ export class TheUserRegisterComponent implements OnInit{
       email: this.email.value,
       password: this.password.value,
       username: this.username.value,
-      name: this.first_name + ' ' + this.last_name,
       imgUrl: this.imgUrl,
-      subscription_id: 1,
+      name: this.first_name + ' ' + this.last_name,
       type: this.type
-    }).subscribe(
-      response => console.log('Usuario registrado con éxito', response),
-      error => console.error('Error al registrar el usuario', error)
-    );
+    }).subscribe(response => {
+        alert("User registered successfully");
+        setTimeout(() => {
+          this.router.navigate(['/home']).then(() =>
+               window.location.reload()
+          );
+        },0);
+    });
 
     let username = this.username.value;
     let password = this.password.value;

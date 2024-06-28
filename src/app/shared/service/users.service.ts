@@ -13,13 +13,13 @@ export class UsersService {
 
   }
    getAll():Observable<any>{
-     return this.http.get(this.baseUrl+'/readers', );
+     return this.http.get(this.baseUrl+'/readers' );
    }
    edit(id:any, name:any){
      return this.http.put(this.baseUrl+'/readers' +`/${id}`, {firstName:name}, )
    }
    createUser(item:any):Observable<User> {
-     return this.http.post<User>(this.baseUrl+'/readers', JSON.stringify(item), )
+     return this.http.post<User>(this.baseUrl+'/readers', JSON.stringify(item) )
    }
    getUserByEmailAndPassword(email:any,password:any): Observable<User>{
       return this.http.get<User>(this.baseUrl+'/readers' +`/${email}` +`/${password}`,)
