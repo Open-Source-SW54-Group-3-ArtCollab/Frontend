@@ -23,6 +23,7 @@ span{
   color: white;
   border: none;
   cursor: pointer;
+  width: 140px;
 }
 button{
   width: 110px;
