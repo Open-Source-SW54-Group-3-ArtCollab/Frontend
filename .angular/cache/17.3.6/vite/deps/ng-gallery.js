@@ -1,7 +1,6 @@
 import {
   DomSanitizer
 } from "./chunk-7JCHHXAL.js";
-import "./chunk-VJY5DKPJ.js";
 import {
   animate,
   style,
@@ -13,6 +12,7 @@ import {
   coerceElement,
   getRtlScrollAxisType
 } from "./chunk-TTLWW4CA.js";
+import "./chunk-VJY5DKPJ.js";
 import {
   AsyncPipe,
   CommonModule,

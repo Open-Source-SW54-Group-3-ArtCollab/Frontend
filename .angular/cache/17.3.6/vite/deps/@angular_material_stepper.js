@@ -1,9 +1,8 @@
 import {
   MatIcon,
   MatIconModule
-} from "./chunk-7E5EOJKV.js";
+} from "./chunk-IQAKDW6Q.js";
 import "./chunk-7JCHHXAL.js";
-import "./chunk-VJY5DKPJ.js";
 import {
   CdkPortalOutlet,
   PortalModule,
@@ -37,6 +36,7 @@ import {
   Platform,
   _getFocusedElementPierceShadowDom
 } from "./chunk-TTLWW4CA.js";
+import "./chunk-VJY5DKPJ.js";
 import {
   CommonModule,
   NgTemplateOutlet
