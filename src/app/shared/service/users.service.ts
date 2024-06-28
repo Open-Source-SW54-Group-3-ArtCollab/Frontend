@@ -21,6 +21,9 @@ export class UsersService {
    createUser(item:any):Observable<User> {
      return this.http.post<User>(this.baseUrl+'/readers', JSON.stringify(item), )
    }
+   getUserByEmailAndPassword(email:any,password:any): Observable<User>{
+      return this.http.get<User>(this.baseUrl+'/readers' +`/${email}` +`/${password}`,)
+   }
    loginUser(item:any):Observable<User>{
     return this.http.post<User>(this.baseUrl+'/login', JSON.stringify(item), )
    }

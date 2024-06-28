@@ -33,8 +33,9 @@ import {TheUserLoginComponent} from "../../../user/components/the-user-login/the
 })
 export class NavbarContentComponent {
   mobileQuery: MediaQueryList;
-
-  loggedInUser: User|null = null;
+  loggedInUser: User|null = sessionStorage.getItem('user') !== null ? JSON.parse(sessionStorage.getItem('user') as string) : null;
+  currentImg: string = sessionStorage.getItem('user') !== null ? JSON.parse(sessionStorage.getItem('user') as string).imgUrl : 'https://www.w3schools.com/howto/img_avatar.png';
+  currentUsername: string = sessionStorage.getItem('user') !== null ? JSON.parse(sessionStorage.getItem('user') as string).username : 'Guest';
 
   private _mobileQueryListener: () => void;
 

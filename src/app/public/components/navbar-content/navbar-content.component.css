@@ -18,6 +18,14 @@ span{
   cursor: pointer;
 }
 
+.sidenav-btn{
+  width: 150px;
+}
+.user-info-sidenav{
+  height: 40px;
+  width: 150px;
+}
+
 .login-btn{
   background-color: #11AEBF;
   color: white;

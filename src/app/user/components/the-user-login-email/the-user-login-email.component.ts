@@ -10,6 +10,7 @@ import {UsersService} from "../../../shared/service/users.service";
 import {RouterLink} from "@angular/router";
 import {AuthenticationService} from "../../../shared/service/authentication.service";
 import {SignInRequest} from "../../../shared/model/sign-in.request";
+import * as http from "node:http";
 
 @Component({
   selector: 'app-the-user-login-email',
@@ -44,19 +45,15 @@ export class TheUserLoginEmailComponent {
 
 
   login() {
-    if (this.username.value === null || this.password.value === null) {
-      console.error('Email and password must not be null');
-      return;
-    }
-    if (this.username.invalid || this.password.invalid) {
-      console.error('Email and password must be valid');
-      return;
-    }
-
-    let username = this.username.value;
-    let password = this.password.value;
-
-    const signInRequest = new SignInRequest(username, password);
+    this.usersService.getUserByEmailAndPassword(this.username.value, this.password.value).subscribe(user => {
+      if(user === null){
+        alert("Not found user with this email or password")
+      }
+      else {
+        sessionStorage.setItem('user', JSON.stringify(user));
+        alert("Login success")
+      }
+    })
 
   }
 
