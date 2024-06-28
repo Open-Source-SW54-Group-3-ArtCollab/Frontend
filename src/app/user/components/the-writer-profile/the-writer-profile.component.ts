@@ -30,4 +30,6 @@ export class TheWriterProfileComponent {
   protected readonly faInstagram = faInstagram;
   protected readonly faYoutube = faYoutube;
   protected readonly faTiktok = faTiktok;
+  currentImage : string = sessionStorage.getItem('user') !== null ? JSON.parse(sessionStorage.getItem('user') as string).imgUrl : 'https://www.w3schools.com/howto/img_avatar.png';
+  currentUsername : string = sessionStorage.getItem('user') !== null ? JSON.parse(sessionStorage.getItem('user') as string).name : 'username';
 }

@@ -3,8 +3,8 @@
   <mat-card class="relative mx-auto mt-10" style="max-width: 100%;">
     <img src="../../../../assets/images/banner-profile-writer.png" alt="Banner" aria-label="Banner" class="mx-auto w-full contain-content">
     <div class="absolute top-28 left-1/2 transform -translate-x-1/2">
-      <img mat-card-image src="../../../../assets/images/flor-profile.png" class="w-40 md:w-60 lg:w-80 contain-content mx-auto">
-      <mat-card-content class="text-center font-semibold text-xl md:text-2xl mt-5">Flor M. Salvador</mat-card-content>
+      <img mat-card-image [src]="currentImage" class="w-40 md:w-60 lg:w-80 contain-content mx-auto">
+      <mat-card-content class="text-center font-semibold text-xl md:text-2xl mt-5">{{currentUsername}}</mat-card-content>
     </div>
   </mat-card>
 </section>
