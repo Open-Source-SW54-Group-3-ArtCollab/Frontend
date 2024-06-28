@@ -5,27 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/server/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/main-page/the-main-page-banner/the-main-page-banner.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/main-page/the-main-page-banner/the-main-page-banner.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/book-publish-stepper/book-publish-stepper.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/book-publish-stepper/book-publish-stepper.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/book-publish-stepper/book-publish-stepper.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/book-publish-stepper/book-publish-stepper.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-genres-select/the-book-publish-genres-select.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-genres-select/the-book-publish-genres-select.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-genres-select/the-book-publish-genres-select.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-genres-select/the-book-publish-genres-select.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-summary-textarea/the-book-publish-summary-textarea.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-summary-textarea/the-book-publish-summary-textarea.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-summary-textarea/the-book-publish-summary-textarea.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-summary-textarea/the-book-publish-summary-textarea.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-thumbnail/the-book-publish-thumbnail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-thumbnail/the-book-publish-thumbnail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-thumbnail/the-book-publish-thumbnail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-thumbnail/the-book-publish-thumbnail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-title-input/the-book-publish-title-input.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-title-input/the-book-publish-title-input.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-title-input/the-book-publish-title-input.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/components/publish/the-book-publish-title-input/the-book-publish-title-input.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/model/book.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/model/book.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/content/service/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/content/service/book.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/content/components/main-page/main-page-carousels/main-page-carousels.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/content/components/main-page/main-page-carousels/main-page-carousels.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/monetization/components/monetization-page/the-step-monetization/the-step-monetization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/monetization/components/monetization-page/the-step-monetization/the-step-monetization.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/public/components/footer-content/footer-content.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/public/components/footer-content/footer-content.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/develop" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -35,8 +33,23 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LordMathi2741&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend.git&quot;,
+    &quot;accountId&quot;: &quot;a07131e3-8f1c-451b-b3a1-f8db89910fc4&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -49,29 +62,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging develop",
-    "last_opened_file_path": "D:/CAMILA/UPC/Ciclo 6/Open source/Angular Proyectos/peliculas-crud",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.ng.executor": "Run",
-    "npm.start.executor": "Run",
-    "ts.external.directory.path": "D:\\CAMILA\\UPC\\Ciclo 6\\Open source\\Proyecto\\FrontendOriginal\\Frontend\\frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CAMILA/UPC/Ciclo 6/Open source/Proyecto/Frontend2/Frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.ng.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/lordmathi2741/Documents/Cursos/Open Source-Upc/Frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CAMILA\UPC\Ciclo 6\Open source\Proyecto\Frontend2\Frontend" />
+      <recent name="D:\CAMILA\UPC\Ciclo 6\Open source\Proyecto\Frontend2\Frontend\frontend" />
       <recent name="C:\Users\Gustavo\OpenSource\TP\Frontend\frontend\src\assets\images" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CAMILA\UPC\Ciclo 6\Open source\Proyecto\Frontend2\Frontend" />
+      <recent name="D:\CAMILA\UPC\Ciclo 6\Open source\Proyecto\FrontendOriginal\Frontend\frontend" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.ng">
+  <component name="RunManager" selected="npm.start">
     <configuration name="ng" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/frontend/package.json" />
       <command value="run" />
@@ -104,7 +125,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
       </set>
     </attachedChunks>
   </component>
@@ -126,16 +147,29 @@
       <workItem from="1714366091704" duration="1945000" />
       <workItem from="1714371518305" duration="140000" />
       <workItem from="1714372094047" duration="1606000" />
-      <workItem from="1717114891690" duration="4761000" />
-      <workItem from="1717119777775" duration="4270000" />
-      <workItem from="1717174819640" duration="599000" />
-      <workItem from="1717183640174" duration="2531000" />
-      <workItem from="1717192695125" duration="79000" />
-      <workItem from="1717196645899" duration="3899000" />
+      <workItem from="1714678005248" duration="5925000" />
+      <workItem from="1714684388763" duration="1645000" />
+      <workItem from="1714696918969" duration="978000" />
+      <workItem from="1714705977950" duration="2764000" />
+      <workItem from="1714713038361" duration="3784000" />
+      <workItem from="1714716859797" duration="226000" />
+      <workItem from="1714745416291" duration="666000" />
+      <workItem from="1714766634630" duration="166000" />
+      <workItem from="1714767076743" duration="1176000" />
+      <workItem from="1714788571292" duration="2000" />
+      <workItem from="1716991128429" duration="971000" />
+      <workItem from="1717219180525" duration="5866000" />
+      <workItem from="1717282198556" duration="2170000" />
+      <workItem from="1719457928577" duration="3547000" />
+      <workItem from="1719510193418" duration="2000" />
+      <workItem from="1719520801292" duration="6907000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

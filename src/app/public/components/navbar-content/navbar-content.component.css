@@ -1,0 +1,142 @@
+.navbar-tools img{
+  cursor: pointer;
+  ;
+}
+.example-icon {
+  display: none;
+}
+span:hover{
+  color: #11AEBF;
+  cursor: pointer;
+}
+
+span{
+  font-weight: bold;
+}
+
+.sidenav-list span{
+  cursor: pointer;
+}
+
+.login-btn{
+  background-color: #11AEBF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button{
+  width: 110px;
+  font-size: 15px;
+}
+
+.search-input{
+  display:flex;
+}
+
+.search-btn{
+  align-content: center;
+}
+
+.input-btn input{
+  border-color: transparent;
+}
+.mat-toolbar{
+  background-color: white;
+  color: black;
+}
+
+.navbar-tools{
+  display: flex;
+  gap: 2em;
+}
+
+.navbar-container{
+  border: 1px solid #e0e0e0;
+}
+
+.sidenav-container {
+  position: absolute;
+  z-index: 100;
+
+}
+
+
+.sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+
+
+}
+
+.example-is-mobile .sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.mat-toolbar .toolbar-container {
+  flex: 1;
+}
+.publish-btn{
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.sidenav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1rem;
+
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+  .example-icon {
+    display:block;
+  }
+
+  .toolbar-sections{
+    display: none;
+  }
+
+  .logged-container{
+    display: none;
+  }
+
+  .toolbar-container{
+    justify-content: space-around;
+    padding: 0 0;
+  }
+
+  span{
+    font-size: 15px;
+  }
+
+  button{
+    width: 15px;
+    font-size: 15px;
+  }
+}
+
+@media (width>=1025px)  {
+  span{
+    font-size: 15px;
+  }
+  img{
+    width: 45px;
+  }
+  button{
+    font-size: 15px;
+    padding:0.3rem;
+    width: 110px;
+
+  }
+}
+@media(width<=350px){
+  .navbar-container{
+    width: 130px;
+  }
+}

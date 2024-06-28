@@ -1,0 +1,34 @@
+<footer>
+  <div class="logo-content">
+    <div class="header">
+      <img src="./assets/logo.png" routerLink="/home" width="50">
+      <h3 class="text-sm md:text-base md:pt-4"> ArtCollab </h3>
+    </div>
+    <div class="media-section">
+      <a href="https://www.facebook.com" target="_blank">
+        <mat-icon>facebook</mat-icon>
+      </a>
+      <a href="https://www.twitter.com" target="_blank">
+        <fa-icon [icon]="faXTwitter" [style.font-size.px]="22"></fa-icon>
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <fa-icon [icon]="faInstagram" [style.font-size.px]="22"></fa-icon>
+      </a>
+      <a href="https://www.youtube.com" target="_blank">
+        <fa-icon [icon]="faYoutube" [style.font-size.px]="23"></fa-icon>
+      </a>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-7 font-bold flex-wrap">
+      <h3><a routerLink="/about" class="text-sm"> Acerca de </a></h3>
+      <h3><a routerLink="/genre" class="text-sm"> Géneros </a></h3>
+      <h3><a routerLink="/populars" class="text-sm"> Populares </a></h3>
+      <h3><a routerLink="/subscription" class="text-sm"> Suscripciones</a></h3>
+      <h3><a routerLink="/monetization" class="text-sm"> Monetización</a></h3>
+      <h3><a routerLink="/artist" class="text-sm"> Artistas </a></h3>
+    </div>
+  </div>
+  <div class="text-white text-center text-xs md:text-base lg:text-md xl:text-xl ">
+    <p>Copyright© 2024 ArtCollab.  Todos los derechos reservados.</p>
+  </div>
+</footer>
+
