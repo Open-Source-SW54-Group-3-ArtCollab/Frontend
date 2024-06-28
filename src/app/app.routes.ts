@@ -26,6 +26,15 @@ import {TheChatPageComponent} from "./collaboration/pages/the-chat-page/the-chat
 import {ChapterPreviewComponent} from "./content/components/chapter/chapter-preview/chapter-preview.component";
 import {BookDetailComponent} from "./content/pages/book-detail-page/book-detail.component";
 import {TheAboutPageComponent} from "./content/pages/about-page/the-about-page/the-about-page.component";
+import {
+  ThePaymentApplicationComponent
+} from "./monetization/pages/the-payment-application/the-payment-application.component";
+import {
+  ThePaymentSuccessApplicationComponent
+} from "./monetization/pages/the-payment-success-application/the-payment-success-application.component";
+import {
+  ThePaymentFailureApplicationComponent
+} from "./monetization/pages/the-payment-failure-application/the-payment-failure-application.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -64,5 +73,9 @@ export const routes: Routes = [
   {path:'',redirectTo:'/chapter-preview', pathMatch:'full'},
   {path:'chapter-preview', component: ChapterPreviewComponent},
   {path:'',redirectTo:'/about', pathMatch:'full'},
-  {path:'about', component: TheAboutPageComponent}
+  {path:'about', component: TheAboutPageComponent},
+  {path:'chapter-preview', component: ChapterPreviewComponent},
+  {path:'payment-information', component: ThePaymentApplicationComponent},
+  {path:'payment-success', component: ThePaymentSuccessApplicationComponent},
+  {path:'payment-failure', component:ThePaymentFailureApplicationComponent}
 ];

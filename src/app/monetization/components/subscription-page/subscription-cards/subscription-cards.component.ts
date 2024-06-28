@@ -3,8 +3,9 @@ import {MatCard, MatCardContent, MatCardHeader} from "@angular/material/card";
 import { FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import{faCheck} from "@fortawesome/free-solid-svg-icons";
 import {NgForOf} from "@angular/common";
-import {PaymentService} from "../../../../shared/service/payment.service.service";
+
 import {Router} from "@angular/router";
+import {PaymentService} from "../../../../shared/service/payment.service";
 
 @Component({
   selector: 'subscription-cards',
