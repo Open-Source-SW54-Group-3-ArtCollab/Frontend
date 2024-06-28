@@ -135,8 +135,4 @@ button{
 
   }
 }
-@media(width<=350px){
-  .navbar-container{
-    width: 130px;
-  }
-}
+
