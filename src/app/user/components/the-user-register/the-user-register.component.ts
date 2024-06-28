@@ -42,9 +42,9 @@ export class TheUserRegisterComponent implements OnInit{
   confirm_password = new FormControl('', [Validators.required]);
   username = new FormControl('', [Validators.required, Validators.maxLength(20)]);
   artist = new FormControl(false);
-  first_name = '';
-  last_name = '';
-  imgUrl = '';
+  first_name = 'Guest';
+  last_name = 'User';
+  imgUrl = 'https://avatars.dicebear.com/api/adventurer-neutral/mail%40ashallendesign.co.uk.svg';
   type = 'reader';
 
 
@@ -77,6 +77,13 @@ export class TheUserRegisterComponent implements OnInit{
       this.confirm_password.setErrors({ mismatch: true });
       return;
     }
+
+    console.log( {email: this.email.value,
+      password: this.password.value,
+      username: this.username.value,
+      imgUrl: this.imgUrl,
+      name: this.first_name + ' ' + this.last_name,
+      type: this.type})
 
     this.usersService.createUser({
       email: this.email.value,

@@ -19,7 +19,7 @@ export class UsersService {
      return this.http.put(this.baseUrl+'/readers' +`/${id}`, {firstName:name}, )
    }
    createUser(item:any):Observable<User> {
-     return this.http.post<User>(this.baseUrl+'/readers', JSON.stringify(item) )
+     return this.http.post<User>(this.baseUrl+'/readers', item )
    }
    getUserByEmailAndPassword(email:any,password:any): Observable<User>{
       return this.http.get<User>(this.baseUrl+'/readers' +`/${email}` +`/${password}`,)
