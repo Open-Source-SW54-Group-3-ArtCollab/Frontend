@@ -103,10 +103,14 @@ export class BookPublishStepperComponent {
       title: this.title,
       description: this.summary,
       type: 'book',
-      imgUrl: this.bookCover,
+      imgURL: this.bookCover,
       views: 0,
       likes: 0,
-      genre: combinedGenres
+      genre: combinedGenres,
+      templateState: 'false',
+      templateState_Id: 0,
+      templateHistory_Id: 0,
+      portfolio_Id: 1
     };
 
     this.bookService.createBook(bookData).subscribe(
