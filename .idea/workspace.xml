@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2b4b5e8f-7e0f-48c1-b411-dcc904554d59" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/content/components/main-page/main-page-carousels/main-page-carousels.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/content/components/main-page/main-page-carousels/main-page-carousels.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/monetization/components/monetization-page/the-step-monetization/the-step-monetization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/monetization/components/monetization-page/the-step-monetization/the-step-monetization.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/public/components/footer-content/footer-content.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/public/components/footer-content/footer-content.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +159,8 @@
       <workItem from="1717282198556" duration="2170000" />
       <workItem from="1719457928577" duration="3547000" />
       <workItem from="1719510193418" duration="2000" />
-      <workItem from="1719520801292" duration="6907000" />
+      <workItem from="1719520801292" duration="7305000" />
+      <workItem from="1719538165074" duration="333000" />
     </task>
     <servers />
   </component>
